@@ -1,0 +1,940 @@
+[    0.000000] -(0)[0:swapper]Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+[    0.000000] -(0)[0:swapper]Linux version 4.19.191-g9c56ee34514d (poca@poca-MacBookPro) (Android (7284624, based on r416183b) clang version 12.0.5 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee), LLD 12.0.5 (/buildbot/src/android/llvm-toolchain/out/llvm-project/lld c935d99d7cf2016289302412d708641d52d2f7ee)) #1 SMP PREEMPT Thu Jun 4 09:10:45 PDT 2026
+[    0.000000] -(0)[0:swapper]Machine model: MT6765
+[    0.000000] -(0)[0:swapper]OF: reserved mem: initialized node reserve-memory-sspm_share, compatible id mediatek,reserve-memory-sspm_share
+[    0.000000] -(0)[0:swapper]Reserved memory: created DMA memory pool at 0x00000000be000000, size 3 MiB
+[    0.000000] -(0)[0:swapper]OF: reserved mem: initialized node wifi-reserve-memory, compatible id shared-dma-pool
+[    0.000000] -(0)[0:swapper][memblock]mediatek,minirdump: 0x47d70000 - 0x47d80000 (0x10000)
+[    0.000000] -(0)[0:swapper]OF: reserved mem: initialized node mblock-14-minirdump, compatible id mediatek,minirdump
+[    0.000000] -(0)[0:swapper][gz_log_context_init] rmem:mblock-4-gz-log base(0x7fa00000) size(0x41000) flag(1)
+[    0.000000] -(0)[0:swapper]OF: reserved mem: initialized node mblock-4-gz-log, compatible id mediatek,gz-log
+[    0.000000] -(0)[0:swapper]cma: Reserved 16 MiB at 0x00000000fec00000
+[    0.000000] -(0)[0:swapper]On node 0 totalpages: 772798
+[    0.000000] -(0)[0:swapper]  DMA32 zone: 12288 pages used for memmap
+[    0.000000] -(0)[0:swapper]  DMA32 zone: 0 pages reserved
+[    0.000000] -(0)[0:swapper]  DMA32 zone: 772798 pages, LIFO batch:63
+[    0.000000] -(0)[0:swapper]psci: probing for conduit method from DT.
+[    0.000000] -(0)[0:swapper]psci: PSCIv1.0 detected in firmware.
+[    0.000000] -(0)[0:swapper]psci: Using standard PSCI v0.2 function IDs
+[    0.000000] -(0)[0:swapper]psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] -(0)[0:swapper]psci: SMC Calling Convention v1.1
+[    0.000000] -(0)[0:swapper]percpu: Embedded 24 pages/cpu s59096 r8192 d31016 u98304
+[    0.000000] -(0)[0:swapper]pcpu-alloc: s59096 r8192 d31016 u98304 alloc=24*4096
+[    0.000000] -(0)[0:swapper]pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+[    0.000000] -(0)[0:swapper]Detected VIPT I-cache on CPU0
+[    0.000000] -(0)[0:swapper]CPU features: enabling workaround for ARM erratum 845719
+[    0.000000] -(0)[0:swapper]Built 1 zonelists, mobility grouping on.  Total pages: 760510
+[    0.000000] -(0)[0:swapper]Kernel command line: console=tty0 console=ttyS0,921600n1 vmalloc=400M 				slub_debug=OFZPU page_owner=on 				swiotlb=noforce androidboot.hardware=mt6765 				maxcpus=8 loop.max_part=7 				firmware_class.path=/vendor/firmware has_battery_removed=1 loop.max_part=7 androidboot.boot_devices=bootdevice,soc/11230000.mmc,11230000.mmc,soc/11230000.msdc,11230000.msdc ramoops.mem_address=0x47c90000 ramoops.mem_size=0xe0000 ramoops.pmsg_size=0x10000 ramoops.console_size=0x40000 bootopt=64S3,32N2,64N2 buildvariant=user androidboot.selinux=permissive root=/dev/ram  androidboot.slot_suffix=_a androidboot.slot=a androidboot.verifiedbootstate=orange androidboot.atm=disabled androidboot.force_normal_boot=1 androidboot.meta_log_disable=0 hcnstub:board_id=0x00000000 mtk_printk_ctrl.disable_uart=1 androidboot.serialno=REDACTED-SERIAL androidboot.bootreason=reboot_longkey gpt=1 usb2jtag_mode=0 androidboot.dtb_idx=0 androidboot.dtbo_idx=0
+[    0.000000] -(0)[0:swapper]Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.000000] -(0)[0:swapper]Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.000000] -(0)[0:swapper]mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] -(0)[0:swapper]Memory: 2976200K/3091192K available (16126K kernel code, 2218K rwdata, 5916K rodata, 1728K init, 3733K bss, 98608K reserved, 16384K cma-reserved)
+[    0.000000] -(0)[0:swapper]SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] -(0)[0:swapper]ftrace: allocating 54395 entries in 213 pages
+[    0.000000] -(0)[0:swapper]
+[    0.000000] -(0)[0:swapper]**********************************************************
+[    0.000000] -(0)[0:swapper]**   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    0.000000] -(0)[0:swapper]**                                                      **
+[    0.000000] -(0)[0:swapper]** trace_printk() being used. Allocating extra memory.  **
+[    0.000000] -(0)[0:swapper]**                                                      **
+[    0.000000] -(0)[0:swapper]** This means that this is a DEBUG kernel and it is     **
+[    0.000000] -(0)[0:swapper]** unsafe for production use.                           **
+[    0.000000] -(0)[0:swapper]**                                                      **
+[    0.000000] -(0)[0:swapper]** If you see this message and you are not debugging    **
+[    0.000000] -(0)[0:swapper]** the kernel, report this immediately to your vendor!  **
+[    0.000000] -(0)[0:swapper]**                                                      **
+[    0.000000] -(0)[0:swapper]**   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    0.000000] -(0)[0:swapper]**********************************************************
+[    0.000000] -(0)[0:swapper/0]rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] -(0)[0:swapper/0]rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=8.
+[    0.000000] -(0)[0:swapper/0]	Tasks RCU enabled.
+[    0.000000] -(0)[0:swapper/0]rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[    0.000000] -(0)[0:swapper/0]NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] -(0)[0:swapper/0]GICv3: Distributor has no Range Selector support
+[    0.000000] -(0)[0:swapper/0]GICv3: no VLPI support, no direct LPI support
+[    0.000000] -(0)[0:swapper/0]GICv3: CPU0: found redistributor 0 region 0:0x000000000c100000
+[    0.000000] -(0)[0:swapper/0]### gic-v3 init done. ###
+[    0.000000] -(0)[0:swapper/0]random: random: get_random_bytes called from start_kernel+0x1e4/0x384 with crng_init=0
+[    0.000000] -(0)[0:swapper/0]arch_timer: cp15 timer(s) running at 13.00MHz (virt).
+[    0.000000] -(0)[0:swapper/0]clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x2ff89eacb, max_idle_ns: 440795202429 ns
+[    0.000004] -(0)[0:swapper/0]sched_clock: 56 bits at 13MHz, resolution 76ns, wraps every 4398046511101ns
+[    0.000180] -(0)[0:swapper/0]genirq: irq_chip MT_SYSIRQ did not update eff. affinity mask of irq 5
+[    0.000683] (0)[0:swapper/0]Console: colour dummy device 80x25
+[    0.001182] (0)[0:swapper/0]console [tty0] enabled
+[    0.001202] (0)[0:swapper/0]mboot_params:[DT] 0x540@0x10ea00, 0x1(0x7c0)
+[    0.001217] (0)[0:swapper/0]mboot_params: [DT] 0x10000@0x47d70000
+[    0.001226] (0)[0:swapper/0]mboot_params: using sram:0x10ea00
+[    0.001238] (0)[0:swapper/0]mboot_params: buffer start: 0xffffff800802da00, size: 0x540
+[    0.001261] (0)[0:swapper/0]pmic & external buck: 0x0
+[    0.001271] (0)[0:swapper/0]mboot_params: CPU notifier status: 0, 0, 0x0, 0
+[    0.001281] (0)[0:swapper/0]mboot_params: CPU HPS footprint: 0, 0x0, 0, 0
+[    0.001291] (0)[0:swapper/0]mboot_params: last init function: 0x0
+[    0.001461] (0)[0:swapper/0]Calibrating delay loop (skipped), value calculated using timer frequency.. 26.00 BogoMIPS (lpj=52000)
+[    0.001480] (0)[0:swapper/0]pid_max: default: 32768 minimum: 301
+[    0.001572] (0)[0:swapper/0]Security Framework initialized
+[    0.001587] (0)[0:swapper/0]SELinux:  Initializing.
+[    0.001671] (0)[0:swapper/0]Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.001693] (0)[0:swapper/0]Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.002966] (0)[1:swapper/0]ASID allocator initialised with 32768 entries
+[    0.003056] (0)[1:swapper/0]rcu: Hierarchical SRCU implementation.
+[    0.007603] (0)[1:swapper/0]tag_devinfo_data size:200, HRID size:4
+[    0.007628] (0)[1:swapper/0][devinfo][SegCode] Segment Code=0x24
+[    0.007646] (0)[1:swapper/0]BOOTPROF: DT(Err:0x0) pl_t=1214, lk_t=7873, lk_logo_t=577
+[    0.007660] (0)[1:swapper/0]BOOTPROF:         7.656922: ON
+[    0.007698] (0)[1:swapper/0]log_store:[DT] log_store: 0x10f200@0x100
+[    0.007714] (0)[1:swapper/0]log_store: get ok, sram addr:0x10f200, size:0x100
+[    0.007737] (0)[1:swapper/0]log_store: sram header address 0x(____ptrval____).
+[    0.007749] (0)[1:swapper/0]log_store printk_buff addr:0x419f5698,sz:0x200000,buff-flag:0x427.
+[    0.007763] (0)[1:swapper/0]sig 0x5678ef90 flag 0x427 add 0x7fbc0000 size 0x40000 offsize 0x20 point 0x21245
+[    0.007855] (0)[1:swapper/0][wdtk] bringup disarm: WDT_MODE 0000007d -> 0000007c
+[    0.008338] (0)[1:swapper/0]smp: Bringing up secondary CPUs ...
+[    0.009817] -(1)[0:swapper/1]Detected VIPT I-cache on CPU1
+[    0.009845] -(1)[0:swapper/1]GICv3: CPU1: found redistributor 1 region 0:0x000000000c120000
+[    0.009876] -(1)[0:swapper/1]CPU1: Booted secondary processor 0x0000000001 [0x410fd034]
+[    0.011348] -(2)[0:swapper/2]Detected VIPT I-cache on CPU2
+[    0.011370] -(2)[0:swapper/2]GICv3: CPU2: found redistributor 2 region 0:0x000000000c140000
+[    0.011392] -(2)[0:swapper/2]CPU2: Booted secondary processor 0x0000000002 [0x410fd034]
+[    0.012892] -(3)[0:swapper/3]Detected VIPT I-cache on CPU3
+[    0.012913] -(3)[0:swapper/3]GICv3: CPU3: found redistributor 3 region 0:0x000000000c160000
+[    0.012933] -(3)[0:swapper/3]CPU3: Booted secondary processor 0x0000000003 [0x410fd034]
+[    0.014770] -(4)[0:swapper/4]Detected VIPT I-cache on CPU4
+[    0.014803] -(4)[0:swapper/4]GICv3: CPU4: found redistributor 100 region 0:0x000000000c180000
+[    0.014833] -(4)[0:swapper/4]CPU4: Booted secondary processor 0x0000000100 [0x410fd034]
+[    0.016385] -(5)[0:swapper/5]Detected VIPT I-cache on CPU5
+[    0.016407] -(5)[0:swapper/5]GICv3: CPU5: found redistributor 101 region 0:0x000000000c1a0000
+[    0.016428] -(5)[0:swapper/5]CPU5: Booted secondary processor 0x0000000101 [0x410fd034]
+[    0.017934] -(6)[0:swapper/6]Detected VIPT I-cache on CPU6
+[    0.017956] -(6)[0:swapper/6]GICv3: CPU6: found redistributor 102 region 0:0x000000000c1c0000
+[    0.017977] -(6)[0:swapper/6]CPU6: Booted secondary processor 0x0000000102 [0x410fd034]
+[    0.019470] -(7)[0:swapper/7]Detected VIPT I-cache on CPU7
+[    0.019493] -(7)[0:swapper/7]GICv3: CPU7: found redistributor 103 region 0:0x000000000c1e0000
+[    0.019514] -(7)[0:swapper/7]CPU7: Booted secondary processor 0x0000000103 [0x410fd034]
+[    0.019635] (0)[1:swapper/0]smp: Brought up 1 node, 8 CPUs
+[    0.019813] (0)[1:swapper/0]SMP: Total of 8 processors activated.
+[    0.019825] (0)[1:swapper/0]CPU features: detected: GIC system register CPU interface
+[    0.019837] (0)[1:swapper/0]CPU features: detected: 32-bit EL0 Support
+[    0.019910] (0)[1:swapper/0]CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+[    0.019925] (0)[1:swapper/0]CPU: All CPU(s) started at EL1
+[    0.019967] -(0)[13:migration/0]alternatives: patching kernel code
+[    0.020386] (0)[1:swapper/0]CPU7: update max cpu_capacity 801
+[    0.020393] (0)[1:swapper/0]CPU3: update max cpu_capacity 1024
+[    0.024446] (5)[0:swapper/5]CPU5: update max cpu_capacity 801
+[    0.024948] (3)[0:swapper/3]CPU3: update max cpu_capacity 1024
+[    0.034207] (0)[1:swapper/0]Registered cp15_barrier emulation handler
+[    0.034229] (0)[1:swapper/0]Registered setend emulation handler
+[    0.034433] (0)[1:swapper/0]clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.034457] (0)[1:swapper/0]futex hash table entries: 2048 (order: 5, 131072 bytes)
+[    0.035042] (0)[1:swapper/0]pinctrl core: initialized pinctrl subsystem
+[    0.036119] (0)[1:swapper/0]use toprgu to setting
+[    0.036134] (0)[1:swapper/0]In dfd init
+[    0.036269] (0)[1:swapper/0]dfd_init: Latch offset is 0x48
+[    0.036335] (0)[1:swapper/0]dfd_init: get topdbg base success
+[    0.036345] (0)[1:swapper/0]Linked base: 0x7c
+[    0.036968] (0)[1:swapper/0]NET: Registered protocol family 16
+[    0.037950] (0)[1:swapper/0]schedtune: configured to support 10 boost groups
+[    0.038051] (0)[1:swapper/0]audit: initializing netlink subsys (disabled)
+[    0.038248] (0)[1:swapper/0]ramoops: using module parameters
+[    0.039256] (0)[1:swapper/0]console [pstore-1] enabled
+[    0.039267] (0)[1:swapper/0]pstore: Registered ramoops as persistent store backend
+[    0.039280] (0)[1:swapper/0]ramoops: attached 0xe0000@0x47c90000, ecc: 0/0
+[    0.039444] (2)[53:kauditd]audit: type=2000 audit(0.036:1): state=initialized audit_enabled=0 res=1
+[    0.039856] (0)[1:swapper/0][DRAMC]dram info dram rank number = 2
+[    0.039870] (0)[1:swapper/0][DRAMC]find dt_scan_dram_info
+[    0.040185] (0)[1:swapper/0][EMI] dram_type(3)
+[    0.040195] (0)[1:swapper/0][EMI] mr5(0x13)
+[    0.040204] (0)[1:swapper/0][EMI] ch_num(2)
+[    0.040213] (0)[1:swapper/0][EMI] rk_num(2)
+[    0.040221] (0)[1:swapper/0][EMI] rank0_size(0xc)
+[    0.040224] (0)[1:swapper/0][EMI] rank1_size(0xc)
+[    0.040340] (0)[1:swapper/0]cpuidle: using governor menu
+[    0.040526] (0)[1:swapper/0]cpuidle: using governor mtk_menu
+[    0.041360] (0)[1:swapper/0]hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.042424] (0)[1:swapper/0]DMA: preallocated 256 KiB pool for atomic allocations
+[    0.042551] (0)[1:swapper/0]Serial: AMBA PL011 UART driver
+[    0.042612] (0)[1:swapper/0][Power/PPM] cluster_num = 2
+[    0.042624] (0)[1:swapper/0][Power/PPM] ppm cluster 0 -> core_num = 4, cpu_id = 0
+[    0.042637] (0)[1:swapper/0][Power/PPM] ppm cluster 1 -> core_num = 4, cpu_id = 4
+[    0.042651] (0)[1:swapper/0][Power/PPM] @ppm_main_data_init: done!
+[    0.042780] (0)[1:swapper/0][Power/PPM] @ppm_main_pdrv_probe: ppm probe done!
+[    0.042819] (0)[1:swapper/0][Power/PPM] ppm_profile_init done
+[    0.042846] (0)[1:swapper/0][Power/PPM] ppm driver init done (no DoE)!
+[    0.042899] (0)[1:swapper/0][CMDQ]cmdq_init enter
+[    0.042926] (0)[1:swapper/0]mrdump_parse_chosen: mrdump_cbaddr=0x000000000010f300, mrdump_cbsize=0x0000000000000e00
+[    0.042948] (0)[1:swapper/0]mrdump_parse_chosen: lk version MRDUMP11
+[    0.042959] (0)[1:swapper/0]mrdump_parse_chosen: ddr reserve mode yes
+[    0.042970] (0)[1:swapper/0]mrdump_dbgtop_dram_reserved: Trying to enable DDR Reserve Mode(1)
+[    0.042984] (0)[1:swapper/0]mtk_dbgtop_dram_reserved: MTK_DBGTOP_MODE(0xfc)
+[    0.042995] (0)[1:swapper/0]mrdump_dbgtop_dram_reserved: DDR reserved mode enable ok
+[    0.043007] (0)[1:swapper/0]mrdump_hw_init: init_done.
+[    0.043017] (0)[1:swapper/0]dfd setup
+[    0.043027] (0)[1:swapper/0]mtk_dbgtop_dfd_count_en: MTK_DBGTOP_LATCH_CTL2(0x20000)
+[    0.043041] (0)[1:swapper/0]mtk_dbgtop_dfd_therm1_dis: MTK_DBGTOP_LATCH_CTL2(0x60000)
+[    0.043055] (0)[1:swapper/0]mtk_dbgtop_dfd_therm2_dis: MTK_DBGTOP_LATCH_CTL2(0x60000)
+[    0.043082] (0)[1:swapper/0]mrdump_hw_init: DFD enabled
+[    0.045684] (0)[1:swapper/0]mrdump_cblock_init: done.
+[    0.045757] (0)[1:swapper/0]minirdump: [DT] reserved 0x47d70000+0x10000->(____ptrval____)
+[    0.045803] (0)[1:swapper/0][gz_log_page_init] set by static_map, virt addr:(____ptrval____), sz:0x41000
+[    0.045817] (0)[1:swapper/0][get_gz_log_buffer] virtual address:0xffffffc03fa00000, paddr:0x7fa00000
+[    0.045861] (0)[1:swapper/0]mrdump_full_init: MT-RAMDUMP enabled done
+[    0.046370] (0)[1:swapper/0][cmdq] cmdq_drv_init enter
+[    0.051520] (0)[1:swapper/0]------------[ cut here ]------------
+[    0.051576] -(0)[1:swapper/0]WARNING: CPU: 0 PID: 1 at gic_irq_domain_translate+0x150/0x158
+[    0.051588] -(0)[1:swapper/0]Modules linked in:
+[    0.051605] -(0)[1:swapper/0]CPU: 0 PID: 1 Comm: swapper/0 Not tainted 4.19.191-g9c56ee34514d #1
+[    0.051618] -(0)[1:swapper/0]Hardware name: MT6765 (DT)
+[    0.051630] -(0)[1:swapper/0]pstate: 60400005 (nZCv daif +PAN -UAO)
+[    0.051643] -(0)[1:swapper/0]pc : gic_irq_domain_translate+0x150/0x158
+[    0.051656] -(0)[1:swapper/0]lr : gic_irq_domain_translate+0x14c/0x158
+[    0.051667] -(0)[1:swapper/0]sp : ffffff8008043640
+[    0.051675] -(0)[1:swapper/0]x29: ffffff8008043640 x28: 0000000000000000 
+[    0.051688] -(0)[1:swapper/0]x27: ffffff80094d7288 x26: 0000000000000000 
+[    0.051701] -(0)[1:swapper/0]x25: ffffff8009595000 x24: 000000000000008b 
+[    0.051713] -(0)[1:swapper/0]x23: 0000000000000001 x22: ffffff8008043758 
+[    0.051726] -(0)[1:swapper/0]x21: ffffff8008043680 x20: ffffff800804367c 
+[    0.051738] -(0)[1:swapper/0]x19: ffffff8008043758 x18: 00000000ffff0a10 
+[    0.051750] -(0)[1:swapper/0]x17: 0000000000000000 x16: 0000000000000000 
+[    0.051763] -(0)[1:swapper/0]x15: ffffff8009024680 x14: 0720072007200720 
+[    0.051775] -(0)[1:swapper/0]x13: 000000000000001a x12: 0000000000000000 
+[    0.051788] -(0)[1:swapper/0]x11: 0000000000000000 x10: ffffffffffffffff 
+[    0.051800] -(0)[1:swapper/0]x9 : e8c6293f5a80a100 x8 : e8c6293f5a80a100 
+[    0.051812] -(0)[1:swapper/0]x7 : 0000000000000000 x6 : ffffffc04f329f00 
+[    0.051825] -(0)[1:swapper/0]x5 : 0000000000000001 x4 : 0000000000000000 
+[    0.051837] -(0)[1:swapper/0]x3 : 0000000000000000 x2 : 0000000000000001 
+[    0.051849] -(0)[1:swapper/0]x1 : 0000000000000000 x0 : 0000000000000000 
+[    0.051863] -(0)[1:swapper/0]Call trace:
+[    0.051875] -(0)[1:swapper/0] gic_irq_domain_translate+0x150/0x158
+[    0.051888] -(0)[1:swapper/0] gic_irq_domain_alloc+0x58/0x228
+[    0.051902] -(0)[1:swapper/0] irq_domain_alloc_irqs_hierarchy+0x44/0x80
+[    0.051914] -(0)[1:swapper/0] irq_domain_alloc_irqs_parent+0x3c/0x54
+[    0.051929] -(0)[1:swapper/0] mtk_sysirq_domain_alloc+0xe4/0xec
+[    0.051940] -(0)[1:swapper/0] irq_domain_alloc_irqs_hierarchy+0x44/0x80
+[    0.051952] -(0)[1:swapper/0] __irq_domain_alloc_irqs+0x104/0x258
+[    0.051963] -(0)[1:swapper/0] irq_create_fwspec_mapping+0x1f0/0x30c
+[    0.051975] -(0)[1:swapper/0] irq_create_of_mapping+0x64/0x8c
+[    0.051989] -(0)[1:swapper/0] of_irq_get+0xa4/0xd4
+[    0.052000] -(0)[1:swapper/0] of_irq_to_resource+0x3c/0xf0
+[    0.052011] -(0)[1:swapper/0] of_irq_to_resource_table+0x3c/0x74
+[    0.052025] -(0)[1:swapper/0] of_device_alloc+0x120/0x1dc
+[    0.052036] -(0)[1:swapper/0] of_platform_device_create_pdata+0x68/0xf4
+[    0.052047] -(0)[1:swapper/0] of_platform_bus_create+0x224/0x454
+[    0.052059] -(0)[1:swapper/0] of_platform_populate+0x8c/0x10c
+[    0.052073] -(0)[1:swapper/0] of_platform_default_populate_init+0xb0/0xcc
+[    0.052087] -(0)[1:swapper/0] do_one_initcall+0x120/0x29c
+[    0.052101] -(0)[1:swapper/0] do_initcall_level+0x148/0x170
+[    0.052113] -(0)[1:swapper/0] do_basic_setup+0x34/0x4c
+[    0.052125] -(0)[1:swapper/0] kernel_init_freeable+0xb4/0x134
+[    0.052139] -(0)[1:swapper/0] kernel_init+0x14/0x10c
+[    0.052150] -(0)[1:swapper/0] ret_from_fork+0x10/0x18
+[    0.052165] -(0)[1:swapper/0]---[ end trace a9bc80a875defde2 ]---
+[    0.064567] (0)[1:swapper/0]platform 18000000.wifi: assigned reserved memory node wifi-reserve-memory
+[    0.077627] (0)[1:swapper/0]platform cci: Linked as a consumer to 1000c000.apmixed
+[    0.078688] (0)[1:swapper/0]platform 1000d000.pwrap: Linked as a consumer to 10001000.infracfg_ao
+[    0.078711] (0)[1:swapper/0]platform 1000d000.pwrap: Linked as a consumer to 10000000.topckgen
+[    0.079422] (0)[1:swapper/0]platform scp_dvfs: Linked as a consumer to 10000000.topckgen
+[    0.079495] (0)[1:swapper/0]platform 10010000.kp: Linked as a consumer to pinctrl@1000b000
+[    0.079571] (0)[1:swapper/0]platform touch: Linked as a consumer to pinctrl@1000b000
+[    0.079637] (0)[1:swapper/0]platform accdet: Linked as a consumer to pinctrl@1000b000
+[    0.079680] (0)[1:swapper/0]platform fingerprint: Linked as a consumer to pinctrl@1000b000
+[    0.079855] (0)[1:swapper/0]platform 10207000.devapc: Linked as a consumer to 10001000.infracfg_ao
+[    0.079941] (0)[1:swapper/0]platform 10212000.cq_dma: Linked as a consumer to 10001000.infracfg_ao
+[    0.080037] (0)[1:swapper/0]platform 10209000.ccifdriver: Linked as a consumer to 10001000.infracfg_ao
+[    0.080086] (0)[1:swapper/0]platform 10014000.cldmadriver: Linked as a consumer to 10001000.infracfg_ao
+[    0.080128] (0)[1:swapper/0]platform 10014000.mddriver: Linked as a consumer to 10001000.scpsys
+[    0.080146] (0)[1:swapper/0]platform 10014000.mddriver: Linked as a consumer to 10001000.infracfg_ao
+[    0.080454] (0)[1:swapper/0]platform 10238000.gce: Linked as a consumer to 10001000.infracfg_ao
+[    0.080490] (0)[1:swapper/0]platform 10238000.gce: Linked as a consumer to 10238000.gce_mbox
+[    0.080642] (0)[1:swapper/0]platform 10238000.gce_mbox: Linked as a consumer to 10001000.infracfg_ao
+[    0.080676] (0)[1:swapper/0]platform 10238000.gce_mbox_svp: Linked as a consumer to 10001000.infracfg_ao
+[    0.080933] (0)[1:swapper/0]platform 11001000.auxadc: Linked as a consumer to 10001000.infracfg_ao
+[    0.081012] (0)[1:swapper/0]platform 11000680.dma-controller: Linked as a consumer to 10001000.infracfg_ao
+[    0.081047] (0)[1:swapper/0]platform 11002000.serial: Linked as a consumer to 10001000.infracfg_ao
+[    0.081068] (0)[1:swapper/0]platform 11002000.serial: Linked as a consumer to 11000680.dma-controller
+[    0.081102] (0)[1:swapper/0]platform 11003000.serial: Linked as a consumer to 10001000.infracfg_ao
+[    0.081149] (0)[1:swapper/0]platform 11007000.i2c0: Linked as a consumer to 10001000.infracfg_ao
+[    0.081267] (0)[1:swapper/0]platform 11008000.i2c1: Linked as a consumer to 10001000.infracfg_ao
+[    0.081319] (0)[1:swapper/0]platform 11009000.i2c2: Linked as a consumer to 10001000.infracfg_ao
+[    0.081401] (0)[1:swapper/0]platform 1100f000.i2c3: Linked as a consumer to 10001000.infracfg_ao
+[    0.081502] (0)[1:swapper/0]platform 11011000.i2c4: Linked as a consumer to 10001000.infracfg_ao
+[    0.081578] (0)[1:swapper/0]platform 11016000.i2c5: Linked as a consumer to 10001000.infracfg_ao
+[    0.081637] (0)[1:swapper/0]platform 1100d000.i2c6: Linked as a consumer to 10001000.infracfg_ao
+[    0.081743] (0)[1:swapper/0]platform 11006000.pwm: Linked as a consumer to 10001000.infracfg_ao
+[    0.081799] (0)[1:swapper/0]platform 1100a000.spi: Linked as a consumer to 10000000.topckgen
+[    0.081819] (0)[1:swapper/0]platform 1100a000.spi: Linked as a consumer to 10001000.infracfg_ao
+[    0.081859] (0)[1:swapper/0]platform 1100b000.therm_ctrl: Linked as a consumer to 10001000.infracfg_ao
+[    0.081897] (0)[1:swapper/0]platform thermal-sensor1: Linked as a consumer to 11001000.auxadc
+[    0.081926] (0)[1:swapper/0]platform thermal-sensor2: Linked as a consumer to 11001000.auxadc
+[    0.081955] (0)[1:swapper/0]platform 1100c000.btif: Linked as a consumer to 10001000.infracfg_ao
+[    0.081988] (0)[1:swapper/0]platform 18002000.consys: Linked as a consumer to 10001000.scpsys
+[    0.082016] (0)[1:swapper/0]platform 18002000.consys: Linked as a consumer to pinctrl@1000b000
+[    0.082072] (0)[1:swapper/0]platform 11010000.spi: Linked as a consumer to 10000000.topckgen
+[    0.082092] (0)[1:swapper/0]platform 11010000.spi: Linked as a consumer to 10001000.infracfg_ao
+[    0.082122] (0)[1:swapper/0]platform 11012000.spi: Linked as a consumer to 10000000.topckgen
+[    0.082143] (0)[1:swapper/0]platform 11012000.spi: Linked as a consumer to 10001000.infracfg_ao
+[    0.082173] (0)[1:swapper/0]platform 11013000.spi: Linked as a consumer to 10000000.topckgen
+[    0.082193] (0)[1:swapper/0]platform 11013000.spi: Linked as a consumer to 10001000.infracfg_ao
+[    0.082225] (0)[1:swapper/0]platform 11014000.spi: Linked as a consumer to 10000000.topckgen
+[    0.082245] (0)[1:swapper/0]platform 11014000.spi: Linked as a consumer to 10001000.infracfg_ao
+[    0.082276] (0)[1:swapper/0]platform 11015000.spi: Linked as a consumer to 10000000.topckgen
+[    0.082296] (0)[1:swapper/0]platform 11015000.spi: Linked as a consumer to 10001000.infracfg_ao
+[    0.082343] (0)[1:swapper/0]platform 11200000.usb0: Linked as a consumer to 10001000.infracfg_ao
+[    0.082360] (0)[1:swapper/0]platform 11200000.usb0: Linked as a consumer to 10000000.topckgen
+[    0.082393] (0)[1:swapper/0]platform 11200000.usb0: Linked as a consumer to 11cc0000.usb-phy
+[    0.082497] (0)[1:swapper/0]platform 11230000.msdc: Linked as a consumer to 10001000.infracfg_ao
+[    0.082560] (0)[1:swapper/0]platform 11240000.msdc: Linked as a consumer to pinctrl@1000b000
+[    0.082593] (0)[1:swapper/0]platform 11240000.msdc: Linked as a consumer to 10001000.infracfg_ao
+[    0.082626] (0)[1:swapper/0]platform msdc1_ins@0: Linked as a consumer to pinctrl@1000b000
+[    0.082678] (0)[1:swapper/0]platform 11220000.audio: Linked as a consumer to pinctrl@1000b000
+[    0.082705] (0)[1:swapper/0]platform 11220000.mt_soc_dl1_pcm: Linked as a consumer to 11220000.audclk
+[    0.082743] (0)[1:swapper/0]platform 11220000.mt_soc_dl1_pcm: Linked as a consumer to 10001000.infracfg_ao
+[    0.082769] (0)[1:swapper/0]platform 11220000.mt_soc_dl1_pcm: Linked as a consumer to 10000000.topckgen
+[    0.082826] (0)[1:swapper/0]platform 11220000.mt_soc_dl1_pcm: Linked as a consumer to 1000c000.apmixed
+[    0.082864] (0)[1:swapper/0]platform 11220000.mt_soc_dl1_pcm: Linked as a consumer to pinctrl@1000b000
+[    0.083017] (0)[1:swapper/0]platform 13000000.mfg_doma: Linked as a consumer to ged
+[    0.083048] (0)[1:swapper/0]platform gpufreq: Linked as a consumer to 10000000.topckgen
+[    0.083070] (0)[1:swapper/0]platform gpufreq: Linked as a consumer to 10001000.scpsys
+[    0.083110] (0)[1:swapper/0]platform ged: Linked as a consumer to gpufreq
+[    0.083146] (0)[1:swapper/0]platform 14000000.dispsys_config: Linked as a consumer to 14000000.mmsys_config
+[    0.083201] (0)[1:swapper/0]platform 14002000.smi_common: Linked as a consumer to 10001000.scpsys
+[    0.083219] (0)[1:swapper/0]platform 14002000.smi_common: Linked as a consumer to 14000000.mmsys_config
+[    0.083243] (0)[1:swapper/0]platform 14002000.smi_common: Linked as a consumer to 10000000.topckgen
+[    0.083299] (0)[1:swapper/0]platform mmdvfs_pmqos: Linked as a consumer to 10000000.topckgen
+[    0.083340] (0)[1:swapper/0]platform 15020000.imgsys: Linked as a consumer to 10001000.scpsys
+[    0.083364] (0)[1:swapper/0]platform 15020000.imgsys: Linked as a consumer to 15020000.imgsys_clk
+[    0.083385] (0)[1:swapper/0]platform 15020000.imgsys: Linked as a consumer to 1a000000.camsys
+[    0.083439] (0)[1:swapper/0]platform 15028000.dpe: Linked as a consumer to 15020000.imgsys_clk
+[    0.083468] (0)[1:swapper/0]platform 14003000.smi_larb0: Linked as a consumer to 10001000.scpsys
+[    0.083486] (0)[1:swapper/0]platform 14003000.smi_larb0: Linked as a consumer to 14000000.mmsys_config
+[    0.083517] (0)[1:swapper/0]platform 14004000.mdp_rdma0: Linked as a consumer to 14000000.mmsys_config
+[    0.083546] (0)[1:swapper/0]platform 14005000.mdp_ccorr0: Linked as a consumer to 14000000.mmsys_config
+[    0.083575] (0)[1:swapper/0]platform 14006000.mdp_rsz0: Linked as a consumer to 14000000.mmsys_config
+[    0.083606] (0)[1:swapper/0]platform 14007000.mdp_rsz1: Linked as a consumer to 14000000.mmsys_config
+[    0.083636] (0)[1:swapper/0]platform 14008000.mdp_wdma0: Linked as a consumer to 14000000.mmsys_config
+[    0.083665] (0)[1:swapper/0]platform 14009000.mdp_wrot0: Linked as a consumer to 14000000.mmsys_config
+[    0.083693] (0)[1:swapper/0]platform 1400a000.mdp_tdshp0: Linked as a consumer to 14000000.mmsys_config
+[    0.083745] (0)[1:swapper/0]platform 1400f000.disp_color0: Linked as a consumer to 14000000.mmsys_config
+[    0.083810] (0)[1:swapper/0]platform dispsys: Linked as a consumer to 10001000.scpsys
+[    0.083827] (0)[1:swapper/0]platform dispsys: Linked as a consumer to 14000000.mmsys_config
+[    0.083926] (0)[1:swapper/0]platform dispsys: Linked as a consumer to 1000c000.apmixed
+[    0.083949] (0)[1:swapper/0]platform dispsys: Linked as a consumer to 10000000.topckgen
+[    0.083973] (0)[1:swapper/0]platform dispsys: Linked as a consumer to 10001000.infracfg_ao
+[    0.084047] (0)[1:swapper/0]platform dsi_te: Linked as a consumer to pinctrl@1000b000
+[    0.084076] (0)[1:swapper/0]platform 15021000.smi_larb2: Linked as a consumer to 10001000.scpsys
+[    0.084094] (0)[1:swapper/0]platform 15021000.smi_larb2: Linked as a consumer to 14000000.mmsys_config
+[    0.084112] (0)[1:swapper/0]platform 15021000.smi_larb2: Linked as a consumer to 15020000.imgsys_clk
+[    0.084143] (0)[1:swapper/0]platform 1502b000.fdvt: Linked as a consumer to 15020000.imgsys_clk
+[    0.084176] (0)[1:swapper/0]platform 17000000.venc_gcon: Linked as a consumer to 10001000.scpsys
+[    0.084196] (0)[1:swapper/0]platform 17000000.venc_gcon: Linked as a consumer to 14000000.mmsys_config
+[    0.084222] (0)[1:swapper/0]platform 17000000.venc_gcon: Linked as a consumer to 17000000.vcodecsys
+[    0.084259] (0)[1:swapper/0]platform 17010000.smi_larb1: Linked as a consumer to 10001000.scpsys
+[    0.084277] (0)[1:swapper/0]platform 17010000.smi_larb1: Linked as a consumer to 17000000.vcodecsys
+[    0.084314] (0)[1:swapper/0]platform 17030000.venc_jpg: Linked as a consumer to 17000000.vcodecsys
+[    0.084368] (0)[1:swapper/0]platform 1a002000.smi_larb3: Linked as a consumer to 10001000.scpsys
+[    0.084386] (0)[1:swapper/0]platform 1a002000.smi_larb3: Linked as a consumer to 14000000.mmsys_config
+[    0.084404] (0)[1:swapper/0]platform 1a002000.smi_larb3: Linked as a consumer to 1a000000.camsys
+[    0.084522] (0)[1:swapper/0]platform 1a040000.kd_camera_hw1: Linked as a consumer to 10000000.topckgen
+[    0.084577] (0)[1:swapper/0]platform 1a040000.kd_camera_hw1: Linked as a consumer to 1a000000.camsys
+[    0.084598] (0)[1:swapper/0]platform 1a040000.kd_camera_hw1: Linked as a consumer to 1000c000.apmixed
+[    0.084627] (0)[1:swapper/0]platform 1a040000.kd_camera_hw1: Linked as a consumer to 11c10000.mipi_rx_ana_csi0a
+[    0.084664] (0)[1:swapper/0]platform 1a040000.kd_camera_hw1: Linked as a consumer to 10001000.scpsys
+[    0.084724] (0)[1:swapper/0]platform 1a040000.kd_camera_hw1: Linked as a consumer to pinctrl@1000b000
+[    0.084877] (0)[1:swapper/0]platform flashlight_dummy_gpio: Linked as a consumer to pinctrl@1000b000
+[    0.084934] (0)[1:swapper/0]platform 1a0b1000.ccu: Linked as a consumer to 1a000000.camsys
+[    0.084952] (0)[1:swapper/0]platform 1a0b1000.ccu: Linked as a consumer to 10001000.scpsys
+[    0.085180] (0)[1:swapper/0]platform extcon_usb: Linked as a consumer to chg
+[    0.085207] (0)[1:swapper/0]platform extcon_usb: Linked as a consumer to pinctrl@1000b000
+[    0.085244] (0)[1:swapper/0]platform irtx_pwm: Linked as a consumer to pinctrl@1000b000
+[    0.085510] (0)[1:swapper/0]platform odm:flashlights_sywt78: Linked as a consumer to pinctrl@1000b000
+[    0.090290] (0)[1:swapper/0]clk_mt6765_scpsys_probe: start
+[    0.092692] (0)[1:swapper/0]clk_mt6765_scpsys_probe done(0)
+[    0.132991] (0)[1:swapper/0]BOOTPROF:       132.987768:probe: probe=platform_drv_probe drv=clk-mt6765(0xffffff8009844058)    40.230154ms
+[    0.136487] (0)[1:swapper/0]armpll_ll_enable = 1
+[    0.139037] (0)[1:swapper/0]systracker probe
+[    0.139056] (0)[1:swapper/0]of_iomap for systracker @ 0x(____ptrval____)
+[    0.139073] (0)[1:swapper/0][systracker] bus_dbg_con is in infra_ao
+[    0.139424] (0)[1:swapper/0][EMI] module probe.
+[    0.139450] (0)[1:swapper/0][EMI] get CEN_EMI_BASE @ (____ptrval____)
+[    0.139461] (0)[1:swapper/0][EMI] get EMI_MPU_BASE @ (____ptrval____)
+[    0.139472] (0)[1:swapper/0][EMI] get CH0_EMI_BASE @ (____ptrval____)
+[    0.139482] (0)[1:swapper/0][EMI] get CH1_EMI_BASE @ (____ptrval____)
+[    0.139510] (0)[1:swapper/0][MPU] initialize EMI MPU
+[    0.139520] (0)[1:swapper/0][MPU] detect violation in driver init
+[    0.139532] (0)[1:swapper/0][MPU] EMI MPU violation
+[    0.139542] (0)[1:swapper/0][MPU] MPUS: 40010b20, MPUT: 7d81b80, MPUT_2ND: 0.
+[    0.139553] (0)[1:swapper/0][MPU] current process is "swapper/0 " (pid: 1)
+[    0.139564] (0)[1:swapper/0][MPU] corrupted address is 0x47d81b80, in region 1
+[    0.139577] (0)[1:swapper/0][MPU] master ID: 0xb20, AXI ID: 0x164, port ID: 0x0
+[    0.139589] (0)[1:swapper/0][MPU] violation master is MT6765_M0_AXI_MST_MP0, from domain 0x0
+[    0.139601] (0)[1:swapper/0][MPU] read violation
+[    0.139618] (0)[1:swapper/0]AEE kernel exception: <drivers/misc/mediatek/emi/mt6765/../submodule/mpu_v1.c:191> EMI MPU violation.
+EMI_MPUS = 0x40010b20,EMI_MPUT = 0x7d81b80,EMI_MPUT_2ND = 0x0,vio_addr = 0x47d81b80
+CRDISPATCH_KEY:EMI MPU Violation Issue/MT6765_M0_AXI_MST_MP0
+[    0.139662] (0)[1:swapper/0][MPU] get MPU IRQ: 35
+[    0.139706] (0)[1:swapper/0][ELM] initialize EMI ELMv2
+[    0.140095] (0)[1:swapper/0][DRAMC] module probe.
+[    0.140176] (0)[1:swapper/0][DRAMC]get DRAMC_AO_CHA_BASE_ADDR @ (____ptrval____)
+[    0.140189] (0)[1:swapper/0][DRAMC]get DRAMC_AO_CHB_BASE_ADDR @ (____ptrval____)
+[    0.140202] (0)[1:swapper/0][DRAMC]get DDRPHY_AO_CHA_BASE_ADDR @ (____ptrval____)
+[    0.140214] (0)[1:swapper/0][DRAMC]get DDRPHY_AO_CHB_BASE_ADDR @ (____ptrval____)
+[    0.140226] (0)[1:swapper/0][DRAMC]get DRAMC_NAO_CHA_BASE_ADDR @ (____ptrval____)
+[    0.140238] (0)[1:swapper/0][DRAMC]get DRAMC_NAO_CHB_BASE_ADDR @ (____ptrval____)
+[    0.140249] (0)[1:swapper/0][DRAMC]get DDRPHY_NAO_CHA_BASE_ADDR @ (____ptrval____)
+[    0.140261] (0)[1:swapper/0][DRAMC]get DDRPHY_NAO_CHB_BASE_ADDR @ (____ptrval____)
+[    0.140456] (0)[1:swapper/0][DRAMC]get SLEEP_BASE_ADDR @ (____ptrval____)
+[    0.140622] (0)[1:swapper/0][DRAMC]get SYS_TIMER_BASE_ADDR @ (____ptrval____)
+[    0.140634] (0)[1:swapper/0][DRAMC]dram type =3
+[    0.140643] (0)[1:swapper/0][DRAMC]Channel num =2
+[    0.140653] (0)[1:swapper/0][DRAMC]cbt mode =0
+[    0.140665] (0)[1:swapper/0][DRAMC]Dram Data Rate = 3200
+[    0.140675] (0)[1:swapper/0][DRAMC]shuffle_status = 0
+[    0.140684] (0)[1:swapper/0][DRAMC]MR mode = 0
+[    0.140695] (0)[1:swapper/0][DRAMC]SW_TX = 0
+[    0.140704] (0)[1:swapper/0][DRAMC]SW_ZQ = 0
+[    0.140718] (0)[1:swapper/0][DRAMC]dram can support DFS
+[    0.140855] (0)[1:swapper/0]mtk_cmdq_mbox 10238000.gce_mbox: cmdq thread:16 shift:0 base:0xffffff800a384000 pa:0x10238000
+[    0.140872] (0)[1:swapper/0][cmdq] cmdq thread:16 shift:0 base:0xffffff800a384000 pa:0x10238000
+
+[    0.141089] (0)[1:swapper/0][cmdq] init cmd buffer:0xffffff800a389000 (0xfec40000)
+[    0.141107] (0)[1:swapper/0][cmdq] mbox set dma mask bit:32 result:0
+
+[    0.141206] (0)[1:swapper/0]mtk_cmdq_mbox 10238000.gce_mbox: register mailbox successfully
+[    0.141590] (0)[1:swapper/0]MMP: mmprofile_enable(): enable: 1
+[    0.141779] (0)[1:swapper/0][cmdq] cmdq device: addr:0x(____ptrval____) va:0x(____ptrval____) irq:0
+[    0.146629] (0)[1:swapper/0]mtk-smi-common 14002000.smi_common: COMMON4 nr_dev:5
+[    0.146663] (0)[1:swapper/0]mtk-smi-common 14002000.smi_common: SMI4 base: VA=(____ptrval____), PA=0x0000000014002000
+[    0.146692] (0)[1:swapper/0]mtk-smi-common 14002000.smi_common: SMI4 CLK0:mtcmos-mm
+[    0.146711] (0)[1:swapper/0]mtk-smi-common 14002000.smi_common: SMI4 CLK1:smi-common-gals-comm0
+[    0.146732] (0)[1:swapper/0]mtk-smi-common 14002000.smi_common: SMI4 CLK2:smi-common-gals-comm1
+[    0.146751] (0)[1:swapper/0]mtk-smi-common 14002000.smi_common: SMI4 CLK3:smi-common
+[    0.146772] (0)[1:swapper/0]mtk-smi-common 14002000.smi_common: SMI4 CLK4:mmdvfs_clk_mm_sel_ck
+[    0.146793] (0)[1:swapper/0]mtk-smi-common 14002000.smi_common: SMI4 CLK5:mmdvfs_clk_mmpll_ck
+[    0.146813] (0)[1:swapper/0]mtk-smi-common 14002000.smi_common: SMI4 CLK6:mmdvfs_clk_univpll1_d2_ck
+[    0.146835] (0)[1:swapper/0]mtk-smi-common 14002000.smi_common: SMI4 CLK7:mmdvfs_clk_mmpll_d2_ck
+[    0.146952] -(1)[0:swapper/1][DEVAPC] INFRA VIO_STA 0:0x0 1:0x0 2:0x0 3:0x0 
+[    0.146959] -(1)[0:swapper/1]4:0x0 5:0x200000 6:0x0 7:0x0 8:0x20010
+[    0.146992] -(1)[0:swapper/1][DEVAPC] Violation(Infra,R ) - Vio Addr:0x15020000 High:0x0, Bus ID:0x20, Dom ID:0x0
+[    0.147007] -(1)[0:swapper/1][DEVAPC] Violation - Process:swapper/1, PID:0
+[    0.147048] -(1)[0:swapper/1][DEVAPC] Access Violation Slave: IMGSYS_CONFIG (infra index=181)
+[    0.147062] -(1)[0:swapper/1][DEVAPC] devapc_vio_first_trigger_time: 59691
+[    0.147341] (0)[1:swapper/0]mtk-smi-larb 14003000.smi_larb0: SMI0 base: VA=(____ptrval____), PA=0x0000000014003000
+[    0.147368] (0)[1:swapper/0]mtk-smi-larb 14003000.smi_larb0: SMI0 CLK0:mtcmos-mm
+[    0.147386] (0)[1:swapper/0]mtk-smi-larb 14003000.smi_larb0: SMI0 CLK1:mm-larb0
+[    0.147857] (0)[1:swapper/0]mtk-smi-larb 15021000.smi_larb2: SMI2 base: VA=(____ptrval____), PA=0x0000000015021000
+[    0.147881] (0)[1:swapper/0]mtk-smi-larb 15021000.smi_larb2: SMI2 CLK0:mtcmos-isp
+[    0.147899] (0)[1:swapper/0]mtk-smi-larb 15021000.smi_larb2: SMI2 CLK1:gals-img2mm
+[    0.147918] (0)[1:swapper/0]mtk-smi-larb 15021000.smi_larb2: SMI2 CLK2:img-larb2
+[    0.148356] (0)[1:swapper/0]mtk-smi-larb 17010000.smi_larb1: SMI1 base: VA=(____ptrval____), PA=0x0000000017010000
+[    0.148380] (0)[1:swapper/0]mtk-smi-larb 17010000.smi_larb1: SMI1 CLK0:mtcmos-vcodec
+[    0.148399] (0)[1:swapper/0]mtk-smi-larb 17010000.smi_larb1: SMI1 CLK1:venc-larb1
+[    0.149175] (0)[1:swapper/0]mtk-smi-larb 1a002000.smi_larb3: SMI3 base: VA=(____ptrval____), PA=0x000000001a002000
+[    0.149199] (0)[1:swapper/0]mtk-smi-larb 1a002000.smi_larb3: SMI3 CLK0:mtcmos-cam
+[    0.149247] (0)[1:swapper/0]mtk-smi-larb 1a002000.smi_larb3: SMI3 CLK1:gals-cam2mm
+[    0.149266] (0)[1:swapper/0]mtk-smi-larb 1a002000.smi_larb3: SMI3 CLK2:cam-larb3
+[    0.149365] (0)[1:swapper/0][MTK_SMI]MMSYS base: VA=(____ptrval____), PA=0x0000000014000000
+[    0.149545] (0)[1:swapper/0][MTK_SMI]======== LARB0 non-zero value, clk:1 ========
+[    0.149567] (0)[1:swapper/0][MTK_SMI] 0x10=0xff3, 0x20=0x1, 0x24=0x370223, 0x40=0x1, 0x60=0xff, 0x80=0xc0, 0xb0=0xaaaaa, 0xb4=0xd83e0, 0xb8=0x200020, 0x100=0xb,
+[    0.149591] (0)[1:swapper/0][MTK_SMI] 0x104=0xb, 0x108=0xb, 0x10c=0xb, 0x110=0xb, 0x200=0x1f1f, 0x204=0x1f1f, 0x208=0x1f1f, 0x20c=0x707, 0x210=0x707, 0x214=0x404,
+[    0.149614] (0)[1:swapper/0][MTK_SMI] 0x218=0x404, 0x21c=0x1f1f, 0x280=0x6, 0x380=0x2, 0x384=0x2, 0x388=0x2, 0x38c=0x2, 0x390=0xb, 0x394=0x9, 0x398=0x9, 0x39c=0x9,
+[    0.149632] (0)[1:swapper/0][MTK_SMI]======== LARB1 OFF ========
+[    0.149642] (0)[1:swapper/0][MTK_SMI]======== LARB2 OFF ========
+[    0.149652] (0)[1:swapper/0][MTK_SMI]======== LARB3 OFF ========
+[    0.149673] (0)[1:swapper/0][MTK_SMI]======== COMM4 non-zero value, clk:2 ========
+[    0.149691] (0)[1:swapper/0][MTK_SMI] 0x100=0xb, 0x104=0x1ba5, 0x108=0x1000, 0x10c=0x15d3, 0x110=0x1000, 0x220=0x4, 0x228=0x30c30c, 0x230=0xf21d1f00,
+[    0.149712] (0)[1:swapper/0][MTK_SMI] 0x234=0x6080608, 0x238=0x5070507, 0x23c=0x5070507, 0x300=0x4fd, 0x308=0x30c30c, 0x310=0x30c30c, 0x318=0x30c30c,
+[    0.149733] (0)[1:swapper/0][MTK_SMI] 0x320=0x30c30c, 0x400=0x2c5, 0x404=0x2c5, 0x408=0x2c0, 0x40c=0x2c0, 0x430=0x455, 0x434=0x455, 0x440=0x1, 0x444=0x1,
+[    0.149754] (0)[1:swapper/0][MTK_SMI]======== MMSYS5 non-zero value, clk:2 ========
+[    0.149769] (0)[1:swapper/0][MTK_SMI] 0x100=0xcf840a7f, 0x110=0x3ffff, 0x120=0x780000, 0x140=0xffffffff,
+[    0.149783] (0)[1:swapper/0][MTK_SMI]SCEN=SMI_BWC_SCEN_NORMAL(0), SMI_SCEN=0
+[    0.149796] (0)[1:swapper/0][MTK_SMI]LARB0:[ ON][    0.     0][         MTK_SMI]/[*OFF][    0.     0][                ]
+[    0.149812] (0)[1:swapper/0][MTK_SMI]LARB1:[ ON][    0.     0][                ]/[*OFF][    0.     0][                ]
+[    0.149828] (0)[1:swapper/0][MTK_SMI]LARB2:[ ON][    0.     0][                ]/[*OFF][    0.     0][                ]
+[    0.149843] (0)[1:swapper/0][MTK_SMI]LARB3:[ ON][    0.     0][                ]/[*OFF][    0.     0][                ]
+[    0.151682] (0)[1:swapper/0]BOOTPROF:       151.679153:initcall: of_platform_default_populate_init   103.522462ms
+[    0.164612] (0)[1:swapper/0]cryptd: max_cpu_qlen set to 1000
+[    0.165301] (3)[1:swapper/0]node 'mediatek,mt6765-mcdi' can not iomap!
+[    0.165319] (3)[1:swapper/0]mcdi_sysram_base = (____ptrval____)
+[    0.165402] (3)[1:swapper/0][CMDQ]cmdq_init CMDQ driver init begin
+[    0.165730] (3)[1:swapper/0][CMDQ]CMDQ driver probe begin
+[    0.165822] (3)[1:swapper/0][CMDQ][CMDQ] platform_dev: dev:(____ptrval____) PA:0x0000000010238000 VA:ffffff800a618000 irqId:40 irqSecId:41
+[    0.165843] (3)[1:swapper/0][CMDQ]set dma mask bit:32 result:0
+[    0.165903] (3)[1:swapper/0][CMDQ]DEV: VA ref(mmsys_config):0xffffff800a3e5000
+[    0.165926] (3)[1:swapper/0][CMDQ]DEV: VA ref(mdp_rdma0):0xffffff800a3ed000
+[    0.165947] (3)[1:swapper/0][CMDQ]DEV: VA ref(mdp_rsz0):0xffffff800a3f5000
+[    0.165967] (3)[1:swapper/0][CMDQ]DEV: VA ref(mdp_rsz1):0xffffff800a3fd000
+[    0.165987] (3)[1:swapper/0][CMDQ]DEV: VA ref(mdp_wdma0):0xffffff800a601000
+[    0.166008] (3)[1:swapper/0][CMDQ]DEV: VA ref(mdp_wrot0):0xffffff800a603000
+[    0.166028] (3)[1:swapper/0][CMDQ]DEV: VA ref(mdp_tdshp0):0xffffff800a605000
+[    0.166049] (3)[1:swapper/0][CMDQ]DEV: VA ref(mdp_color0):0xffffff800a60d000
+[    0.166069] (3)[1:swapper/0][CMDQ]DEV: VA ref(mdp_ccorr0):0xffffff800a615000
+[    0.166083] (3)[1:swapper/0][CMDQ]DEV: VA ref(venc):0x0
+[    0.166103] (3)[1:swapper/0][CMDQ]DEV: VA ref(mm_mutex):0xffffff800a61d000
+[    0.167692] (3)[1:swapper/0][CMDQ]DEV: PA ref(mm_mutex): start:0x0000000014001000
+[    0.167713] (3)[1:swapper/0][CMDQ]free CPR size:128 thread:24
+[    0.167737] (3)[1:swapper/0][CMDQ]sec thread index 8 to 10
+[    0.167863] (3)[1:swapper/0][CMDQ]chan 0 0x(____ptrval____) dev:0x(____ptrval____)
+[    0.167943] (3)[1:swapper/0][CMDQ]chan 1 0x(____ptrval____) dev:0x(____ptrval____)
+[    0.168017] (3)[1:swapper/0][CMDQ]chan 2 0x(____ptrval____) dev:0x(____ptrval____)
+[    0.168090] (3)[1:swapper/0][CMDQ]chan 3 0x(____ptrval____) dev:0x(____ptrval____)
+[    0.168166] (3)[1:swapper/0][CMDQ]chan 4 0x(____ptrval____) dev:0x(____ptrval____)
+[    0.168240] (3)[1:swapper/0][CMDQ]chan 5 0x(____ptrval____) dev:0x(____ptrval____)
+[    0.168315] (3)[1:swapper/0][CMDQ]chan 6 0x(____ptrval____) dev:0x(____ptrval____)
+[    0.168388] (3)[1:swapper/0][CMDQ]chan 7 0x(____ptrval____) dev:0x(____ptrval____)
+[    0.168479] (3)[1:swapper/0][CMDQ][ERR]channel and client duplicate:-1
+[    0.168492] -(3)[1:swapper/0][cmdq][err] stop empty thread:8 @cmdq_mbox_thread_stop,1637
+[    0.168569] (3)[1:swapper/0][CMDQ][ERR]channel and client duplicate:-1
+[    0.168581] -(3)[1:swapper/0][cmdq][err] stop empty thread:9 @cmdq_mbox_thread_stop,1637
+[    0.168654] (3)[1:swapper/0][CMDQ][ERR]channel and client duplicate:-1
+[    0.168666] -(3)[1:swapper/0][cmdq][err] stop empty thread:10 @cmdq_mbox_thread_stop,1637
+[    0.168741] (3)[1:swapper/0][CMDQ]chan 11 0x(____ptrval____) dev:0x(____ptrval____)
+[    0.168814] (3)[1:swapper/0][CMDQ]chan 12 0x(____ptrval____) dev:0x(____ptrval____)
+[    0.168891] (3)[1:swapper/0][CMDQ]chan 13 0x(____ptrval____) dev:0x(____ptrval____)
+[    0.168965] (3)[1:swapper/0][CMDQ]chan 14 0x(____ptrval____) dev:0x(____ptrval____)
+[    0.169056] (3)[1:swapper/0][CMDQ]chan 15 0x(____ptrval____) dev:0x(____ptrval____)
+[    0.169081] (3)[1:swapper/0][cmdq][err] channel request fail:-19, idx:16 @cmdq_mbox_create,181
+[    0.169099] -(3)[1:swapper/0]CPU: 3 PID: 1 Comm: swapper/0 Tainted: G        W         4.19.191-g9c56ee34514d #1
+[    0.169113] -(3)[1:swapper/0]Hardware name: MT6765 (DT)
+[    0.169124] -(3)[1:swapper/0]Call trace:
+[    0.169142] -(3)[1:swapper/0] dump_backtrace+0x0/0x19c
+[    0.169155] -(3)[1:swapper/0] show_stack+0x20/0x2c
+[    0.169169] -(3)[1:swapper/0] dump_stack+0xb8/0xf0
+[    0.169184] -(3)[1:swapper/0] cmdq_mbox_create+0x10c/0x11c
+[    0.169198] -(3)[1:swapper/0] cmdq_helper_mbox_register+0xc8/0x210
+[    0.169209] -(3)[1:swapper/0] cmdq_core_initialize+0x3c/0x3f8
+[    0.169224] -(3)[1:swapper/0] cmdq_probe+0x40/0x24c
+[    0.169236] -(3)[1:swapper/0] platform_drv_probe+0x80/0xb0
+[    0.169250] -(3)[1:swapper/0] really_probe+0x26c/0x3ec
+[    0.169262] -(3)[1:swapper/0] driver_probe_device+0x70/0x140
+[    0.169274] -(3)[1:swapper/0] __driver_attach+0xa8/0x134
+[    0.169286] -(3)[1:swapper/0] bus_for_each_dev+0x84/0xcc
+[    0.169298] -(3)[1:swapper/0] driver_attach+0x2c/0x38
+[    0.169309] -(3)[1:swapper/0] bus_add_driver+0x138/0x24c
+[    0.169320] -(3)[1:swapper/0] driver_register+0x64/0xf8
+[    0.169331] -(3)[1:swapper/0] __platform_driver_register+0x4c/0x58
+[    0.169344] -(3)[1:swapper/0] cmdq_init+0x8c/0x114
+[    0.169355] -(3)[1:swapper/0] do_one_initcall+0x120/0x29c
+[    0.169369] -(3)[1:swapper/0] do_initcall_level+0x148/0x170
+[    0.169381] -(3)[1:swapper/0] do_basic_setup+0x34/0x4c
+[    0.169393] -(3)[1:swapper/0] kernel_init_freeable+0xb4/0x134
+[    0.169405] -(3)[1:swapper/0] kernel_init+0x14/0x10c
+[    0.169416] -(3)[1:swapper/0] ret_from_fork+0x10/0x18
+[    0.169427] (3)[1:swapper/0][CMDQ]register mbox stop:0x          (null) idx:16
+[    0.169456] (3)[1:swapper/0][CMDQ]available thread pool: max:24
+[    0.170879] (3)[1:swapper/0][CMDQ]SRAM Chunk New-32bit unit: start:0x0 count:96 Name:Fake SPR
+[    0.170898] (3)[1:swapper/0][CMDQ]CPR for thread allocated, thread:24 free:128
+[    0.170912] (3)[1:swapper/0][CMDQ]SRAM Chunk New-32bit unit: start:0x60 count:10 Name:Delay CPR
+[    0.170926] (3)[1:swapper/0][CMDQ]cmdq_sec_create_shared_memory
+[    0.171200] (0)[1:swapper/0][CMDQ]cmdq_mdp_init
+[    0.171412] (0)[1:swapper/0][CMDQ]cmdq_core_register_status_dump notifier:0x(____ptrval____)
+[    0.171445] (0)[1:swapper/0][CMDQ][Res]Init resource engine:10 event:710
+[    0.171752] (0)[1:swapper/0][CMDQ]MDP limit dev create end
+[    0.171763] (0)[1:swapper/0][CMDQ]CMDQ driver probe end
+[    0.172347] (0)[1:swapper/0][CMDQ]CMDQ driver init end
+[    0.172707] (0)[1:swapper/0][SSPM] mt6765-sspm irq=44, cfgreg=0x(____ptrval____)
+[    0.172720] (0)[1:swapper/0][SSPM] mt6765-sspm_probe Done.
+[    0.172731] (0)[1:swapper/0][SSPM] mt6765-sspm_module_init.
+[    0.173123] (0)[1:swapper/0]SSPM is ready to service IPI
+[    0.173159] (0)[1:swapper/0]SSPM platform service is ready
+[    0.173240] (0)[1:swapper/0][SSPM_TS] ts: cycle_last 126486436, time_base:173233614, wrap:4000000000000
+[    0.173258] (0)[1:swapper/0][SSPM_TS] update base: ts=173252921, tick=0x78a089f, fz=0, ver=1
+[    0.173832] (0)[1:swapper/0][CONN-MD-DFT][I]conn_md_init:init message queue list succeed
+[    0.173847] (0)[1:swapper/0][CONN-MD-DFT][I]conn_md_init:init active queue list succeed
+[    0.173861] (0)[1:swapper/0][CONN-MD-DFT][I]conn_md_init:init user information list succeed
+[    0.173900] (0)[1:swapper/0][CONN_MD_DMP][I]conn_md_dmp_init:alloc msg_log memory done, size:0x00000428
+[    0.173915] (0)[1:swapper/0][CONN-MD-DFT][I]conn_md_init:conn_md_dmp_init succeed
+[    0.173984] (0)[1:swapper/0][CONN-MD-DFT][I]conn_md_init:create conn_md_thread succeed, wakeup it
+[    0.174005] (0)[1:swapper/0][M4U] MTK_M4U_Init kzalloc: (____ptrval____)
+[    0.174034] (0)[1:swapper/0][M4U] M4U platform_driver_register start
+[    0.174282] (0)[1:swapper/0][M4U] m4u_probe 0
+[    0.174292] (0)[1:swapper/0][M4U] m4u_probe: 1
+[    0.174303] (0)[1:swapper/0][M4U] m4u_probe 1, pdev id = 0 name = 10205000.m4u
+[    0.174345] (0)[1:swapper/0][M4U] m4u_probe 2, of_iomap: 0xffffff800a675000, irq_num: 26, pDev: (____ptrval____)
+[    0.174360] (0)[1:swapper/0][M4U] m4u_domain_init
+[    0.174536] (0)[1:swapper/0][M4U] dma_alloc_coherent success! pagetable_va=0xffffff800a791000, pagetable_pa=0xfec48000.
+[    0.174569] (0)[1:swapper/0][M4U] m4u_pte_allocator_init: gM4u_pte_kmem = 0x(____ptrval____), IMU_BYTES_PER_PTE = 1024
+[    0.174595] (0)[1:swapper/0][M4U] reserve sec mva: 0x100000
+[    0.174605] (0)[1:swapper/0][M4U] 4G DRAM Mode is: 0
+[    0.174616] (0)[1:swapper/0][M4U] protect memory va=0xffffffc0ba249800, pa=0xfa249800.
+[    0.174629] (0)[1:swapper/0][M4U] m4u_reg_init, ProtectPA = 0xfa249800
+[    0.175076] (0)[1:swapper/0][M4U] init larb 0, 0xffffff800a67d000
+[    0.175366] (0)[1:swapper/0][M4U] init larb 1, 0xffffff800a685000
+[    0.175532] (0)[1:swapper/0][M4U] init larb 2, 0xffffff800a68d000
+[    0.175692] (0)[1:swapper/0][M4U] init larb 3, 0xffffff800a695000
+[    0.175704] (0)[1:swapper/0][M4U] m4u hw init id = 0, base address: 0xffffff800a675000, pgd_pa: 0xfec48000
+[    0.175721] (0)[1:swapper/0][M4U] m4u inorder setting: 0x0
+[    0.175765] (0)[1:swapper/0][M4U] request_irq, irq_num=26
+[    0.175776] (0)[1:swapper/0][M4U] ====m4u_monitor_start: 0======
+[    0.175791] (0)[1:swapper/0][M4U] mau_start_monitor [0], start=0x0, end=0xfffff, write: 1, port_mask=0xffffffff, larb_mask=0xffffffff
+[    0.175810] (0)[1:swapper/0][M4U] mau_start_monitor [1], start=0x0, end=0xfffff, write: 0, port_mask=0xffffffff, larb_mask=0xffffffff
+[    0.175844] (0)[1:swapper/0][M4U] m4u_config_port: MDP_RDMA0, m4u_tee_en:0,mmu_en:0->1, sec_en:0->0
+[    0.175871] (0)[1:swapper/0][M4U] m4u_config_port: MDP_WROT0, m4u_tee_en:0,mmu_en:0->1, sec_en:0->0
+[    0.175893] (0)[1:swapper/0][M4U] m4u_config_port: MDP_WROT0, m4u_tee_en:0,mmu_en:0->1, sec_en:0->0
+[    0.175911] (0)[1:swapper/0][M4U] config port, done
+[    0.175920] (0)[1:swapper/0][M4U] m4u_probe 3 finish...
+[    0.176613] (0)[1:swapper/0][M4U] M4U platform_driver_register finsish
+[    0.176627] (0)[1:swapper/0]MMP: mmprofile_enable(): enable: 1
+[    0.176646] (0)[1:swapper/0][M4U] m4u register fb_notifier OK!
+[    0.176659] (0)[1:swapper/0]Init Richtek RegMap 1.2.1_G
+[    0.177176] (0)[1:swapper/0]SCSI subsystem initialized
+[    0.177311] (0)[1:swapper/0]usbcore: registered new interface driver usbfs
+[    0.177451] (0)[1:swapper/0]usbcore: registered new interface driver hub
+[    0.177495] (0)[1:swapper/0]usbcore: registered new device driver usb
+[    0.178084] (0)[1:swapper/0]media: Linux media interface: v0.10
+[    0.178113] (0)[1:swapper/0]videodev: Linux video capture interface: v2.00
+[    0.178166] (0)[1:swapper/0]EDAC MC: Ver: 3.0.0
+[    0.179184] (0)[1:swapper/0]mt6577-auxadc 11001000.auxadc: failed to get mtk_efuse device
+[    0.179201] (0)[1:swapper/0]mt6577-auxadc 11001000.auxadc: fail to get some dt info!
+[    0.180427] (0)[1:swapper/0]mt6577-auxadc 11001000.auxadc: fail to create debugfs root
+[    0.180443] (0)[1:swapper/0]mt6577-auxadc 11001000.auxadc: mt6577_auxadc_probe done
+[    0.181740] (0)[1:swapper/0]Advanced Linux Sound Architecture Driver Initialized.
+[    0.182121] (0)[1:swapper/0]Bluetooth: Core ver 2.22
+[    0.182142] (0)[1:swapper/0]NET: Registered protocol family 31
+[    0.182153] (0)[1:swapper/0]Bluetooth: HCI device and connection manager initialized
+[    0.182170] (0)[1:swapper/0]Bluetooth: HCI socket layer initialized
+[    0.182183] (0)[1:swapper/0]Bluetooth: L2CAP socket layer initialized
+[    0.182197] (0)[1:swapper/0]Bluetooth: SCO socket layer initialized
+[    0.182297] (0)[1:swapper/0]nfc: nfc_init: NFC Core ver 0.1
+[    0.182343] (0)[1:swapper/0]NET: Registered protocol family 39
+[    0.183268] (0)[1:swapper/0]clocksource: Switched to clocksource arch_sys_counter
+[    0.235706] (0)[1:swapper/0]BOOTPROF:       235.700307:initcall: tracer_init_tracefs    52.405539ms
+[    0.235882] (0)[1:swapper/0]VFS: Disk quotas dquot_6.6.0
+[    0.235933] (0)[1:swapper/0]VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.239783] (0)[1:swapper/0][Power/cpufreq] 3,0,36,0,833,833,833,833
+[    0.239867] (0)[1:swapper/0][Power/cpufreq] DVFS - @(Record)cpuhvfs_pvt_tbl_create----->((____ptrval____))
+[    0.239903] (0)[1:swapper/0][MUSB]usb20_init 2258: usb20 init
+[    0.239914] (0)[1:swapper/0][MUSB]usb20_init 2274: usb20 init ret:0
+[    0.240188] (0)[1:swapper/0][ION]ion_init()
+[    0.240699] (0)[1:swapper/0][ION]ion_heap_create: heap ion_system_heap created, type 0 ,base 0, size 0
+[    0.241160] (0)[1:swapper/0][ION]ion_sec_heap_create enter:ion_sec_heap
+[    0.241178] (0)[1:swapper/0][ION]ion_sec_heap_create enter:ion_sec_heap_protected
+[    0.241195] (0)[1:swapper/0][ION]ion_sec_heap_create enter:ion_sec_heap_2d_fr
+[    0.241215] (0)[1:swapper/0][ION]ion_sec_heap_create enter:ion_sec_heap_wfd
+[    0.241235] (0)[1:swapper/0][ION]ion_sec_heap_create enter:ion_sec_heap_happ
+[    0.241251] (0)[1:swapper/0][ION]ion_sec_heap_create enter:ion_sec_heap_happ_mem
+[    0.241267] (0)[1:swapper/0][ION]ion_sec_heap_create enter:ion_sec_heap_sdsp
+[    0.241282] (0)[1:swapper/0][ION]ion_sec_heap_create enter:ion_sec_heap_sdsp_shared
+[    0.241443] (0)[1:swapper/0]MMP: mmprofile_enable(): enable: 1
+[    0.241476] (0)[1:swapper/0][ION]ion_drv_probe, done
+[    0.241518] (0)[1:swapper/0][ION]ion_init fd register notifer fail
+[    0.241612] (0)[1:swapper/0]NET: Registered protocol family 2
+[    0.242127] (0)[1:swapper/0]tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes)
+[    0.242183] (0)[1:swapper/0]TCP established hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.242358] (0)[1:swapper/0]TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
+[    0.242723] (0)[1:swapper/0]TCP: Hash tables configured (established 32768 bind 32768)
+[    0.242840] (0)[1:swapper/0]UDP hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.242914] (0)[1:swapper/0]UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.243144] (0)[1:swapper/0]NET: Registered protocol family 1
+[    0.243650] (0)[1:swapper/0]#@# spmfw_init(63) __spmfw_idx 0x1, ddr=[3][3200]
+[    0.243843] (0)[1:swapper/0]Trying to unpack rootfs image as initramfs...
+[    0.555575] (0)[1:swapper/0]Freeing initrd memory: 11376K
+[    0.555614] (0)[1:swapper/0]BOOTPROF:       555.611692:initcall: populate_rootfs   311.934770ms
+[    0.561068] (0)[1:swapper/0]Initialise system trusted keyrings
+[    0.561219] (0)[1:swapper/0]workingset: timestamp_bits=45 max_order=20 bucket_order=0
+[    0.565983] (0)[1:swapper/0]Registering sdcardfs 0.1
+[    0.566217] (0)[1:swapper/0]fuse init (API version 7.27)
+[    0.571945] (2)[1:swapper/0]Key type asymmetric registered
+[    0.571969] (2)[1:swapper/0]Asymmetric key parser 'x509' registered
+[    0.572028] (2)[1:swapper/0]Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+[    0.572044] (2)[1:swapper/0]io scheduler noop registered
+[    0.572055] (2)[1:swapper/0]io scheduler deadline registered
+[    0.572176] (2)[1:swapper/0]io scheduler cfq registered (default)
+[    0.572189] (2)[1:swapper/0]io scheduler mq-deadline registered
+[    0.572200] (2)[1:swapper/0]io scheduler kyber registered
+[    0.576970] (0)[1:swapper/0]mt-freqhopping 1000ce00.fhctl: FHCTL driver probe start
+[    0.577045] (0)[1:swapper/0]mt-freqhopping 1000ce00.fhctl: FHCTL Init Done
+[    0.577058] (0)[1:swapper/0]mt-freqhopping 1000ce00.fhctl: pllid_map[0]=1
+[    0.577071] (0)[1:swapper/0]mt-freqhopping 1000ce00.fhctl: pllid_map[1]=3
+[    0.577083] (0)[1:swapper/0]mt-freqhopping 1000ce00.fhctl: pllid_map[2]=7
+[    0.577095] (0)[1:swapper/0]mt-freqhopping 1000ce00.fhctl: pllid_map[3]=4
+[    0.577107] (0)[1:swapper/0]mt-freqhopping 1000ce00.fhctl: pllid_map[4]=-1
+[    0.577120] (0)[1:swapper/0]mt-freqhopping 1000ce00.fhctl: pllid_map[5]=9
+[    0.577132] (0)[1:swapper/0]mt-freqhopping 1000ce00.fhctl: pllid_map[6]=5
+[    0.577144] (0)[1:swapper/0]mt-freqhopping 1000ce00.fhctl: pllid_map[7]=0
+[    0.577156] (0)[1:swapper/0]mt-freqhopping 1000ce00.fhctl: pllid_map[8]=-1
+[    0.577998] (0)[1:swapper/0]mtk_uart_apdma 11000680.dma-controller: DMA address bits: 32
+[    0.579109] (0)[1:swapper/0]mtk-dvfsrc 10012000.dvfsrc: dram_type: 1
+[    0.581021] (0)[1:swapper/0]mtk-dvfsrc 10012000.dvfsrc: dvfsrc vopp[0] = 800000
+[    0.581036] (0)[1:swapper/0]mtk-dvfsrc 10012000.dvfsrc: dvfsrc vopp[1] = 700000
+[    0.581050] (0)[1:swapper/0]mtk-dvfsrc 10012000.dvfsrc: dvfsrc vopp[2] = 700000
+[    0.581064] (0)[1:swapper/0]mtk-dvfsrc 10012000.dvfsrc: dvfsrc vopp[3] = 650000
+[    0.586087] (0)[1:swapper/0]irq: type mismatch, failed to map hwirq-144 for pinctrl@1000b000!
+[    0.586896] (0)[1:swapper/0]platform 1000d000.pwrap:main_pmic: Linked as a consumer to pinctrl@1000b000
+[    0.587666] (0)[1:swapper/0]mt-pmic-pwrap 1000d000.pwrap: Dropping the link to pinctrl@1000b000
+[    0.589921] (0)[1:swapper/0]MT6765 SoC detected.
+[    0.590485] (0)[1:swapper/0]Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled
+[    0.591340] (0)[1:swapper/0]console [ttyS0] disabled
+[    0.611559] (0)[1:swapper/0]11002000.serial: ttyS0 at MMIO 0x11002000 (irq = 57, base_baud = 1625000) is a ST16650V2
+[    0.612676] (0)[1:swapper/0]console [ttyS0] enabled
+[    0.612840] (0)[1:swapper/0]BOOTPROF:       612.836308:probe: probe=platform_drv_probe drv=mt6577-uart(0xffffff80098545d8)    21.656616ms
+[    0.633169] (0)[1:swapper/0]11003000.serial: ttyS1 at MMIO 0x11003000 (irq = 58, base_baud = 1625000) is a ST16650V2
+[    0.633339] (0)[1:swapper/0]BOOTPROF:       633.335692:probe: probe=platform_drv_probe drv=mt6577-uart(0xffffff80098545d8)    20.428923ms
+[    0.633746] (0)[1:swapper/0]BOOTPROF:       633.743154:initcall: mtk8250_platform_driver_init    42.755462ms
+[    0.634629] (0)[1:swapper/0]mt67xx_rng: driver registered
+[    0.635445] (2)[189:hwrng]random: fast init done
+[    0.635484] (0)[1:swapper/0][GPU/FREQ][INFO]@__mt_gpufreq_init: start to initialize gpufreq driver
+[    0.636015] (2)[189:hwrng]random: crng init done
+[    0.636041] (0)[1:swapper/0][GPU/GED][INFO]@ged_init: start to initialize ged driver
+[    0.636494] (0)[1:swapper/0][GPU/GED][INFO]@ged_init: ged driver init done
+[    0.637061] (0)[1:swapper/0]mtk-spi 1100a000.spi: No 'mediatek,kthread-rt' property
+[    0.637191] (0)[1:swapper/0]mtk-spi 1100a000.spi: spi is trying to get spare-clk
+[    0.637632] (0)[1:swapper/0]mtk-spi 11010000.spi: No 'mediatek,kthread-rt' property
+[    0.637732] (0)[1:swapper/0]mtk-spi 11010000.spi: spi is trying to get spare-clk
+[    0.637952] (0)[1:swapper/0]mtk-spi 11012000.spi: No 'mediatek,kthread-rt' property
+[    0.638020] (0)[1:swapper/0]mtk-spi 11012000.spi: spi is trying to get spare-clk
+[    0.638254] (2)[1:swapper/0]mtk-spi 11013000.spi: No 'mediatek,kthread-rt' property
+[    0.638388] (2)[1:swapper/0]mtk-spi 11013000.spi: spi is trying to get spare-clk
+[    0.638590] (2)[1:swapper/0]mtk-spi 11014000.spi: No 'mediatek,kthread-rt' property
+[    0.638682] (2)[1:swapper/0]mtk-spi 11014000.spi: spi is trying to get spare-clk
+[    0.638870] (2)[1:swapper/0]mtk-spi 11015000.spi: No 'mediatek,kthread-rt' property
+[    0.638952] (2)[1:swapper/0]mtk-spi 11015000.spi: spi is trying to get spare-clk
+[    0.641605] (0)[15:cpuhp/0]cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    0.645627] (2)[1:swapper/0]brd: module loaded
+[    0.650791] (2)[1:swapper/0]loop: module loaded
+[    0.651069] (2)[1:swapper/0]zram: Added device: zram0
+[    0.654069] (2)[1:swapper/0][Efuse] MTK_L_LEAKAGE => 0x9e
+[    0.654089] (2)[1:swapper/0][Efuse] MTK_LL_LEAKAGE => 0xa5
+[    0.654099] (2)[1:swapper/0][Efuse] MTK_CCI_LEAKAGE => 0x40
+[    0.654110] (2)[1:swapper/0][Efuse] MTK_GPU_LEAKAGE => 0xe5
+[    0.654121] (2)[1:swapper/0][Efuse] MTK_VCORE_LEAKAGE => 0xc5
+[    0.654131] (2)[1:swapper/0][Efuse] MTK_VMD_LEAKAGE => 0x80
+[    0.654141] (2)[1:swapper/0][Efuse] MTK_MODEM_LEAKAGE => 0xa5
+[    0.654233] (2)[1:swapper/0][Power/spower] 7/2/3/8/10/4/6/
+[    0.654545] (2)[1:swapper/0][Power/cpufreq] 3,0,36,0,833,833,833,833
+[    0.654713] (2)[1:swapper/0][Power/cpufreq] 3,0,36,0,833,833,833,833
+[    0.654737] (2)[1:swapper/0][Power/PPM] @ppm_dlpt_policy_init: register PPM_POLICY_DLPT done!
+[    0.654760] (2)[1:swapper/0][Power/PPM] @ppm_sysboost_policy_init: register PPM_POLICY_SYS_BOOST done!
+[    0.654776] (2)[1:swapper/0][Power/PPM] @ppm_ptpod_policy_init: register PPM_POLICY_PTPOD done!
+[    0.654791] (2)[1:swapper/0][register_battery_percent_notify] prio_val=1
+[    0.654803] (2)[1:swapper/0][register_battery_oc_notify] prio_val=1
+[    0.654814] (2)[1:swapper/0][register_low_battery_notify] prio_val=1
+[    0.654825] (2)[1:swapper/0][Power/PPM] @ppm_pwrthro_policy_init: register PPM_POLICY_PWR_THRO done!
+[    0.654846] (2)[1:swapper/0][Power/PPM] @ppm_thermal_policy_init: register PPM_POLICY_THERMAL done!
+[    0.654869] (2)[1:swapper/0][Power/PPM] @ppm_hard_userlimit_policy_init: register PPM_POLICY_HARD_USER_LIMIT done!
+[    0.654893] (2)[1:swapper/0][Power/PPM] @ppm_userlimit_policy_init: register PPM_POLICY_USER_LIMIT done!
+[    0.654911] (2)[1:swapper/0][Power/PPM] @ppm_forcelimit_policy_init: register PPM_POLICY_FORCE_LIMIT done!
+[    0.654930] (2)[1:swapper/0][Power/PPM] @ppm_ut_policy_init: register PPM_POLICY_UT done!
+[    0.654951] (2)[1:swapper/0][register_dlpt_notify] prio_val=0
+[    0.655110] (2)[1:swapper/0][PBM] pbm_module_init : Done
+[    0.655358] (2)[1:swapper/0][mt_udi] udipin_base = 0xffffff800ad3e000.
+[    0.655863] (2)[1:swapper/0][mt_udi] UDI Initial.
+[    0.656623] (2)[1:swapper/0]nanohub: loaded; ret=0
+[    0.657214] (2)[1:swapper/0][SCP] register scp A notify callback..
+[    0.659915] (0)[202:gz_get_cpuinfo_][KREE]gz_get_cpuinfo_thread driver register done
+[    0.661663] (2)[1:swapper/0]disp_probe: 1
+[    0.661677] (2)[1:swapper/0]disp driver(1) disp_probe begin
+[    0.661935] (2)[1:swapper/0]disp driver(1) disp_probe end
+[    0.661946] (2)[1:swapper/0]disp driver(1) disp_probe_1 begin
+[    0.666002] -(6)[0:swapper/6][DISP][_is_lcm_inited #49]warn:WARNING, invalid lcm handle:           (null)
+[    0.666078] (2)[1:swapper/0]disp driver(1) disp_probe_1 end
+[    0.667632] (2)[1:swapper/0]disphal_allocate_fb, pa_start=0x0x000000007dcb0000, pa_end=0x0x000000007e4fffff, va=0xffffff800b000000
+[    0.668299] (2)[1:swapper/0]tinno_gpio_check_wq create workqueue start
+[    0.669918] (0)[210:init_decouple_b]init_decouple_buffers done
+[    0.671701] (2)[1:swapper/0][DDP/DSI]===>DSI_PHY_TIMCONFIG start
+[    0.671729] (2)[1:swapper/0][DDP/DSI]<===DSI_PHY_TIMCONFIG done
+[    0.671863] (2)[1:swapper/0][GAMMA] disp_gamma_write_lut_reg: table [0] not initialized
+
+[    0.677332] (2)[1:swapper/0][M4U] m4u_config_port: DISP_OVL0, m4u_tee_en:0,mmu_en:0->1, sec_en:0->0
+[    0.677361] (2)[1:swapper/0][M4U] m4u_config_port: DISP_2L_OVL0_LARB0, m4u_tee_en:0,mmu_en:0->1, sec_en:0->0
+[    0.677385] (2)[1:swapper/0][M4U] m4u_config_port: DISP_RDMA0, m4u_tee_en:0,mmu_en:0->1, sec_en:0->0
+[    0.677409] (2)[1:swapper/0][M4U] m4u_config_port: DISP_WDMA0, m4u_tee_en:0,mmu_en:0->1, sec_en:0->0
+[    0.677977] (2)[1:swapper/0][name:spm&]Power/swap - mtk_idle_disp_is_ready not support anymore!
+[    0.701669] (0)[1:swapper/0]Console: switching to colour frame buffer device 128x37
+[    0.711304] (2)[114:kworker/2:1]tinno func:tinno_gpio_check_func LCD_ENN_GPIO value:0
+[    0.711331] (2)[114:kworker/2:1]tinno func:tinno_gpio_check_func LCD_ENN_GPIO value:1
+[    0.718215] (0)[1:swapper/0][M4U] m4u_fb_notifier_callback 5, 9
+[    0.718806] (0)[1:swapper/0]disp driver(2) mtkfb_probe end
+[    0.718918] (0)[1:swapper/0][PRODUCT_DEV_INFO]:full_product_device_info: - [0, SAT070HK30I21Y03,           (null)]
+[    0.719141] (0)[1:swapper/0]BOOTPROF:       719.138770:probe: probe=platform_drv_probe drv=mtkfb(0xffffff8009890db0)    51.617616ms
+[    0.719729] (0)[1:swapper/0]BOOTPROF:       719.726539:initcall: mtkfb_init    52.617462ms
+[    0.720690] (0)[1:swapper/0]atf_log: inited
+[    0.721732] (0)[1:swapper/0]amms_dev->dma_ops=0xffffff8009048100
+[    0.721951] (0)[1:swapper/0]amms irq num 11
+[    0.723475] (0)[1:swapper/0]aee kernel api ready
+[    0.724096] (0)[1:swapper/0]MTK-BTIF[I]mtk_btif_probe:DO BTIF PROBE
+[    0.732147] (0)[1:swapper/0]MTK-BTIF[E]hal_btif_clk_get_and_prepare(292):[CCF]clk_btif=000000001cfc6d26
+[    0.736249] (0)[1:swapper/0]MTK-BTIF[E]hal_btif_clk_get_and_prepare(298):[CCF]clk_btif_apdma=00000000f4617269
+[    0.740284] (0)[1:swapper/0]BOOTPROF:       740.280385:probe: probe=platform_drv_probe drv=mtk_btif(0xffffff8009899da0)    16.179615ms
+[    0.748642] (0)[1:swapper/0]MTK-BTIF[I]BTIF_init:p_btif_buffer get memory 0x00000000f79cba6a
+[    0.752829] (0)[1:swapper/0]MTK-BTIF[I]BTIF_init:p_tx_queue get memory 0x000000005bc6b37e
+[    0.756972] (0)[1:swapper/0]MTK-BTIF[I]BTIF_init:p_rx_queue get memory 0x000000001718bf0d
+[    0.761029] (0)[1:swapper/0]MTK-BTIF[I]hal_btif_info_get:_btif_tx_fifo_init succeed
+[    0.765198] (0)[1:swapper/0]MTK-BTIF[I]_btif_set_default_setting:get btif irq(69),register base(0xffffff800afbd000)
+[    0.769432] (0)[1:swapper/0]MTK-BTIF[I]_btif_set_default_setting:get interrupt flag(0x8)
+[    0.773617] (0)[1:swapper/0]MTK-BTIF[I]_btif_set_default_setting:get register phy base(0x1100c000)
+[    0.777758] (0)[1:swapper/0]MTK-BTIF-DMA[I]hal_dma_set_default_setting:tx_dma irq(70),register base(0xffffff800afc5880)
+[    0.782048] (0)[1:swapper/0]MTK-BTIF-DMA[I]hal_dma_set_default_setting:get interrupt flag(0x8)
+[    0.786254] (0)[1:swapper/0]MTK-BTIF-DMA[I]hal_dma_set_default_setting:get phy base dma_dir(1)(0x11000880)
+[    0.790411] (0)[1:swapper/0]MTK-BTIF[I]_btif_vfifo_init:alloc vFIFO succeed in arch64,vir addr:0x0000000088e209b4,phy addr:0xfec00000
+[    0.798656] (0)[1:swapper/0]MTK-BTIF-DMA[I]hal_dma_set_default_setting:rx_dma irq(71),register base(0xffffff800afcd900)
+[    0.802978] (0)[1:swapper/0]MTK-BTIF-DMA[I]hal_dma_set_default_setting:get interrupt flag(0x8)
+[    0.807211] (0)[1:swapper/0]MTK-BTIF-DMA[I]hal_dma_set_default_setting:get phy base dma_dir(0)(0x11000900)
+[    0.811382] (0)[1:swapper/0]MTK-BTIF[I]_btif_vfifo_init:alloc vFIFO succeed in arch64,vir addr:0x00000000b11f4ff7,phy addr:0xfec02000
+[    0.819775] (0)[1:swapper/0]MTK-BTIF[I]_btif_rx_btm_init:set RT to workqueue succeed
+[    0.824021] -(0)[1:swapper/0]Perf order domain is not ready!
+[    0.824034] (0)[1:swapper/0]MTK-BTIF[I]_btif_rx_btm_init:btif_rxd start to work!
+[    0.832414] (0)[1:swapper/0]MTK-BTIF[I]_btif_rx_btm_init:rx_spin_lock init succeed
+[    0.836629] (0)[1:swapper/0]MTK-BTIF[I]_btif_tx_ctx_init:nothing is done when btif tx in user's thread
+[    0.840834] (0)[1:swapper/0]MTK-BTIF[I]_btif_tx_ctx_init:succeed
+[    0.844986] (0)[1:swapper/0]BOOTPROF:       844.983385:initcall: BTIF_init   121.093231ms
+[    0.849413] (0)[1:swapper/0][Power/dcm] 
+******** dcm dump register *********
+[    0.857331] (0)[1:swapper/0][Power/dcm] PERI_BUS_DCM_CTRL             (0xffffff800afd5074): 0xb47f83e3
+[    0.861326] (0)[1:swapper/0][Power/dcm] DFS_MEM_DCM_CTRL              (0xffffff800afd507c): 0x00000000
+[    0.865283] (0)[1:swapper/0][Power/dcm] PERI_BUS_DCM_CTRL             (0xffffff800afd5074): 0xb47f83e3
+[    0.869224] (0)[1:swapper/0][Power/dcm] INFRA_MISC                    (0xffffff800afd5f00): 0x01c01224
+[    0.873166] (0)[1:swapper/0][Power/dcm] MEM_DCM_CTRL                  (0xffffff800afd5078): 0x19a007c0
+[    0.877116] (0)[1:swapper/0][Power/dcm] INFRA_BUS_DCM_CTRL            (0xffffff800afd5070): 0x40ff0603
+[    0.881040] (0)[1:swapper/0][Power/dcm] PERI_BUS_DCM_CTRL             (0xffffff800afd5074): 0xb47f83e3
+[    0.884925] (0)[1:swapper/0][Power/dcm] P2P_RX_CLK_ON                 (0xffffff800afd50a0): 0x00000000
+[    0.884932] (0)[1:swapper/0][Power/dcm] PERI_BUS_DCM_CTRL             (0xffffff800afd5074): 0xb47f83e3
+[    0.892584] (0)[1:swapper/0][Power/dcm] PERI_BUS_DCM_CTRL             (0xffffff800afd5074): 0xb47f83e3
+[    0.896186] (0)[1:swapper/0][Power/dcm] PERI_BUS_DCM_CTRL             (0xffffff800afd5074): 0xb47f83e3
+[    0.899639] (0)[1:swapper/0][Power/dcm] CHN0_EMI_CHN_EMI_CONB         (0xffffff800afed008): 0x00ff2048
+[    0.903075] (0)[1:swapper/0][Power/dcm] CHN1_EMI_CHN_EMI_CONB         (0xffffff800aff5008): 0x00ff2048
+[    0.906516] (0)[1:swapper/0][Power/dcm] [dcm_set_default]type:0x00004287, init_dcm_type=0x4287, INIT_DCM_TYPE_BY_K=0x0
+[    0.910027] (0)[1:swapper/0][Power/dcm] [     ARMCORE_DCM 0x00000001] current state:1 (0)
+[    0.913485] (0)[1:swapper/0][Power/dcm] [      MCUSYS_DCM 0x00000002] current state:1 (0)
+[    0.916877] (0)[1:swapper/0][Power/dcm] [       INFRA_DCM 0x00000004] current state:1 (0)
+[    0.920239] (0)[1:swapper/0][Power/dcm] [       STALL_DCM 0x00000080] current state:1 (0)
+[    0.923474] (0)[1:swapper/0][Power/dcm] [    GIC_SYNC_DCM 0x00000200] current state:1 (0)
+[    0.926659] (0)[1:swapper/0][Power/dcm] [        MCSI_DCM 0x00004000] current state:1 (0)
+[    0.929847] (0)[1:swapper/0]BOOTPROF:       929.844001:initcall: mt6765_dcm_init    80.676077ms
+[    0.937269] (0)[1:swapper/0]MMP: mmprofile_enable(): enable: 1
+[    0.940361] (0)[1:swapper/0][mmdvfs]vcore_steps: [0, 1, 3, 0, 0, 0], count:3
+[    0.943296] (0)[1:swapper/0][mmdvfs]start get step node of disp_freq
+[    0.946202] (0)[1:swapper/0][mmdvfs] node name mm_step0
+[    0.949112] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    0.951970] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mmpll_ck
+[    0.954630] (0)[1:swapper/0][mmdvfs]mm_step0: 457MHz, clk:1/0/1
+[    0.957208] (0)[1:swapper/0][mmdvfs]read freq steps mm_step0_ext failed (-22)
+[    0.959785] (0)[1:swapper/0][mmdvfs] node name mm_step1
+[    0.962291] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    0.964865] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_univpll1_d2_ck
+[    0.967394] (0)[1:swapper/0][mmdvfs]mm_step1: 312MHz, clk:1/0/2
+[    0.969887] (0)[1:swapper/0][mmdvfs]read freq steps mm_step1_ext failed (-22)
+[    0.972378] (0)[1:swapper/0][mmdvfs] node name mm_step2
+[    0.974801] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    0.977274] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mmpll_d2_ck
+[    0.979640] (0)[1:swapper/0][mmdvfs]mm_step2: 228MHz, clk:1/0/3
+[    0.982000] (0)[1:swapper/0][mmdvfs]read freq steps mm_step2_ext failed (-22)
+[    0.984415] (0)[1:swapper/0][mmdvfs]disp_freq: step size:3
+[    0.986801] (0)[1:swapper/0][mmdvfs]disp_freq: add notifier
+[    0.989175] (0)[1:swapper/0][mmdvfs]MMDVFS limit is off
+[    0.991547] (0)[1:swapper/0][mmdvfs]start get step node of mdp_freq
+[    0.993937] (0)[1:swapper/0][mmdvfs] node name mm_step0
+[    0.996336] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    0.998770] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mmpll_ck
+[    1.001215] (0)[1:swapper/0][mmdvfs]mm_step0: 457MHz, clk:1/0/1
+[    1.003713] (0)[1:swapper/0][mmdvfs]read freq steps mm_step0_ext failed (-22)
+[    1.006231] (0)[1:swapper/0][mmdvfs] node name mm_step1
+[    1.008779] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.011289] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_univpll1_d2_ck
+[    1.013691] (0)[1:swapper/0][mmdvfs]mm_step1: 312MHz, clk:1/0/2
+[    1.016127] (0)[1:swapper/0][mmdvfs]read freq steps mm_step1_ext failed (-22)
+[    1.018629] (0)[1:swapper/0][mmdvfs] node name mm_step2
+[    1.021150] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.023744] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mmpll_d2_ck
+[    1.026331] (0)[1:swapper/0][mmdvfs]mm_step2: 228MHz, clk:1/0/3
+[    1.028869] (0)[1:swapper/0][mmdvfs]read freq steps mm_step2_ext failed (-22)
+[    1.031385] (0)[1:swapper/0][mmdvfs]mdp_freq: step size:3
+[    1.033832] (0)[1:swapper/0][mmdvfs]mdp_freq: add notifier
+[    1.036241] (0)[1:swapper/0][mmdvfs]MMDVFS limit is off
+[    1.038625] (0)[1:swapper/0][mmdvfs]start get step node of vdec_freq
+[    1.041039] (0)[1:swapper/0][mmdvfs] node name mm_step0
+[    1.043482] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.045943] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mmpll_ck
+[    1.048354] (0)[1:swapper/0][mmdvfs]mm_step0: 457MHz, clk:1/0/1
+[    1.050741] (0)[1:swapper/0][mmdvfs]read freq steps mm_step0_ext failed (-22)
+[    1.053166] (0)[1:swapper/0][mmdvfs] node name mm_step1
+[    1.055604] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.058052] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_univpll1_d2_ck
+[    1.060458] (0)[1:swapper/0][mmdvfs]mm_step1: 312MHz, clk:1/0/2
+[    1.062844] (0)[1:swapper/0][mmdvfs]read freq steps mm_step1_ext failed (-22)
+[    1.065262] (0)[1:swapper/0][mmdvfs] node name mm_step2
+[    1.067689] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.070134] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mmpll_d2_ck
+[    1.072541] (0)[1:swapper/0][mmdvfs]mm_step2: 228MHz, clk:1/0/3
+[    1.074923] (0)[1:swapper/0][mmdvfs]read freq steps mm_step2_ext failed (-22)
+[    1.077380] (0)[1:swapper/0][mmdvfs]vdec_freq: step size:3
+[    1.079833] (0)[1:swapper/0][mmdvfs]vdec_freq: add notifier
+[    1.082239] (0)[1:swapper/0][mmdvfs]MMDVFS limit is off
+[    1.084641] (0)[1:swapper/0][mmdvfs]start get step node of venc_freq
+[    1.087055] (0)[1:swapper/0][mmdvfs] node name mm_step0
+[    1.089515] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.091987] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mmpll_ck
+[    1.094390] (0)[1:swapper/0][mmdvfs]mm_step0: 457MHz, clk:1/0/1
+[    1.096797] (0)[1:swapper/0][mmdvfs]read freq steps mm_step0_ext failed (-22)
+[    1.099210] (0)[1:swapper/0][mmdvfs] node name mm_step1
+[    1.101646] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.104106] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_univpll1_d2_ck
+[    1.106511] (0)[1:swapper/0][mmdvfs]mm_step1: 312MHz, clk:1/0/2
+[    1.108918] (0)[1:swapper/0][mmdvfs]read freq steps mm_step1_ext failed (-22)
+[    1.111344] (0)[1:swapper/0][mmdvfs] node name mm_step2
+[    1.113770] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.116232] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mmpll_d2_ck
+[    1.118635] (0)[1:swapper/0][mmdvfs]mm_step2: 228MHz, clk:1/0/3
+[    1.121031] (0)[1:swapper/0][mmdvfs]read freq steps mm_step2_ext failed (-22)
+[    1.123493] (0)[1:swapper/0][mmdvfs]venc_freq: step size:3
+[    1.125935] (0)[1:swapper/0][mmdvfs]venc_freq: add notifier
+[    1.128353] (0)[1:swapper/0][mmdvfs]MMDVFS limit is off
+[    1.130738] (0)[1:swapper/0][mmdvfs]start get step node of img_freq
+[    1.133153] (0)[1:swapper/0][mmdvfs] node name mm_step0
+[    1.135584] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.138034] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mmpll_ck
+[    1.140433] (0)[1:swapper/0][mmdvfs]mm_step0: 457MHz, clk:1/0/1
+[    1.142819] (0)[1:swapper/0][mmdvfs]read freq steps mm_step0_ext failed (-22)
+[    1.145225] (0)[1:swapper/0][mmdvfs] node name mm_step1
+[    1.147651] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.150085] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_univpll1_d2_ck
+[    1.152488] (0)[1:swapper/0][mmdvfs]mm_step1: 312MHz, clk:1/0/2
+[    1.154867] (0)[1:swapper/0][mmdvfs]read freq steps mm_step1_ext failed (-22)
+[    1.157276] (0)[1:swapper/0][mmdvfs] node name mm_step2
+[    1.159693] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.162121] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mmpll_d2_ck
+[    1.164525] (0)[1:swapper/0][mmdvfs]mm_step2: 228MHz, clk:1/0/3
+[    1.166892] (0)[1:swapper/0][mmdvfs]read freq steps mm_step2_ext failed (-22)
+[    1.169340] (0)[1:swapper/0][mmdvfs]img_freq: step size:3
+[    1.171774] (0)[1:swapper/0][mmdvfs]img_freq: add notifier
+[    1.174163] (0)[1:swapper/0][mmdvfs]MMDVFS limit is off
+[    1.176539] (0)[1:swapper/0][mmdvfs]start get step node of cam_freq
+[    1.178925] (0)[1:swapper/0][mmdvfs] node name mm_step0
+[    1.181340] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.183788] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mmpll_ck
+[    1.186165] (0)[1:swapper/0][mmdvfs]mm_step0: 457MHz, clk:1/0/1
+[    1.188544] (0)[1:swapper/0][mmdvfs]read freq steps mm_step0_ext failed (-22)
+[    1.190934] (0)[1:swapper/0][mmdvfs] node name mm_step1
+[    1.193339] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.195778] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_univpll1_d2_ck
+[    1.198169] (0)[1:swapper/0][mmdvfs]mm_step1: 312MHz, clk:1/0/2
+[    1.200543] (0)[1:swapper/0][mmdvfs]read freq steps mm_step1_ext failed (-22)
+[    1.202938] (0)[1:swapper/0][mmdvfs] node name mm_step2
+[    1.205351] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mm_sel_ck
+[    1.207791] (0)[1:swapper/0][mmdvfs]Get module clock: mmdvfs_clk_mmpll_d2_ck
+[    1.210169] (0)[1:swapper/0][mmdvfs]mm_step2: 228MHz, clk:1/0/3
+[    1.212553] (0)[1:swapper/0][mmdvfs]read freq steps mm_step2_ext failed (-22)
+[    1.214994] (0)[1:swapper/0][mmdvfs]cam_freq: step size:3
+[    1.217438] (0)[1:swapper/0][mmdvfs]cam_freq: add notifier
+[    1.219838] (0)[1:swapper/0][mmdvfs]MMDVFS limit is off
+[    1.222204] (0)[1:swapper/0][mmdvfs]start get step node of dpe_freq
+[    1.224603] (0)[1:swapper/0][mmdvfs]freq setting dpe_freq is not same as vcore_steps (3)
+[    1.227093] (0)[1:swapper/0][mmdvfs]dpe_freq: step size:3
+[    1.229553] (0)[1:swapper/0][mmdvfs]dpe_freq: add notifier
+[    1.231962] (0)[1:swapper/0][mmdvfs]MMDVFS limit is off
+[    1.234340] (0)[1:swapper/0][mmdvfs]start get step node of ipe_freq
+[    1.236745] (0)[1:swapper/0][mmdvfs]freq setting ipe_freq is not same as vcore_steps (3)
+[    1.239238] (0)[1:swapper/0][mmdvfs]ipe_freq: step size:3
+[    1.241701] (0)[1:swapper/0][mmdvfs]MMDVFS limit is off
+[    1.244128] (0)[1:swapper/0][mmdvfs]start get step node of ccu_freq
+[    1.246562] (0)[1:swapper/0][mmdvfs]freq setting ccu_freq is not same as vcore_steps (3)
+[    1.249070] (0)[1:swapper/0][mmdvfs]ccu_freq: step size:3
+[    1.251578] (0)[1:swapper/0][mmdvfs]MMDVFS limit is off
+[    1.254047] (0)[1:swapper/0][mmdvfs]start get step node of img2_freq
+[    1.256541] (0)[1:swapper/0][mmdvfs]freq setting img2_freq is not same as vcore_steps (3)
+[    1.259076] (0)[1:swapper/0][mmdvfs]img2_freq: step size:3
+[    1.261632] (0)[1:swapper/0][mmdvfs]MMDVFS limit is off
+[    1.264203] (0)[1:swapper/0][mmdvfs]larb[0].comm_port=0 channel=0
+[    1.266764] (0)[1:swapper/0][mmdvfs]larb[1].comm_port=1 channel=1
+[    1.269289] (0)[1:swapper/0][mmdvfs]larb[2].comm_port=2 channel=0
+[    1.271760] (0)[1:swapper/0][mmdvfs]larb[3].comm_port=3 channel=1
+[    1.274209] (0)[1:swapper/0][mmdvfs]disp step size:3
+[    1.276625] (0)[1:swapper/0][mmdvfs] - step[0]: 457
+[    1.278998] (0)[1:swapper/0][mmdvfs] - step[1]: 312
+[    1.2813

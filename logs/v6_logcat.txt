@@ -1,0 +1,1254 @@
+--------- beginning of main
+06-04 09:01:20.915   404   404 W linker  : Warning: failed to find generated linker configuration from "/linkerconfig/ld.config.txt"
+06-04 09:01:20.924   403   403 I lowmemorykiller: Using psi monitors for memory pressure detection
+06-04 09:01:20.927   403   403 I lowmemorykiller: Process polling is supported
+06-04 09:01:20.928   403   403 I lowmemorykiller: Mbrain trigger success: fail
+06-04 09:01:20.932   403   403 I lowmemorykiller: Process reaping is not supported
+06-04 09:01:20.934   406   406 W linker  : Warning: failed to find generated linker configuration from "/linkerconfig/ld.config.txt"
+--------- beginning of events
+12-31 16:00:00.036   402   402 I auditd  : type=2000 audit(0.0:1): state=initialized audit_enabled=0 res=1
+12-31 16:00:00.036   402   402 W auditd  : type=2000 audit(0.0:1): state=initialized audit_enabled=0 res=1
+06-04 09:01:20.980   404   404 I snet_event_log: [121035042,-1,]
+06-04 09:01:16.588   402   402 I auditd  : type=1403 audit(0.0:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+06-04 09:01:16.588   402   402 W auditd  : type=1403 audit(0.0:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+06-04 09:01:16.968     1     1 I auditd  : type=1107 audit(0.0:3): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.mount.fs pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:16.968     1     1 W /system/bin/init: type=1107 audit(0.0:3): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.mount.fs pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:16.968     1     1 I auditd  : type=1107 audit(0.0:4): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.mtk_perf_fast_start_win pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:16.968     1     1 W /system/bin/init: type=1107 audit(0.0:4): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.mtk_perf_fast_start_win pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:16.968     1     1 I auditd  : type=1107 audit(0.0:5): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=persist.vendor.em.dy.debug pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vendor_mtk_em_dy_debug_ctrl_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:16.968     1     1 W /system/bin/init: type=1107 audit(0.0:5): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=persist.vendor.em.dy.debug pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vendor_mtk_em_dy_debug_ctrl_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:16.968     1     1 I auditd  : type=1107 audit(0.0:6): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.mediatek.chip_ver pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:16.968     1     1 W /system/bin/init: type=1107 audit(0.0:6): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.mediatek.chip_ver pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:16.968     1     1 I auditd  : type=1107 audit(0.0:7): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.mediatek.platform pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:16.968     1     1 W /system/bin/init: type=1107 audit(0.0:7): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.mediatek.platform pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:16.968     1     1 I auditd  : type=1107 audit(0.0:8): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.telephony.sim.count pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:16.968     1     1 W /system/bin/init: type=1107 audit(0.0:8): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.telephony.sim.count pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:16.968     1     1 I auditd  : type=1107 audit(0.0:9): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=persist.radio.default.sim pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:radio_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:16.968     1     1 W /system/bin/init: type=1107 audit(0.0:9): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=persist.radio.default.sim pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:radio_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:18.084     1     1 I auditd  : type=1107 audit(0.0:10): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { read } for property=vts.native_server.on pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vts_status_prop:s0 tclass=file permissive=0'
+06-04 09:01:18.084     1     1 W /system/bin/init: type=1107 audit(0.0:10): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { read } for property=vts.native_server.on pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vts_status_prop:s0 tclass=file permissive=0'
+06-04 09:01:18.100     1     1 I auditd  : type=1107 audit(0.0:11): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { read } for property=vts.native_server.on pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vts_status_prop:s0 tclass=file permissive=0'
+06-04 09:01:18.100     1     1 W /system/bin/init: type=1107 audit(0.0:11): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { read } for property=vts.native_server.on pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vts_status_prop:s0 tclass=file permissive=0'
+06-04 09:01:20.998   404   404 I auditd  : SELinux: Loaded service context from:
+06-04 09:01:20.998   404   404 I auditd  : 		/system/etc/selinux/plat_service_contexts
+06-04 09:01:20.998   404   404 I auditd  : 		/system_ext/etc/selinux/system_ext_service_contexts
+06-04 09:01:20.998   404   404 I auditd  : 		/vendor/etc/selinux/vendor_service_contexts
+06-04 09:01:21.006   406   406 I hwservicemanager: getFrameworkHalManifest: Reading VINTF information.
+06-04 09:01:21.044   406   406 I hwservicemanager: getDeviceHalManifest: Reading VINTF information.
+06-04 09:01:21.058   414   414 I snet_event_log: [121035042,-1,]
+06-04 09:01:21.069   414   414 I SELinux : SELinux: Loaded vndservice context from:
+06-04 09:01:21.069   414   414 I SELinux : 		/vendor/etc/selinux/vndservice_contexts
+06-04 09:01:21.087   406   406 I hwservicemanager: getDeviceHalManifest: Successfully processed VINTF information
+06-04 09:01:21.087   406   406 I hwservicemanager: getFrameworkHalManifest: Successfully processed VINTF information
+06-04 09:01:21.090   406   406 I hwservicemanager: hwservicemanager is ready now.
+--------- beginning of system
+06-04 09:01:21.849   419   419 I vold    : Vold 3.0 (the awakening) firing up
+06-04 09:01:21.867   406   406 E cutils-trace: Error opening trace file: No such file or directory (2)
+06-04 09:01:21.885   419   419 W vold    : [libfs_mgr] Warning: unknown flag: resize
+06-04 09:01:21.898   420   420 I HidlServiceManagement: Registered android.hardware.boot@1.2::IBootControl/default
+06-04 09:01:21.899   420   420 I HidlServiceManagement: Removing namespace from process name android.hardware.boot@1.2-service to boot@1.2-service.
+06-04 09:01:21.899   420   420 I LegacySupport: Registration complete for android.hardware.boot@1.0::IBootControl/default.
+06-04 09:01:23.371   461   461 I AEE_AEDV: Built  commit d3b8f92ec5d513ab98c0b63be8b772639cde7d13
+06-04 09:01:23.376   461   461 E AEE_AEDV: Can't open virbrator, No such file or directory
+06-04 09:01:23.379   461   461 I AEE_AEDV: aed_update_coredump_mode: persist.vendor.aeev.core.dump disable
+06-04 09:01:23.381   461   461 I AEE_AEDV: aed_update_coredump_mode: persist.vendor.aeev.core.direct disable
+06-04 09:01:23.382   461   461 I AEE_AEDV: aed_update_coredump_mode: persist.vendor.aeev.mini.dump disable
+06-04 09:01:23.384   461   461 I AEE_AEDV: AED config
+06-04 09:01:23.384   461   461 I AEE_AEDV:   mode '4'
+06-04 09:01:23.384   461   461 I AEE_AEDV:   exp level '0
+06-04 09:01:23.384   461   461 I AEE_AEDV:   dal enable '0'
+06-04 09:01:23.384   461   461 I AEE_AEDV:   db count '4'
+06-04 09:01:23.384   461   461 I AEE_AEDV:   fatal db count '4'
+06-04 09:01:23.384   461   461 I AEE_AEDV:  db storage '2'
+06-04 09:01:23.384   461   461 I AEE_AEDV:   SMP Info => 1
+06-04 09:01:23.385   461   461 I AEE_AEDV: aed_get_commit_id: Get AEE commit id successfully, [d3b8f92ec5d513ab98c0b63be8b772639cde7d13]
+06-04 09:01:23.386   461   461 E AEE_AEDV: init_aed_setting: fail to open db history file 
+06-04 09:01:23.386   461   461 E AEE_AEDV: init_aed_setting: fail to open file_tree.txt 
+06-04 09:01:23.397   464   464 W AEE_AEDV: read_fstab: get fstab /fstab.mt6765
+06-04 09:01:23.398   464   464 E AEE_AEDV: read_fstab: failed to open /fstab.mt6765
+06-04 09:01:23.398   464   464 W AEE_AEDV: read_fstab: get fstab /vendor/etc/fstab.mt6765
+06-04 09:01:23.400   464   464 W AEE_AEDV: get_expdb_path: get expdb_path /dev/block/by-name/expdb
+06-04 09:01:23.401   464   464 I AEE_AEDV: ipanic_blk_open, expdb, 200 x a000 = 1400000
+06-04 09:01:23.403   464   464 W AEE_AEDV: ipanic heahder: magic:0, version:0, size:0, datas:0
+06-04 09:01:23.403   464   464 W AEE_AEDV: ipanic heahder: dhblk:0, blksize:0, partsize:0, bufsize:0
+06-04 09:01:23.403   464   464 W AEE_AEDV: aed_reboot_session, no valid ipanic header, ignored
+06-04 09:01:23.405   464   464 I AEE_AEDV: wdt_status = 0x0, fiq_step=0, exception_type:0 
+06-04 09:01:23.405   464   464 E AEE_AEDV: get_value_from_proc_bootconfig: failed to fopen /proc/bootconfig file, error: No such file or directory
+06-04 09:01:23.405   464   464 I AEE_AEDV: reboot_reason = 0(0x0)
+06-04 09:01:23.405   464   464 E AEE_AEDV: open boot mode file fail! (2, No such file or directory)
+06-04 09:01:23.405   464   464 I AEE_AEDV: aed_reboot_session: boot_mode(0)
+06-04 09:01:23.405   464   464 W AEE_AEDV: read_fstab: get fstab /fstab.mt6765
+06-04 09:01:23.405   464   464 E AEE_AEDV: read_fstab: failed to open /fstab.mt6765
+06-04 09:01:23.405   464   464 W AEE_AEDV: read_fstab: get fstab /vendor/etc/fstab.mt6765
+06-04 09:01:23.406   464   464 W AEE_AEDV: get_expdb_path: get expdb_path /dev/block/by-name/expdb
+06-04 09:01:23.406   464   464 I AEE_AEDV: ipanic_blk_open, expdb, 200 x a000 = 1400000
+06-04 09:01:23.452   462   462 I AEE_AED : Built  commit 1002699b04bb3521f5be160aafcabaa1abb2cdeb
+06-04 09:01:23.456   462   462 E AEE_AED : [main][RT] failed to get platform info
+06-04 09:01:23.458   462   462 I AEE_AED : socket server: android:aee_aed
+06-04 09:01:23.458   462   462 E AEE_AED : Can't open vibrator duration, No such file or directory
+06-04 09:01:23.459   462   462 E AEE_AED : Can't open vibrator activate, No such file or directory
+06-04 09:01:23.459   462   462 E AEE_AED : Can't open vibrator state, No such file or directory
+06-04 09:01:23.465   462   462 I AEE_AED : AED config
+06-04 09:01:23.465   462   462 I AEE_AED :   mode '4'
+06-04 09:01:23.465   462   462 I AEE_AED :   exp level '0
+06-04 09:01:23.465   462   462 I AEE_AED :   dal enable '0'
+06-04 09:01:23.465   462   462 I AEE_AED :   db count '4'
+06-04 09:01:23.465   462   462 I AEE_AED :   fatal db count '4'
+06-04 09:01:23.465   462   462 I AEE_AED :  db storage '2'
+06-04 09:01:23.465   462   462 I AEE_AED :   SMP Info => 1
+06-04 09:01:23.486   462   462 E AEE_AED : fail to get prebuild packages: No such file or directory
+06-04 09:01:23.488   462   462 I AEE_AED : aed_get_commit_id: Get AEE commit id successfully, [1002699b04bb3521f5be160aafcabaa1abb2cdeb]
+06-04 09:01:23.488   462   462 E AEE_AED : init_aed_setting: fail to open db history file 
+06-04 09:01:23.488   462   462 E AEE_AED : init_aed_setting: fail to open file_tree.txt 
+06-04 09:01:23.494   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(1)
+06-04 09:01:23.590   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:23.662   472   472 I fsverity_init: LoadKeyFromFile path=/system/etc/security/fsverity/fsverity-release.x509.der keyname=fsv_system_0
+06-04 09:01:23.667   472   472 I fsverity_init: LoadKeyFromFile path=/product/etc/security/fsverity/gms_fsverity_cert.der keyname=fsv_product_0
+06-04 09:01:23.673   472   472 I fsverity_init: LoadKeyFromFile path=/product/etc/security/fsverity/play_store_fsi_cert.der keyname=fsv_product_1
+06-04 09:01:23.708   471   471 I android.hardware.keymaster@4.1-service.trustonic: Trustonic Keymaster 4.1 Service starts
+06-04 09:01:23.709   471   471 I TrustonicKeymaster4DeviceImpl: Read os_version = 140000, os_patchlevel = 202603, vendor_patchlevel = 20260305, boot_patchlevel = 0
+06-04 09:01:23.713   471   471 I TeeSysClient: driver version: v8.3 [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/ClientLib/src/driver.cpp:104]
+06-04 09:01:23.713   471   471 I TeeSysClient: driver open [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/ClientLib/src/driver.cpp:109]
+06-04 09:01:23.725   471   471 E TlcTeeKeyMaster: Error: Cannot open file: /data/misc/keybox_sample.so.
+06-04 09:01:23.751   471   471 E TeeSysClient: syscall failed with "Try again"(errno 11) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/ClientLib/src/driver.cpp:615]
+06-04 09:01:23.751   471   471 E TeeSysClient: mcCloseSession returned UNKNOWN (rc 0x6) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/ClientLib/src/native_interface.cpp:651]
+06-04 09:01:23.751   471   471 E TlcTeeKeyMaster: TEE_Configure: mcCloseSession() returned 6
+06-04 09:01:23.756   471   471 I HidlServiceManagement: Registered android.hardware.keymaster@4.1::IKeymasterDevice/default
+06-04 09:01:23.756   471   471 I HidlServiceManagement: Removing namespace from process name android.hardware.keymaster@4.1-service.trustonic to keymaster@4.1-service.trustonic.
+06-04 09:01:23.757   471   471 I android.hardware.keymaster@4.1-service.trustonic: Trustonic Keymaster 4.1 Service registered
+06-04 09:01:23.777   469   469 I HidlServiceManagement: Registered android.system.suspend@1.0::ISystemSuspend/default
+06-04 09:01:23.778   469   469 I HidlServiceManagement: Removing namespace from process name android.system.suspend-service to suspend-service.
+06-04 09:01:23.795   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(2)
+06-04 09:01:23.814   470   470 I keystore2: system/security/keystore2/src/keystore2_main.rs:61 - Keystore2 is starting.
+06-04 09:01:23.814   470   470 I keystore2: system/security/keystore2/src/keystore2_main.rs:67 - Setting up sqlite logging for keystore2
+06-04 09:01:23.820   470   470 W keystore2: system/security/keystore2/src/metrics_store.rs:577 - In update_keystore_crash_sysprop: Failed to read the existing system property due to: system/security/keystore2/src/metrics_store.rs:608: Property not set..Therefore, keystore crashes will not be logged.
+06-04 09:01:23.827   470   470 I keystore2: system/security/keystore2/src/keystore2_main.rs:97 - Starting thread pool now.
+06-04 09:01:23.831   470   477 I keystore2: getDeviceHalManifest: Reading VINTF information.
+06-04 09:01:23.843   470   477 I keystore2: getDeviceHalManifest: Successfully processed VINTF information
+06-04 09:01:23.870   470   470 I keystore2: found android.hardware.keymaster@4.0::IKeymasterDevice with interface name default and seclevel TRUSTED_ENVIRONMENT
+06-04 09:01:23.872   470   470 I keystore2: system/security/keystore2/src/globals.rs:286 - Add emulation wrapper around Keymaster device for security level: r#TRUSTED_ENVIRONMENT
+06-04 09:01:23.876   470   477 I keystore2: system/security/keystore2/src/shared_secret_negotiation.rs:47 - Shared secret negotiation concluded successfully.
+06-04 09:01:23.891   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:23.913   470   477 I keystore2: system/security/keystore2/src/shared_secret_negotiation.rs:294 - No StrongBox Keymint available, so no RoT transfer
+06-04 09:01:23.922   470   470 I keystore2: system/security/keystore2/src/keystore2_main.rs:152 - Successfully registered Keystore 2.0 service.
+06-04 09:01:23.922   470   470 I keystore2: system/security/keystore2/src/keystore2_main.rs:154 - Joining thread pool now.
+06-04 09:01:23.987   419   419 I vold    : AIDL IBootControl not available, falling back to HIDL.
+06-04 09:01:23.995   419   419 I vold    : Using HIDL version 1.2 of IBootControl
+06-04 09:01:24.095   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(3)
+06-04 09:01:24.098   470   470 I SELinux : SELinux: Loaded keystore2 context from:
+06-04 09:01:24.098   470   470 I auditd  : SELinux: Loaded keystore2 context from:
+06-04 09:01:24.098   470   470 I SELinux : 		/system/etc/selinux/plat_keystore2_key_contexts
+06-04 09:01:24.098   470   470 I auditd  : 		/system/etc/selinux/plat_keystore2_key_contexts
+06-04 09:01:24.120   419   419 I vold    : [libfs_mgr] Running /system/bin/fsck.f2fs -a -c 10000 --debug-cache /dev/block/dm-42
+06-04 09:01:24.194   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:24.395   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(4)
+06-04 09:01:24.494   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:24.565   419   419 I vold    : [libfs_mgr] __mount(source=/dev/block/dm-42,target=/data,type=f2fs)=0: Success
+06-04 09:01:24.697   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(5)
+06-04 09:01:24.709   419   419 I Checkpoint: cp_prepareCheckpoint called
+06-04 09:01:24.796   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:24.936   419   419 I vold    : fscrypt_initialize_systemwide_keys
+06-04 09:01:24.987   419   419 I vold    : Wrote system DE key reference to:/data/unencrypted/ref
+06-04 09:01:24.998   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(6)
+06-04 09:01:25.022   419   419 I vold    : Wrote per boot key reference to:/data/unencrypted/per_boot_ref
+06-04 09:01:25.098   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:25.181   502   502 I tombstoned: tombstoned successfully initialized
+06-04 09:01:25.220   419   419 I incfs   : Initial API level of the device: 34
+06-04 09:01:25.235   419   419 I incfs   : ro.incremental.enable: yes
+06-04 09:01:25.241   419   419 I incfs   : isFsAvailable: true
+06-04 09:01:25.247   419   419 I incfs   : isFsAvailable: true
+06-04 09:01:25.254   419   419 I incfs   : IncFs_Features: v1
+06-04 09:01:25.263   470   470 I keystore2: system/security/keystore2/src/maintenance.rs:206 - In early_boot_ended.
+06-04 09:01:25.280   470   470 I keystore2: system/security/keystore2/src/globals.rs:66 - Touching Keystore 2.0 database for this first time since boot.
+06-04 09:01:25.280   470   470 I keystore2: system/security/keystore2/src/globals.rs:68 - Calling cleanup leftovers.
+06-04 09:01:25.281   470   470 I keystore2: system/security/keystore2/src/boot_level_keys.rs:57 - ro.keystore.boot_level_key.strategy not set, inferring from installed KM instances
+06-04 09:01:25.281   470   470 I keystore2: system/security/keystore2/src/boot_level_keys.rs:115 - In get_level_zero_key: security_level=r#TRUSTED_ENVIRONMENT, deny_later_strategy=EarlyBootOnly
+06-04 09:01:25.298   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(7)
+06-04 09:01:25.302   470   470 I keystore2: system/security/keystore2/src/super_key.rs:293 - Starting boot level watcher.
+06-04 09:01:25.302   470   508 I keystore2: system/security/keystore2/src/super_key.rs:325 - Read keystore.boot_level value 30
+06-04 09:01:25.303   470   508 I keystore2: system/security/keystore2/src/super_key.rs:325 - Read keystore.boot_level value 30
+06-04 09:01:25.303   470   470 I keystore2: system/security/keystore2/src/maintenance.rs:187 - Call to earlyBootEnded succeeded for security level TRUSTED_ENVIRONMENT.
+06-04 09:01:25.304   470   470 E keystore2: system/security/keystore2/src/maintenance.rs:192 - Call to earlyBootEnded failed for security level STRONGBOX: system/security/keystore2/src/maintenance.rs:167: getting keymint device.
+06-04 09:01:25.305   470   470 E keystore2: system/security/keystore2/src/error.rs:180 - system/security/keystore2/src/maintenance.rs:167: getting keymint device
+06-04 09:01:25.305   470   470 E keystore2: 
+06-04 09:01:25.305   470   470 E keystore2: Caused by:
+06-04 09:01:25.305   470   470 E keystore2:     0: system/security/keystore2/src/globals.rs:335: Cannot connect to Keymint
+06-04 09:01:25.305   470   470 E keystore2:     1: system/security/keystore2/src/globals.rs:246: Trying to get Legacy wrapper.
+06-04 09:01:25.305   470   470 E keystore2:     2: Error::Km(r#HARDWARE_TYPE_UNAVAILABLE)
+06-04 09:01:25.305   419   419 E vold    : keystore2 Keystore earlyBootEnded returned service specific error: -68
+06-04 09:01:25.387   461   463 I AEE_AEDV: aed_wait_decrypt done! file base encryption
+06-04 09:01:25.388   461   463 E AEE_AEDV: aee:vrttd_64Rtt command connect 64_socket fail: Connection refused
+06-04 09:01:25.388   461   463 E AEE_AEDV: aee_exception_running_64: command failed
+06-04 09:01:25.388   461   463 E AEE_AEDV: delete_temp_folder: Error: Can't get running exception 
+06-04 09:01:25.398   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:25.489   462   467 I AEE_AED : aed_wait_decrypt done! file base encryption
+06-04 09:01:25.490   462   467 E aee_aed : client connect socket fail: Connection refused
+06-04 09:01:25.490   462   467 E AEE_AED : aee:rttd_64Rtt command connect 64_socket fail: Connection refused
+06-04 09:01:25.490   462   467 E AEE_AED : aee_exception_running_64: command failed
+06-04 09:01:25.490   462   467 E AEE_AED : delete_temp_folder: Error: Can't get running exception 
+06-04 09:01:25.599   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(8)
+06-04 09:01:25.699   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:25.900   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(9)
+06-04 09:01:26.001   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:26.204   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(10)
+06-04 09:01:26.301   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:26.505   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(11)
+06-04 09:01:26.602   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:26.805   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(12)
+06-04 09:01:26.902   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:27.106   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(13)
+06-04 09:01:27.202   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:27.406   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(14)
+06-04 09:01:27.509   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:27.707   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(15)
+06-04 09:01:27.810   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:28.007   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(16)
+06-04 09:01:28.052   639   639 I derive_sdk: Read version 11 from 7
+06-04 09:01:28.052   639   639 I derive_sdk: Read version 11 from 6
+06-04 09:01:28.053   639   639 I derive_sdk: Read version 11 from 5
+06-04 09:01:28.054   639   639 I derive_sdk: Read version 11 from 9
+06-04 09:01:28.055   639   639 I derive_sdk: Read version 11 from 4
+06-04 09:01:28.056   639   639 I derive_sdk: Read version 11 from 3
+06-04 09:01:28.056   639   639 I derive_sdk: Read version 11 from 16
+06-04 09:01:28.057   639   639 I derive_sdk: Read version 11 from 2
+06-04 09:01:28.058   639   639 I derive_sdk: Read version 11 from 8
+06-04 09:01:28.059   639   639 I derive_sdk: Read version 11 from 12
+06-04 09:01:28.060   639   639 I derive_sdk: Read version 11 from 14
+06-04 09:01:28.061   639   639 I derive_sdk: Read version 11 from 15
+06-04 09:01:28.062   639   639 I derive_sdk: Read version 11 from 1
+06-04 09:01:28.063   639   639 I derive_sdk: Read version 11 from 10
+06-04 09:01:28.064   639   639 I derive_sdk: Read version 7 from 13
+06-04 09:01:28.065   639   639 I derive_sdk: Read version 11 from 11
+06-04 09:01:28.065   639   639 I derive_sdk: extension r version is 11
+06-04 09:01:28.066   639   639 I derive_sdk: extension s version is 11
+06-04 09:01:28.067   639   639 I derive_sdk: extension t version is 11
+06-04 09:01:28.068   639   639 I derive_sdk: extension u version is 11
+06-04 09:01:28.069   639   639 I derive_sdk: extension ad_services version is 11
+06-04 09:01:28.110   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:28.243   419   419 I vold    : Verified that /data/system_de/0 has the encryption policy 7b7957664859d2edd821e1eac087e769 v2 modes 1/4 flags 0x2
+06-04 09:01:28.267   419   419 I vold    : Verified that /data/vendor_de/0 has the encryption policy 7b7957664859d2edd821e1eac087e769 v2 modes 1/4 flags 0x2
+06-04 09:01:28.278   419   419 I vold    : Verified that /data/misc_de/0 has the encryption policy 7b7957664859d2edd821e1eac087e769 v2 modes 1/4 flags 0x2
+06-04 09:01:28.290   419   419 I vold    : Verified that /data/user_de/0 has the encryption policy 7b7957664859d2edd821e1eac087e769 v2 modes 1/4 flags 0x2
+06-04 09:01:28.307   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(17)
+06-04 09:01:28.411   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:28.412   464   464 I AEE_AEDV: aed_wait_decrypt done! file base encryption
+06-04 09:01:28.419   464   464 I AEE_AEDV: aed_wait_decrypt done! file base encryption
+06-04 09:01:28.547   650   650 I derive_classpath: ParseFragments for bootclasspath
+06-04 09:01:28.579   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.art/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.580   650   650 I derive_classpath: ReadClasspathFragment /system/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.581   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.adservices/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.582   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.appsearch/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.583   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.btservices/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.584   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.configinfrastructure/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.584   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.conscrypt/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.585   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.devicelock/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.586   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.healthfitness/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.586   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.ipsec/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.587   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.media/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.588   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.mediaprovider/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.588   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.ondevicepersonalization/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.589   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.os.statsd/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.589   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.permission/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.590   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.scheduling/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.590   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.sdkext/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.591   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.tethering/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.592   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.uwb/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.592   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.virt/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.593   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.wifi/etc/classpaths/bootclasspath.pb
+06-04 09:01:28.594   650   650 I derive_classpath: ParseFragments for systemserverclasspath
+06-04 09:01:28.597   650   650 I derive_classpath: ReadClasspathFragment /system/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.598   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.adservices/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.598   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.appsearch/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.599   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.art/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.600   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.btservices/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.600   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.configinfrastructure/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.601   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.devicelock/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.601   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.healthfitness/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.602   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.media/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.603   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.ondevicepersonalization/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.604   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.os.statsd/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.605   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.permission/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.605   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.rkpd/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.606   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.scheduling/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.607   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.tethering/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.607   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.uwb/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.608   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(18)
+06-04 09:01:28.608   650   650 I derive_classpath: ReadClasspathFragment /apex/com.android.wifi/etc/classpaths/systemserverclasspath.pb
+06-04 09:01:28.608   650   650 I derive_classpath: WriteClasspathExports /data/system/environ/classpath
+06-04 09:01:28.609   650   650 I derive_classpath: WriteClasspathExports content
+06-04 09:01:28.609   650   650 I derive_classpath: export BOOTCLASSPATH /apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system_ext/framework/mediatek-telephony-base.jar:/system_ext/framework/mediatek-telephony-common.jar:/system_ext/framework/mediatek-carrier-config-manager.jar:/system_ext/framework/mediatek-common.jar:/system_ext/framework/mediatek-framework.jar:/system_ext/framework/mediatek-ims-common.jar:/system_ext/framework/mediatek-ims-base.jar:/system_ext/framework/mediatek-telecom-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar:/apex/com.android.adservices/javalib/framework-adservices.jar:/apex/com.android.adservices/javalib/framework-sdksandbox.jar:/apex/com.android.appsearch/javalib/framework-appsearch.jar:/apex/com.android.btservices/javalib/framework-bluetooth.jar:/apex/com.android.configinfrastructure/javalib/framework-configinfrastructure.jar:/apex/com.android.conscrypt/javalib/conscrypt.jar:/apex/com.android.devicelock/javalib/framework-devicelock.jar:/apex/com.android.healthfitness/javalib/framework-healthfitness.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar:/apex/com.android.media/javalib/updatable-media.jar:/apex/com.android.mediaprovider/javalib/framework-mediaprovider.jar:/apex/com.android.ondevicepersonalization/javalib/framework-ondevicepersonalization.jar:/apex/com.android.os.statsd/javalib/framework-statsd.jar:/apex/com.android.permission/javalib/framework-permission.jar:/apex/com.android.permission/javalib/framework-permission-s.jar:/apex/com.android.scheduling/javalib/framework-scheduling.jar:/apex/com.android.sdkext/javalib/framework-sdkextensions.jar:/apex/com.android.tethering/javalib/framework-connectivity.jar:/apex/com.android.tethering/javalib/framework-connectivity-t.jar:/apex/com.android.tethering/javalib/framework-tethering.jar:/apex/com.android.uwb/javalib/framework-uwb.jar:/apex/com.android.virt/javalib/framework-virtualization.jar:/apex/com.android.wifi/javalib/framework-wifi.jar
+06-04 09:01:28.609   650   650 I derive_classpath: export DEX2OATBOOTCLASSPATH /apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system_ext/framework/mediatek-telephony-base.jar:/system_ext/framework/mediatek-telephony-common.jar:/system_ext/framework/mediatek-carrier-config-manager.jar:/system_ext/framework/mediatek-common.jar:/system_ext/framework/mediatek-framework.jar:/system_ext/framework/mediatek-ims-common.jar:/system_ext/framework/mediatek-ims-base.jar:/system_ext/framework/mediatek-telecom-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar
+06-04 09:01:28.609   650   650 I derive_classpath: export SYSTEMSERVERCLASSPATH /system/framework/com.android.location.provider.jar:/system/framework/services.jar:/apex/com.android.adservices/javalib/service-adservices.jar:/apex/com.android.adservices/javalib/service-sdksandbox.jar:/apex/com.android.appsearch/javalib/service-appsearch.jar:/apex/com.android.art/javalib/service-art.jar:/apex/com.android.configinfrastructure/javalib/service-configinfrastructure.jar:/apex/com.android.healthfitness/javalib/service-healthfitness.jar:/apex/com.android.media/javalib/service-media-s.jar:/apex/com.android.ondevicepersonalization/javalib/service-ondevicepersonalization.jar:/apex/com.android.permission/javalib/service-permission.jar:/apex/com.android.rkpd/javalib/service-rkp.jar
+06-04 09:01:28.609   650   650 I derive_classpath: export STANDALONE_SYSTEMSERVER_JARS /apex/com.android.btservices/javalib/service-bluetooth.jar:/apex
+06-04 09:01:28.711   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:28.712   651   651 I art_boot: Property persist.device_config.runtime_native_boot.useartservice not set
+06-04 09:01:28.808   652   652 I odsign  : Trying to retrieve existing HMAC key...
+06-04 09:01:28.811   652   652 I odsign  : Trying to retrieve existing keystore key...
+06-04 09:01:28.824   652   652 I odsign  : Verified public key signature.
+06-04 09:01:28.824   652   652 I odsign  : Initialized Keystore key.
+06-04 09:01:28.826   652   652 I odsign  : Found and verified existing public key certificate: /data/misc/odsign/key.cert
+06-04 09:01:28.908   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(19)
+06-04 09:01:29.011   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:29.044   653   653 I odrefresh: ART APEX version 341514410
+06-04 09:01:29.045   653   653 I odrefresh: Userfaultfd GC check failed (build_enable_uffd_gc: true, kernel_supports_uffd: false).
+06-04 09:01:29.208   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(20)
+06-04 09:01:29.241   653   653 I odrefresh: Checking boot images /data (arm)
+06-04 09:01:29.241   653   653 I odrefresh: Boot images on /data OK (arm)
+06-04 09:01:29.242   653   653 I odrefresh: system_server artifacts on /data OK
+06-04 09:01:29.262   652   652 I odsign  : /data/misc/odsign/odsign.info.signature matches.
+06-04 09:01:29.263   652   652 I odsign  : Loaded /data/misc/odsign/odsign.info
+06-04 09:01:29.312   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:29.327   652   652 I odsign  : All root hashes match.
+06-04 09:01:29.327   652   652 I odsign  : odrefresh said artifacts are VALID
+06-04 09:01:29.327   652   652 I odsign  : On-device signing done.
+06-04 09:01:29.327   652   652 I odsign  : Metrics report is empty
+06-04 09:01:29.403   470   508 I keystore2: system/security/keystore2/src/super_key.rs:330 - keystore.boot_level 1000000000 hits maximum 1000000000, finishing.
+06-04 09:01:29.509   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(21)
+06-04 09:01:29.576   662   662 I Magisk  : Magisk v27.2-kitsune-4(27002) daemon started
+06-04 09:01:29.577   662   662 I Magisk  : * Device API level: 34
+06-04 09:01:29.577   662   662 I Magisk  : * CPU ABI 32-bit: armeabi-v7a,armeabi
+06-04 09:01:29.586   662   665 I Magisk  : ** post-fs-data mode running
+06-04 09:01:29.590   662   665 I Magisk  : * Magic Mount Setup
+06-04 09:01:29.608     1     1 W libc    : Unable to set property "dev.mnt.dev.debug_ramdisk..magisk.modules" to "dm-42": error code: 0x10
+06-04 09:01:29.612   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:29.620     1     1 W libc    : Unable to set property "dev.mnt.blk.debug_ramdisk..magisk.modules" to "mmcblk0p44": error code: 0x10
+06-04 09:01:29.633     1     1 W libc    : Unable to set property "dev.mnt.rootdisk.debug_ramdisk..magisk.modules" to "mmcblk0": error code: 0x10
+06-04 09:01:29.706   662   665 I Magisk  : * Initializing Magisk environment
+06-04 09:01:29.712   662   665 E Magisk  : * Magisk environment incomplete, abort
+06-04 09:01:29.712   662   665 I Magisk  : * Loading modules
+06-04 09:01:29.809   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(22)
+06-04 09:01:29.912   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:30.110   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(23)
+06-04 09:01:30.213   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:30.309   673   673 I otapreopt_slot: No A/B artifacts found for slot _a.
+06-04 09:01:30.411   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(24)
+06-04 09:01:30.513   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:30.711   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(25)
+06-04 09:01:30.814   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:30.800   321   321 I auditd  : type=1400 audit(0.0:19): avc:  denied  { write } for  comm="init" name="vendor_de" dev="dm-42" ino=137 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vendor_userdir_file:s0 tclass=dir permissive=0
+06-04 09:01:30.800   321   321 W init    : type=1400 audit(0.0:19): avc:  denied  { write } for  name="vendor_de" dev="dm-42" ino=137 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vendor_userdir_file:s0 tclass=dir permissive=0
+06-04 09:01:31.012   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(26)
+06-04 09:01:31.114   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:31.312   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(27)
+06-04 09:01:31.415   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:31.613   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(28)
+06-04 09:01:31.716   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:31.914   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(29)
+06-04 09:01:32.017   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:32.215   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(30)
+06-04 09:01:32.333   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:32.431   406   406 I hwservicemanager: getDeviceHalManifest: Reloading VINTF information.
+06-04 09:01:32.431   406   406 I hwservicemanager: getDeviceHalManifest: Reading VINTF information.
+06-04 09:01:32.444   406   406 I hwservicemanager: getDeviceHalManifest: Successfully processed VINTF information
+06-04 09:01:32.515   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(31)
+06-04 09:01:32.600   689   689 I ServiceManagerCppClient: Waiting for service 'statscompanion' on '/dev/binder'...
+06-04 09:01:32.634   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:32.745   691   691 I netdClient: Skipping libnetd_client init since *we* are netd
+06-04 09:01:32.760     1     1 I auditd  : type=1400 audit(0.0:20): avc:  denied  { write } for  comm="init" name="discard_max_bytes" dev="sysfs" ino=32606 scontext=u:r:init:s0 tcontext=u:object_r:sysfs_devices_block:s0 tclass=file permissive=0
+06-04 09:01:32.760     1     1 W init    : type=1400 audit(0.0:20): avc:  denied  { write } for  name="discard_max_bytes" dev="sysfs" ino=32606 scontext=u:r:init:s0 tcontext=u:object_r:sysfs_devices_block:s0 tclass=file permissive=0
+06-04 09:01:32.816   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(32)
+06-04 09:01:32.847   698   698 I HidlServiceManagement: Registered android.hidl.allocator@1.0::IAllocator/ashmem
+06-04 09:01:32.848   698   698 I HidlServiceManagement: Removing namespace from process name android.hidl.allocator@1.0-service to allocator@1.0-service.
+06-04 09:01:32.854   691   691 I netd    : netd 1.0 starting
+06-04 09:01:32.857   691   691 I netd    : Pid file removed
+06-04 09:01:32.858   691   691 I netd    : SIGPIPE is blocked
+06-04 09:01:32.858   691   691 I netd    : setCloseOnExec(dnsproxyd)
+06-04 09:01:32.858   691   691 I netd    : setCloseOnExec(fwmarkd)
+06-04 09:01:32.858   691   691 I netd    : setCloseOnExec(mdns)
+06-04 09:01:32.859   691   691 I NetdUpdatable: libnetd_updatable_init: Initializing
+06-04 09:01:32.860   691   691 I BpfHandler: BPF programs are loaded
+06-04 09:01:32.861   691   691 I BpfHandler: initMaps successfully
+06-04 09:01:32.861   691   691 I netd    : libnetd_updatable_init success
+06-04 09:01:32.862   691   691 I netd    : NetlinkManager instanced
+06-04 09:01:32.862   691   691 I netd    : enter NetworkController ctor
+06-04 09:01:32.863   691   691 E TcUtils : NLMSG_ERROR message return error: -2
+06-04 09:01:32.864   691   691 E TcUtils : NLMSG_ERROR message return error: -2
+06-04 09:01:32.864   691   691 E TcUtils : NLMSG_ERROR message return error: -2
+06-04 09:01:32.864   691   691 E TcUtils : NLMSG_ERROR message return error: -2
+06-04 09:01:32.864   691   691 E TcUtils : NLMSG_ERROR message return error: -2
+06-04 09:01:32.864   691   691 E TcUtils : NLMSG_ERROR message return error: -2
+06-04 09:01:32.864   691   691 E TcUtils : NLMSG_ERROR message return error: -2
+06-04 09:01:32.864   691   691 I netd    : leave NetworkController ctor
+06-04 09:01:32.865   691   691 I netd    : enter TetherController ctor
+06-04 09:01:32.868   691   691 I netd    : leave TetherController ctor
+06-04 09:01:32.904   691   691 I netd    : Creating child chains: 26628us
+06-04 09:01:32.934   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:33.116   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(33)
+06-04 09:01:33.122   708   708 I android.hardware.health@2.1-service: default instance initializing with healthd_config...
+06-04 09:01:33.126   708   708 I HidlServiceManagement: Registered android.hardware.health@2.1::IHealth/default
+06-04 09:01:33.127   708   708 I HidlServiceManagement: Removing namespace from process name android.hardware.health@2.1-service to health@2.1-service.
+06-04 09:01:33.127   708   708 I android.hardware.health@2.1-service: default: Hal init done
+06-04 09:01:33.154   701   701 I TlcTeeGatekeeper: t-base-MTK-ARMv8-Android-400C-V001-20180713_214233_52230_81596 [vendor/mediatek/proprietary/trustzone/trustonic/source/external/gatekeeper/common/500/src/HalAdaptationLayer.cpp:104]
+06-04 09:01:33.155   701   701 I TeeSysClient: driver version: v8.3 [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/ClientLib/src/driver.cpp:104]
+06-04 09:01:33.155   701   701 I TeeSysClient: driver open [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/ClientLib/src/driver.cpp:109]
+06-04 09:01:33.225   713   713 I android.hardware.usb@1.2-service-mediatekv2: UsbGadget
+06-04 09:01:33.232   713   713 I HidlServiceManagement: Registered android.hardware.usb@1.3::IUsb/default
+06-04 09:01:33.232   713   713 I HidlServiceManagement: Removing namespace from process name android.hardware.usb@1.2-service-mediatekv2 to usb@1.2-service-mediatekv2.
+06-04 09:01:33.235   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:33.237   713   713 I HidlServiceManagement: Registered android.hardware.usb.gadget@1.1::IUsbGadget/default
+06-04 09:01:33.238   713   713 I android.hardware.usb@1.2-service-mediatekv2: USB HAL Ready.
+06-04 09:01:33.361   717   738 I mtkpower@1.0-service: mtkPowerService register IMtkPower
+06-04 09:01:33.404   720   720 I HidlServiceManagement: Registered vendor.trustonic.tee@1.1::ITee/default
+06-04 09:01:33.404   720   720 I HidlServiceManagement: Removing namespace from process name vendor.trustonic.tee@1.1-service to tee@1.1-service.
+06-04 09:01:33.406   720   720 I HidlServiceManagement: Registered vendor.trustonic.tee.tui@1.0::ITui/default
+06-04 09:01:33.416   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(34)
+06-04 09:01:33.427   719   719 I HidlServiceManagement: Registered vendor.mediatek.hardware.nvram@1.1::INvram/default
+06-04 09:01:33.429   719   719 I HidlServiceManagement: Removing namespace from process name vendor.mediatek.hardware.nvram@1.1-service to nvram@1.1-service.
+06-04 09:01:33.430   719   719 I LegacySupport: Registration complete for vendor.mediatek.hardware.nvram@1.1::INvram/default.
+--------- beginning of radio
+06-04 09:01:33.510   744   744 I terservice: [terserver] service not enabled. exit.
+06-04 09:01:33.513   711   711 I SensorList: defaultSensorListCount=14
+06-04 09:01:33.515   724   724 I credstore: Registered binder service
+06-04 09:01:33.531   711   711 I SensorList: sensor=0, name=mir3da
+06-04 09:01:33.532   711   711 I SensorList: sensor=3, name=NULL
+06-04 09:01:33.532   711   711 I SensorList: removeSensor=3
+06-04 09:01:33.532   711   711 I SensorList: sensor=1, name=NULL
+06-04 09:01:33.532   711   711 I SensorList: removeSensor=1
+06-04 09:01:33.533   711   711 I SensorList: sensor=4, name=hx3220_als
+06-04 09:01:33.533   711   711 I SensorList: sensor=7, name=hx3220_ps
+06-04 09:01:33.533   711   711 I SensorList: sensor=5, name=NULL
+06-04 09:01:33.533   711   711 I SensorList: removeSensor=5
+06-04 09:01:33.533   711   711 I SensorList: sensor=71, name=NULL
+06-04 09:01:33.533   711   711 I SensorList: removeSensor=71
+06-04 09:01:33.534   711   711 I SensorList: newSensorListCount=14
+06-04 09:01:33.534   711   711 E SensorContext: sensors_poll_context_t constructor.
+06-04 09:01:33.534   711   711 E SensorSaved: (/mnt/vendor/nvcfg) exist
+06-04 09:01:33.535   711   711 I Accelerometer: read div buf(/sys/class/sensor/m_acc_misc/accactive), mdiv 1000
+06-04 09:01:33.542   711   711 E SensorSaved: settings file(/mnt/vendor/nvcfg/sensor/acc_bias.json) open failed: -2 (No such file or directory)
+06-04 09:01:33.542   711   711 I Accelerometer: read bias: [0.000000, 0.000000, 0.000000]
+06-04 09:01:33.542   711   711 E SensorSaved: settings file(/mnt/vendor/nvcfg/sensor/acc_cali.json) open failed: -2 (No such file or directory)
+06-04 09:01:33.542   711   711 I Accelerometer: read cali: [0, 0, 0]
+06-04 09:01:33.545   711   711 E SensorEventReader: couldn't find device path=/dev/m_mag_misc
+06-04 09:01:33.545   711   711 E Magnetic: couldn't find input device
+06-04 09:01:33.545   711   711 E Magnetic: open misc path /sys/class/sensor/m_mag_misc/magactive fail
+06-04 09:01:33.545   711   711 E SensorSaved: settings file(/mnt/vendor/nvcfg/sensor/mag_bias.json) open failed: -2 (No such file or directory)
+06-04 09:01:33.545   711   711 I Magnetic: read bias: [0.000000, 0.000000, 0.000000]
+06-04 09:01:33.545   711   711 E SensorSaved: settings file(/mnt/vendor/nvcfg/sensor/mag_cali.json) open failed: -2 (No such file or directory)
+06-04 09:01:33.545   711   711 I Magnetic: read cali parameter: [0, 0, 0, 0, 0, 0]
+06-04 09:01:33.546   711   711 E Magnetic: no cali attr
+06-04 09:01:33.546   711   711 I VendorInterface: VendorInterface constructor.
+06-04 09:01:33.546   711   711 E VendorInterface: open vendor libinfo fail
+06-04 09:01:33.546   711   711 I Proximity: read div buf(/sys/class/sensor/m_ps_misc/psactive), mdiv 100
+06-04 09:01:33.546   711   711 E SensorSaved: settings file(/mnt/vendor/nvcfg/sensor/ps_cali.json) open failed: -2 (No such file or directory)
+06-04 09:01:33.546   711   711 I Proximity: read cali [high, low]: [0, 0]
+06-04 09:01:33.547   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:33.548   711   711 I Light   : read div buf(/sys/class/sensor/m_als_misc/alsactive),mdiv 100
+06-04 09:01:33.549   711   711 E SensorSaved: settings file(/mnt/vendor/nvcfg/sensor/als_cali.json) open failed: -2 (No such file or directory)
+06-04 09:01:33.550   711   711 I Light   : read alsCali: [0]
+06-04 09:01:33.550   746   746 W MTK_FG_FUEL: fd < 0, init first!
+06-04 09:01:33.552   746   746 W MTK_FG_FUEL: init failed, return!
+06-04 09:01:33.552   711   711 E SensorEventReader: couldn't find device path=/dev/m_baro_misc
+06-04 09:01:33.553   711   711 E Pressure: couldn't find sensor device
+06-04 09:01:33.553   711   711 E SensorEventReader: couldn't find device path=/dev/m_hmdy_misc
+06-04 09:01:33.553   711   711 E HUMIDITY: couldn't find sensor device
+06-04 09:01:33.554   711   711 I StepRecognize: read div buf(/sys/class/sensor/m_step_c_misc/step_cactive)
+06-04 09:01:33.554   711   711 I StepRecognize: mdiv 0
+06-04 09:01:33.555   711   711 E SensorEventReader: couldn't find device path=/dev/m_pedo_misc
+06-04 09:01:33.555   711   711 E Pedometer: open misc path /sys/class/sensor/m_pedo_misc/pedoactive fail
+06-04 09:01:33.555   711   711 E SensorEventReader: couldn't find device path=/dev/m_act_misc
+06-04 09:01:33.556   711   711 E Activity: couldn't find sensor device
+06-04 09:01:33.556   711   711 E SensorEventReader: couldn't find device path=/dev/m_fusion_misc
+06-04 09:01:33.556   711   711 E ScpFusion: open fusion misc path /sys/class/sensor/m_fusion_misc/fusionactive fail 
+06-04 09:01:33.557   711   711 E SensorEventReader: couldn't find device path=/dev/m_bio_misc
+06-04 09:01:33.558   711   711 I mtkSubHal: HIDL mediatek subhal 2.x load sensor module success.
+06-04 09:01:33.561   752   752 I TeeMcDaemon: Registry search paths: [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:227]
+06-04 09:01:33.561   752   752 I TeeMcDaemon:   /data/vendor/mcRegistry [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:229]
+06-04 09:01:33.561   752   752 I TeeMcDaemon:   /vendor/app/mcRegistry [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:229]
+06-04 09:01:33.561   752   752 I TeeMcDaemon:   /system/app/mcRegistry [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:229]
+06-04 09:01:33.561   752   752 I TeeMcDaemon: Initialise Secure World [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:259]
+06-04 09:01:33.562   752   752 I TeeMcDaemon: driver version: v8.3 [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:223]
+06-04 09:01:33.562   752   752 I TeeMcDaemon: driver version: v8.3 [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/ClientLib/src/driver.cpp:104]
+06-04 09:01:33.562   752   752 I TeeMcDaemon: driver open [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/ClientLib/src/driver.cpp:109]
+06-04 09:01:33.562   752   752 I TeeMcDaemon: driver closed [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/ClientLib/src/driver.cpp:120]
+06-04 09:01:33.562   752   752 I TeeMcDaemon: TEE is ready, version: t-base-MTK-A64-Android-500a-V009-20210919_233904_29714_105404 [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:287]
+06-04 09:01:33.562   752   752 I TeeMcDaemon: Load decryption key [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:269]
+06-04 09:01:33.562   752   752 W TeeMcDaemon: Cannot open key SO  (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:445]
+06-04 09:01:33.562   752   752 W TeeMcDaemon: key decryption  missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:275]
+06-04 09:01:33.562   752   752 I TeeMcDaemon: t-base-MTK-A64-Android-500a-V009-20210919_233904_29714_105404 [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:296]
+06-04 09:01:33.563   752   752 I TeeMcDaemon: Specific partition path used for Store_1.tf, stored in /mnt/vendor/persist/mcRegistry [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/FSD2.cpp:381]
+06-04 09:01:33.563   752   752 I TeeMcDaemon: Start services [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:318]
+06-04 09:01:33.563   752   752 I TeeMcDaemon: * start secure world interface [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:322]
+06-04 09:01:33.564   752   752 I TeeMcDaemon: * start filesystem [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:322]
+06-04 09:01:33.564   752   752 I TeeMcDaemon: driver version: v8.3 [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/ClientLib/src/driver.cpp:104]
+06-04 09:01:33.564   752   752 I TeeMcDaemon: driver open [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/ClientLib/src/driver.cpp:109]
+06-04 09:01:33.567   752   757 I TeeMcDaemon: Start listening to secure world [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:507]
+06-04 09:01:33.567   711   711 I HidlServiceManagement: Registered android.hardware.sensors@2.0::ISensors/default
+06-04 09:01:33.568   711   711 I HidlServiceManagement: Removing namespace from process name android.hardware.sensors@2.0-service.multihal-mediatek to sensors@2.0-service.multihal-mediatek.
+06-04 09:01:33.583   748   748 I ccci_rpcd: [open_rpc_device] dev_name: /dev/ccci_rpc
+06-04 09:01:33.584   748   748 E ccci_rpcd: /dev/ccci_rpc open fail (2)
+06-04 09:01:33.584   748   748 E ccci_rpcd: /dev/ccci_rpc not exists..
+06-04 09:01:33.600   747   747 E ccci_mdinit: (1):main, fail to open ccci_dump, err(No such file or directory)
+06-04 09:01:33.606   747   747 E ccci_mdinit: (1):Open ccci kernel setting file fail, exit
+06-04 09:01:33.626   752   757 W TeeMcDaemon: Cannot open trustlet /data/vendor/mcRegistry/07150000000000000000000000000000.tlbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:33.645   699   699 I mtkaudiohalservice: register interface = android.hardware.audio@7.0::IDevicesFactory
+06-04 09:01:33.648   750   750 I auditd  : type=1400 audit(0.0:21): avc:  denied  { search } for  comm="nvram_daemon" name="android" dev="sysfs" ino=38 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:sysfs_dt_firmware_android:s0 tclass=dir permissive=0
+06-04 09:01:33.648   750   750 W nvram_daemon: type=1400 audit(0.0:21): avc:  denied  { search } for  name="android" dev="sysfs" ino=38 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:sysfs_dt_firmware_android:s0 tclass=dir permissive=0
+06-04 09:01:33.648   750   750 I auditd  : type=1400 audit(0.0:22): avc:  denied  { search } for  comm="nvram_daemon" name="android" dev="sysfs" ino=38 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:sysfs_dt_firmware_android:s0 tclass=dir permissive=0
+06-04 09:01:33.648   750   750 W nvram_daemon: type=1400 audit(0.0:22): avc:  denied  { search } for  name="android" dev="sysfs" ino=38 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:sysfs_dt_firmware_android:s0 tclass=dir permissive=0
+06-04 09:01:33.648   750   750 I auditd  : type=1400 audit(0.0:23): avc:  denied  { search } for  comm="nvram_daemon" name="android" dev="sysfs" ino=38 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:sysfs_dt_firmware_android:s0 tclass=dir permissive=0
+06-04 09:01:33.648   750   750 W nvram_daemon: type=1400 audit(0.0:23): avc:  denied  { search } for  name="android" dev="sysfs" ino=38 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:sysfs_dt_firmware_android:s0 tclass=dir permissive=0
+06-04 09:01:33.652   750   750 I auditd  : type=1400 audit(0.0:24): avc:  denied  { search } for  comm="nvram_daemon" name="android" dev="sysfs" ino=38 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:sysfs_dt_firmware_android:s0 tclass=dir permissive=0
+06-04 09:01:33.652   750   750 W nvram_daemon: type=1400 audit(0.0:24): avc:  denied  { search } for  name="android" dev="sysfs" ino=38 scontext=u:r:nvram_daemon:s0 tcontext=u:object_r:sysfs_dt_firmware_android:s0 tclass=dir permissive=0
+06-04 09:01:33.665   752   757 W TeeMcDaemon: Cannot open trustlet /data/vendor/mcRegistry/07050501000000000000000000000020.tlbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:33.676   321   321 I auditd  : type=1400 audit(0.0:25): avc:  denied  { write } for  comm="init" name="dirty_writeback_centisecs" dev="proc" ino=18315 scontext=u:r:vendor_init:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=0
+06-04 09:01:33.676   321   321 W init    : type=1400 audit(0.0:25): avc:  denied  { write } for  name="dirty_writeback_centisecs" dev="proc" ino=18315 scontext=u:r:vendor_init:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=0
+06-04 09:01:33.684   752   752 I TeeMcDaemon: * start endorsement installer [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:322]
+06-04 09:01:33.685   752   752 I TeeMcDaemon: * start registry server [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:322]
+06-04 09:01:33.685   752   763 I TeeMcDaemon: run: Start listening for request from STH2 [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/FSD2.cpp:484]
+06-04 09:01:33.685   752   752 I TeeMcDaemon: * start debug session [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:322]
+06-04 09:01:33.685   752   764 I TeeEndorsementInstaller: Starting endorsement installer thread [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/EndorsementInstaller.cpp:85]
+06-04 09:01:33.685   752   757 W TeeMcDaemon: Cannot open trustlet /data/vendor/mcRegistry/08050500000000000000000000000000.tlbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:33.687   752   765 I TeeMcDaemon: run: Starting server [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/RegistryServer.cpp:207]
+06-04 09:01:33.687   701   701 I TeeSysClient: driver closed [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/ClientLib/src/driver.cpp:120]
+06-04 09:01:33.687   752   752 E TeeMcDaemon: mcOpenSession returned INVALID_OPERATION (rc 0x9) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/ClientLib/src/native_interface.cpp:604]
+06-04 09:01:33.687   752   752 W TeeMcDaemon: Tci buffer might be too short, trying again with new size sent by SWd (size = 911548 bytes) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/DebugSession.cpp:104]
+06-04 09:01:33.689   752   757 W TeeMcDaemon: Cannot open trustlet /data/vendor/mcRegistry/08050500000000000000000000000000.tlbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:33.699   752   752 I TeeMcDaemon: session opened [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/DebugSession.cpp:125]
+06-04 09:01:33.699   752   752 I TeeMcDaemon: Load secure drivers [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:335]
+06-04 09:01:33.699   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/06090000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:33.701   701   701 I HidlServiceManagement: Registered android.hardware.gatekeeper@1.0::IGatekeeper/default
+06-04 09:01:33.705   701   701 I HidlServiceManagement: Removing namespace from process name android.hardware.gatekeeper@1.0-service to gatekeeper@1.0-service.
+06-04 09:01:33.706   701   701 I LegacySupport: Registration complete for android.hardware.gatekeeper@1.0::IGatekeeper/default.
+06-04 09:01:33.717   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(35)
+06-04 09:01:33.755   715   715 E mtk-hidl-service: Threadpool start run process!
+06-04 09:01:33.756   715   767 I mtk-hidl-service: mtkHidlService - data:0x0
+06-04 09:01:33.772   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.memtrack@1.0::IMemtrack/default in either framework or device VINTF manifest.
+06-04 09:01:33.774   702   702 I HidlServiceManagement: Registered android.hardware.graphics.allocator@4.0::IAllocator/default
+06-04 09:01:33.775   702   702 I HidlServiceManagement: Removing namespace from process name android.hardware.graphics.allocator@4.0-service-mediatek to allocator@4.0-service-mediatek.
+06-04 09:01:33.781   750   773 E HWMLIB  : gyroscope_open: Couldn't find or open file sensor (No such file or directory)
+06-04 09:01:33.790   715   767 E LegacySupport: Could not get passthrough implementation for android.hardware.memtrack@1.0::IMemtrack/default.
+06-04 09:01:33.791   715   767 E mtk-hidl-service: Err 1 while registering IMemtrack
+06-04 09:01:33.825   715   767 W merged_hal_service: ThermalHelper:tz_map_version 1
+06-04 09:01:33.827   715   767 I merged_hal_service: ThermalWatcherThread started
+06-04 09:01:33.830   752   763 I TeeMcDaemon: open: Open storage file "/mnt/vendor/persist/mcRegistry/Store_1.tf" [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/FSD2.cpp:182]
+06-04 09:01:33.832   715   767 I HidlServiceManagement: Registered android.hardware.thermal@2.0::IThermal/default
+06-04 09:01:33.833   715   767 I LegacySupport: Registration complete for android.hardware.thermal@2.0::IThermal/default.
+06-04 09:01:33.834   699   699 I HidlServiceManagement: Registered android.hardware.audio@7.0::IDevicesFactory/default
+06-04 09:01:33.834   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@2.0::IAllocator/default in either framework or device VINTF manifest.
+06-04 09:01:33.835   699   699 I HidlServiceManagement: Removing namespace from process name android.hardware.audio.service.mediatek to audio.service.mediatek.
+06-04 09:01:33.836   715   767 E LegacySupport: Could not get passthrough implementation for android.hardware.graphics.allocator@2.0::IAllocator/default.
+06-04 09:01:33.836   715   767 E mtk-hidl-service: Err 1 while registering IAllocator
+06-04 09:01:33.837   699   699 I LegacySupport: Registration complete for android.hardware.audio@7.0::IDevicesFactory/default.
+06-04 09:01:33.843   406   406 W hwservicemanager: Detected instance of android.hardware.audio@7.0::IDevicesFactory (pid: 699) registering over instance of or with base of android.hardware.audio@7.0::IDevicesFactory (pid: 699).
+06-04 09:01:33.844   406   406 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+06-04 09:01:33.844   752   763 I TeeMcDaemon: open: storage file "/mnt/vendor/persist/mcRegistry/Store_1.tf" successfully open (size: 22 KB / 22528 B)) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/FSD2.cpp:198]
+06-04 09:01:33.845   699   699 I HidlServiceManagement: Registered android.hardware.audio@7.0::IDevicesFactory/default
+06-04 09:01:33.845   699   699 I HidlServiceManagement: Removing namespace from process name android.hardware.audio.service.mediatek to audio.service.mediatek.
+06-04 09:01:33.845   699   699 I LegacySupport: Registration complete for android.hardware.audio@7.0::IDevicesFactory/default.
+06-04 09:01:33.845   699   699 I mtkaudiohalservice: register interface = android.hardware.audio@6.0::IDevicesFactory
+06-04 09:01:33.847   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device VINTF manifest.
+06-04 09:01:33.848   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:33.850   717   739 I mtkpower@impl: [load_api] libpowerhal_SetScnCallback done
+06-04 09:01:33.856   715   767 E AidlGnss: [12.03] aidl_gnss_main: AIDL Gnss start registering service
+06-04 09:01:33.856   715   767 E AidlGnss: [12.03] AidlGnss: AidlGnss constructor
+06-04 09:01:33.859   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/020f0000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:33.871   717   739 I libPowerHal: perfservice ver:11.0
+06-04 09:01:33.877   717   739 I libPowerHal: FBE feature is open, waiting for decrypt done
+06-04 09:01:33.878   717   739 I libPowerHal: check_vendor_partition done
+06-04 09:01:33.879   717   739 I libPowerHal: checkDrvSupport - perfmgr:1/0, ppm:1, ppmAll:1, acao:1, hmp:1, sysfs:1, dvfs:1, turbo:0
+06-04 09:01:33.883   717   739 I libPowerHal: getCputopoInfo - cpuNum:8, cluster:2, cputopoCluster:2
+06-04 09:01:33.884   717   739 I libPowerHal: [cluster 0]: cpu:4, first:0, freq count:16, max_freq:2301000
+06-04 09:01:33.884   717   739 I libPowerHal:   0: 900000
+06-04 09:01:33.884   717   739 I libPowerHal:   15: 2301000
+06-04 09:01:33.885   717   739 I libPowerHal: [cluster 1]: cpu:4, first:4, freq count:16, max_freq:1800000
+06-04 09:01:33.885   717   739 I libPowerHal:   0: 400000
+06-04 09:01:33.885   717   739 I libPowerHal:   15: 1800000
+06-04 09:01:33.886   717   739 I libPowerHal: nGpuFreqCount:3
+06-04 09:01:33.886   717   739 I libPowerHal: [init] HintRscList_init
+06-04 09:01:33.887   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device VINTF manifest.
+06-04 09:01:33.887   699   699 E HidlServiceManagement: Service android.hardware.audio@6.0::IDevicesFactory/default must be in VINTF manifest in order to register/get.
+06-04 09:01:33.887   699   699 E LegacySupport: Could not register service android.hardware.audio@6.0::IDevicesFactory/default (-2147483648).
+06-04 09:01:33.888   717   739 I libPowerHal: PowerScnTbl.size: 47
+06-04 09:01:33.888   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device VINTF manifest.
+06-04 09:01:33.889   717   739 E libPowerHal: can't find app list file
+06-04 09:01:33.890   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device VINTF manifest.
+06-04 09:01:33.891   699   699 E HidlServiceManagement: Service android.hardware.audio@6.0::IDevicesFactory/default must be in VINTF manifest in order to register/get.
+06-04 09:01:33.891   699   699 E LegacySupport: Could not register service android.hardware.audio@6.0::IDevicesFactory/default (-2147483648).
+06-04 09:01:33.891   699   699 W mtkaudiohalservice: register interface = android.hardware.audio@6.0::IDevicesFactory fail!
+06-04 09:01:33.891   699   699 I mtkaudiohalservice: register interface = android.hardware.audio.effect@7.0::IEffectsFactory
+06-04 09:01:33.908   717   739 I libPowerHal: update_activity_whitelist_table: load powerhal CusScnTable config succeed!
+06-04 09:01:33.912   717   739 I libPowerHal: [update_activity_whitelist_table] total activity num :27
+06-04 09:01:33.913   717   739 I libPowerHal: [init] nPackNum:27
+06-04 09:01:33.915   715   767 E merged_hal_service: safe_sendto: safe_sendto() sendto() failed path=[mtk_hal2mnl] ret=-1 reason=[Connection refused]111
+06-04 09:01:33.916   715   767 E merged_hal_service: gps_device__get_gps_interface: hal2mnl_hal_reboot failed because of safe_sendto fail ,strerror:Connection refused 
+06-04 09:01:33.916   715   767 E AidlGnss: [12.03] AidlGnss: Successfully get GPS HAL iface
+06-04 09:01:33.916   715   767 E AidlGnss: [12.03] AidlGnss: Successfully get Aidl Gnss interface from GPS HAL
+06-04 09:01:33.920   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/05120000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:33.921   717   739 I libPowerHal: access of (null) failed 1: No such file or directory
+06-04 09:01:33.939   717   739 I libPowerHal: loadConTable: load powerhal ConTable config succeed!
+06-04 09:01:33.944   717   739 E libPowerHal: PERF_RES_DRAM_CM_MGR cannot access!!!!
+06-04 09:01:33.947   780   780 I gsid    : no DSU: No such file or directory
+06-04 09:01:33.951   715   767 E AidlGnss: [12.03] aidl_gnss_main: AIDL Gnss successfully register service: android.hardware.gnss.IGnss/default
+06-04 09:01:33.953   717   739 E libPowerHal: PERF_RES_NET_WIFI_CAM cannot access!!!!
+06-04 09:01:33.954   717   739 E libPowerHal: Could not open '/proc/net/wlan/setCAM'
+06-04 09:01:33.954   717   739 E libPowerHal: PERF_RES_FPS_FPSGO_STOP_BOOST cannot access!!!!
+06-04 09:01:33.955   717   739 E libPowerHal: PERF_RES_PERF_TASK_TURBO cannot access!!!!
+06-04 09:01:33.956   717   739 I libPowerHal: [update_default_core_min] cid:0 min:4 max:4
+06-04 09:01:33.956   717   739 I libPowerHal: [update_default_core_min] cid:1 min:2 max:4
+06-04 09:01:33.960   717   739 I libPowerHal: [init] loadRscTable:100
+06-04 09:01:33.961   717   739 I libPowerHal: [init] loadRscTable:100 memset
+06-04 09:01:33.962   717   739 I libPowerHal: [reset_thermal_policy] 
+06-04 09:01:33.962   717   739 I libPowerHal: [reset_thermal_policy] skip
+06-04 09:01:33.970   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/05120000000000000000000000000001.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:33.970   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/05120000000000000000000000000001.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:33.970   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/05120000000000000000000000000001.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:33.970   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/05160000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:33.970   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/05160000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:33.970   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/05160000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:33.970   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/020b0000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:33.993   715   767 E merged_hal_service: safe_sendto: safe_sendto() sendto() failed path=[mtk_hal2mnl] ret=-1 reason=[Connection refused]111
+06-04 09:01:33.994   715   767 E merged_hal_service: gps_device__get_gps_interface: hal2mnl_hal_reboot failed because of safe_sendto fail ,strerror:Connection refused 
+06-04 09:01:33.996   717   739 I libPowerHal: [fbc_touch_init] nFbcSupport:1
+06-04 09:01:33.997   717   739 I libPowerHal: [get_cpu_dma_latency_value] 0
+06-04 09:01:33.996     1     1 I auditd  : type=1107 audit(0.0:26): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=vendor.powerhal.gpu.acp.hint pid=717 uid=0 gid=1000 scontext=u:r:mtk_hal_power:s0 tcontext=u:object_r:vendor_mtk_powerhal_gpu_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:33.996     1     1 W /system/bin/init: type=1107 audit(0.0:26): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=vendor.powerhal.gpu.acp.hint pid=717 uid=0 gid=1000 scontext=u:r:mtk_hal_power:s0 tcontext=u:object_r:vendor_mtk_powerhal_gpu_prop:s0 tclass=property_service permissive=0'
+06-04 09:01:34.002   784   784 E mtk_plpath_utils: Valid EMMC header EMMC
+06-04 09:01:34.003   784   784 E mtk_plpath_utils: isEmmc = 1, pl_size: 4194304
+06-04 09:01:34.003   784   784 I mtk_plpath_utils: create_dm dev: /dev/block/mmcblk0boot0, name pl_a, start 4, blks 8188
+06-04 09:01:34.015   699   699 I HidlServiceManagement: Registered android.hardware.audio.effect@7.0::IEffectsFactory/default
+06-04 09:01:34.015   699   699 I LegacySupport: Registration complete for android.hardware.audio.effect@7.0::IEffectsFactory/default.
+06-04 09:01:34.017   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(36)
+06-04 09:01:34.022   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/05070000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.022   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/05070000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.022   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/05070000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.022   717   739 W libc    : Unable to set property "vendor.powerhal.gpu.acp.hint" to "": error code: 0x18
+06-04 09:01:34.022   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/030b0000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.023   717   739 I libPowerHal: [init] updateScnListfromwhitelist
+06-04 09:01:34.024   717   739 I libPowerHal: cmdSetting - unknown cmd:ffffffff, scmd:PERF_RES_FPS_FSTB_FPS_LOWER ,param_1:60
+06-04 09:01:34.024   717   739 I libPowerHal: cmdSetting - unknown cmd:ffffffff, scmd:PERF_RES_FPS_FSTB_FPS_UPPER ,param_1:60
+06-04 09:01:34.025   717   739 I libPowerHal: [init] perfservice_xmlparse_freeList
+06-04 09:01:34.025   717   739 I libPowerHal: [init] nUserScnBase:0
+06-04 09:01:34.029   406   406 W hwservicemanager: Detected instance of android.hardware.audio.effect@7.0::IEffectsFactory (pid: 699) registering over instance of or with base of android.hardware.audio.effect@7.0::IEffectsFactory (pid: 699).
+06-04 09:01:34.029   406   406 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+06-04 09:01:34.029   699   699 I HidlServiceManagement: Registered android.hardware.audio.effect@7.0::IEffectsFactory/default
+06-04 09:01:34.029   699   699 I LegacySupport: Registration complete for android.hardware.audio.effect@7.0::IEffectsFactory/default.
+06-04 09:01:34.029   699   699 I mtkaudiohalservice: register interface = android.hardware.audio.effect@6.0::IEffectsFactory
+06-04 09:01:34.030   715   767 I HidlServiceManagement: Registered android.hardware.gnss@2.1::IGnss/default
+06-04 09:01:34.030   715   767 I LegacySupport: Registration complete for android.hardware.gnss@2.1::IGnss/default.
+06-04 09:01:34.030   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device VINTF manifest.
+06-04 09:01:34.032   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_agps
+06-04 09:01:34.034   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_wlan
+06-04 09:01:34.037   717   739 I libPowerHal: [init] updateCusScnTable:/vendor/etc/powerscntbl.xml
+06-04 09:01:34.038   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_bt
+06-04 09:01:34.040   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_sensor
+06-04 09:01:34.044   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/03100000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.045   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/03100000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.045   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/03100000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.045   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/030c0000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.045   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/030c0000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.045   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/030c0000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.045   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/031c0000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.045   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/031c0000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.045   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/031c0000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.045   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/032c0000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.045   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/032c0000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.045   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/032c0000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.045   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/033c0000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.046   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/033c0000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.046   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/033c0000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.046   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/034c0000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.046   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/034c0000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.046   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/034c0000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.046   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/035c0000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.046   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/035c0000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.046   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/035c0000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.046   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/036c0000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.046   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/036c0000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.046   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/036c0000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.046   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/037c0000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.046   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/037c0000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.046   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/037c0000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.046   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.049   717   739 I libPowerHal: updateCusScnTable: load powerhal CusScnTable config succeed!
+06-04 09:01:34.050   717   739 E libPowerHal: input parameter exceed reasonable range c14000 2 1 0
+06-04 09:01:34.050   717   739 E libPowerHal: input parameter exceed reasonable range c0c500 2 1 0
+06-04 09:01:34.051   717   739 I libPowerHal: cmdSetting - unknown cmd:ffffffff, scmd:PERF_RES_SCHED_CACHE_AUDIT ,param_1:1
+06-04 09:01:34.051   717   739 I libPowerHal: cmdSetting - unknown cmd:ffffffff, scmd:PERF_RES_SCHED_CACHE_AUDIT ,param_1:1
+06-04 09:01:34.051   717   739 I libPowerHal: cmdSetting - unknown cmd:ffffffff, scmd:PERF_RES_SCHED_CACHE_AUDIT ,param_1:1
+06-04 09:01:34.065   717   739 I libPowerHal: [load_fbc_api] load fbc successfully
+06-04 09:01:34.065   717   739 I libPowerHal: [init] isFbcSupport 1
+06-04 09:01:34.065   784   784 I mtk_plpath_utils: Create /dev/block/dm-43 done
+06-04 09:01:34.065   784   784 I mtk_plpath_utils: create_dm dev: /dev/block/mmcblk0boot1, name pl_b, start 4, blks 8188
+06-04 09:01:34.066   717   739 I libPowerHal: [init] Disable PowerHAL API during boot time.
+06-04 09:01:34.066   717   739 I mtkpower@1.0-service: mtkPowerService register IPower
+06-04 09:01:34.069   717   804 I libPowerHal_boot: [mtkPowerBootHandler] boot boost, 0x0
+06-04 09:01:34.073   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/090b0000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.073   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/090b0000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.073   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/090b0000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.073   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/0f5eed3c3b5a47afacca69a84bf0efad.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.073   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/0f5eed3c3b5a47afacca69a84bf0efad.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.073   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/0f5eed3c3b5a47afacca69a84bf0efad.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.073   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/07060000000000000000000000007169.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.078   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_network
+06-04 09:01:34.082   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device VINTF manifest.
+06-04 09:01:34.082   699   699 E HidlServiceManagement: Service android.hardware.audio.effect@6.0::IEffectsFactory/default must be in VINTF manifest in order to register/get.
+06-04 09:01:34.082   699   699 E LegacySupport: Could not register service android.hardware.audio.effect@6.0::IEffectsFactory/default (-2147483648).
+06-04 09:01:34.084   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_ipaddr
+06-04 09:01:34.089   717   738 I HidlServiceManagement: Registered vendor.mediatek.hardware.mtkpower@1.2::IMtkPower/default
+06-04 09:01:34.090   717   738 I HidlServiceManagement: Removing namespace from process name vendor.mediatek.hardware.mtkpower@1.0-service to mtkpower@1.0-service.
+06-04 09:01:34.092   717   738 I LegacySupport: Registration complete for vendor.mediatek.hardware.mtkpower@1.2::IMtkPower/default.
+06-04 09:01:34.093   717   738 I mtkpower@1.0-service: mtkPowerService register IMtkPerf
+06-04 09:01:34.094   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device VINTF manifest.
+06-04 09:01:34.095   717   739 I mtkpower@1.0-service: mtkPowerService joinRpcThreadpool
+06-04 09:01:34.103   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lppe_socket_lbs
+06-04 09:01:34.104   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/4be4f7dc1f2c11e5b5f7727283247c7f.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.104   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/4be4f7dc1f2c11e5b5f7727283247c7f.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.104   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/4be4f7dc1f2c11e5b5f7727283247c7f.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.104   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/08070000000000000000000000008270.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.104   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/08070000000000000000000000008270.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.104   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/08070000000000000000000000008270.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.104   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/07070000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.105   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/07070000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.105   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/07070000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.105   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/07407000000000000000000000000000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.105   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/07407000000000000000000000000000.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.105   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/07407000000000000000000000000000.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.105   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/9073f03a9618383bb1856eb3f990babd.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.105   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device VINTF manifest.
+06-04 09:01:34.105   699   699 E HidlServiceManagement: Service android.hardware.audio.effect@6.0::IEffectsFactory/default must be in VINTF manifest in order to register/get.
+06-04 09:01:34.105   699   699 E LegacySupport: Could not register service android.hardware.audio.effect@6.0::IEffectsFactory/default (-2147483648).
+06-04 09:01:34.106   699   699 W mtkaudiohalservice: register interface = android.hardware.audio.effect@6.0::IEffectsFactory fail!
+06-04 09:01:34.107   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.3::ISoundTriggerHw/default in either framework or device VINTF manifest.
+06-04 09:01:34.110   794   794 I libPerfCtl: xgfGetCmd ioctl_ret:-1
+06-04 09:01:34.111   699   699 E LegacySupport: Could not get passthrough implementation for android.hardware.soundtrigger@2.3::ISoundTriggerHw/default.
+06-04 09:01:34.114   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_framework2agps
+06-04 09:01:34.115   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.2::ISoundTriggerHw/default in either framework or device VINTF manifest.
+06-04 09:01:34.117   699   699 E LegacySupport: Could not get passthrough implementation for android.hardware.soundtrigger@2.2::ISoundTriggerHw/default.
+06-04 09:01:34.119   717   738 I HidlServiceManagement: Registered vendor.mediatek.hardware.mtkpower@1.2::IMtkPerf/default
+06-04 09:01:34.120   717   738 I HidlServiceManagement: Removing namespace from process name vendor.mediatek.hardware.mtkpower@1.0-service to mtkpower@1.0-service.
+06-04 09:01:34.122   717   738 I LegacySupport: Registration complete for vendor.mediatek.hardware.mtkpower@1.2::IMtkPerf/default.
+06-04 09:01:34.122   717   738 I mtkpower@1.0-service: mtkPowerService joinRpcThreadpool
+06-04 09:01:34.123   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.1::ISoundTriggerHw/default in either framework or device VINTF manifest.
+06-04 09:01:34.125   699   699 E LegacySupport: Could not get passthrough implementation for android.hardware.soundtrigger@2.1::ISoundTriggerHw/default.
+06-04 09:01:34.126   702   702 E IMGSRV  : :479: DevmemMapToDeviceAddress() failed (PVRSRV_ERROR_CMD_TOO_BIG) in PVRSRVMapToDeviceAddress()
+06-04 09:01:34.126   702   702 E IMGSRV  : :93: Failed to map static memory from PDS heap() failed (PVRSRV_ERROR_CMD_TOO_BIG) in allocateStaticMemory()
+06-04 09:01:34.126   702   702 E IMGSRV  : :88: PVRSRVDestroyDeviceMemContext() failed (PVRSRV_ERROR_CMD_TOO_BIG) in RGXConstructDeviceMemContext()
+06-04 09:01:34.127   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_agps2framework
+--------- beginning of crash
+06-04 09:01:34.127   702   702 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xf54811f0)
+06-04 09:01:34.128   702   702 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 702 (allocator@4.0-s), pid 702 (allocator@4.0-s)
+06-04 09:01:34.129   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.0::ISoundTriggerHw/default in either framework or device VINTF manifest.
+06-04 09:01:34.130   699   699 E LegacySupport: Could not get passthrough implementation for android.hardware.soundtrigger@2.0::ISoundTriggerHw/default.
+06-04 09:01:34.130   699   699 W mtkaudiohalservice: Could not register Soundtrigger API
+06-04 09:01:34.134   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_mnld2nlputils
+06-04 09:01:34.136   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_mnld2debugService
+06-04 09:01:34.136   748   748 E ccci_rpcd: /dev/ccci_rpc open fail (2)
+06-04 09:01:34.136   748   748 E ccci_rpcd: /dev/ccci_rpc not exists..
+06-04 09:01:34.136   784   784 I mtk_plpath_utils: Create /dev/block/dm-44 done
+06-04 09:01:34.137   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_debugService2mnld
+06-04 09:01:34.139   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_meta2mnld
+06-04 09:01:34.140   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_agpsd2debugService
+06-04 09:01:34.143   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_debugService2agpsd
+06-04 09:01:34.144   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/AgpsInterface
+06-04 09:01:34.146   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/AgpsDebugInterface
+06-04 09:01:34.147   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_mnld2mtklogger
+06-04 09:01:34.148   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_mtklogger2mnld
+06-04 09:01:34.148   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:34.150   715   767 I HidlServiceManagement: Registered vendor.mediatek.hardware.lbs@1.0::ILbs/mtk_lbs_log_v2s
+06-04 09:01:34.158   699   699 I MediatekBTAudioProviderA2dpSoftware: A2dpSoftwareAudioProvider - size of audio buffer 7168 byte(s) p = 0xe6ab7110
+06-04 09:01:34.159   699   699 I MediatekBTAudioProviderHearingAid: HearingAidAudioProvider - size of audio buffer 3584 byte(s)
+06-04 09:01:34.160   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/6b3f5fa0f8cf55a7be2582587d62d63a.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.161   752   752 W TeeMcDaemon: Cannot open trustlet /vendor/app/mcRegistry/6b3f5fa0f8cf55a7be2582587d62d63a.drbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:34.161   752   752 W TeeMcDaemon: Driver /vendor/app/mcRegistry/6b3f5fa0f8cf55a7be2582587d62d63a.drbin missing, ignore [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:348]
+06-04 09:01:34.161   752   752 I TeeMcDaemon: * loading /vendor/app/mcRegistry/5020170115e016302017012521300000.drbin [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:338]
+06-04 09:01:34.162   699   699 I HidlServiceManagement: Registered vendor.mediatek.hardware.bluetooth.audio@2.2::IBluetoothAudioProvidersFactory/default
+06-04 09:01:34.163   699   699 I LegacySupport: Registration complete for vendor.mediatek.hardware.bluetooth.audio@2.2::IBluetoothAudioProvidersFactory/default.
+06-04 09:01:34.171   752   752 W TeeMcDaemon: TUI device not found, skip [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/TuiStarter.cpp:46]
+06-04 09:01:34.171   752   752 I TeeMcDaemon: Daemon running [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/MobiCoreDriverDaemon.cpp:372]
+06-04 09:01:34.185   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: failed to get path of fd 3: No such file or directory
+06-04 09:01:34.186   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: allowing syscall: clock_gettime
+06-04 09:01:34.186   699   699 I BTAudioProviderA2dpSoftware: A2dpSoftwareAudioProvider - size of audio buffer 7680 byte(s)
+06-04 09:01:34.186   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: allowing syscall: connect
+06-04 09:01:34.186   699   699 I BTAudioProviderHearingAid: HearingAidAudioProvider - size of audio buffer 3584 byte(s)
+06-04 09:01:34.187   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: allowing syscall: fcntl64
+06-04 09:01:34.187   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: allowing syscall: socket
+06-04 09:01:34.187   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: allowing syscall: writev
+06-04 09:01:34.190   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(76): syscall futex redefined here
+06-04 09:01:34.190   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(15): previous definition here
+06-04 09:01:34.191   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(96): syscall writev redefined here
+06-04 09:01:34.192   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(38): previous definition here
+06-04 09:01:34.194   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(99): syscall sched_getparam redefined here
+06-04 09:01:34.194   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(69): previous definition here
+06-04 09:01:34.194   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(100): syscall sched_getscheduler redefined here
+06-04 09:01:34.194   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(70): previous definition here
+06-04 09:01:34.194   699   699 I HidlServiceManagement: Registered android.hardware.bluetooth.audio@2.1::IBluetoothAudioProvidersFactory/default
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(107): syscall ftruncate64 redefined here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(26): previous definition here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(108): syscall getuid32 redefined here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(37): previous definition here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(109): syscall open redefined here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(45): previous definition here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(110): syscall fstat64 redefined here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(46): previous definition here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(111): syscall readlink redefined here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(53): previous definition here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(112): syscall fstatfs64 redefined here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(56): previous definition here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(113): syscall _llseek redefined here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(59): previous definition here
+06-04 09:01:34.195   699   699 I LegacySupport: Registration complete for android.hardware.bluetooth.audio@2.1::IBluetoothAudioProvidersFactory/default.
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(114): syscall fstatat64 redefined here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(60): previous definition here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(115): syscall ugetrlimit redefined here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(61): previous definition here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(117): syscall sigreturn redefined here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(74): previous definition here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(118): syscall futex redefined here
+06-04 09:01:34.195   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(15): previous definition here
+06-04 09:01:34.196   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(120): syscall geteuid32 redefined here
+06-04 09:01:34.196   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(88): previous definition here
+06-04 09:01:34.196   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(121): syscall getgid32 redefined here
+06-04 09:01:34.196   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(89): previous definition here
+06-04 09:01:34.196   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(122): syscall getegid32 redefined here
+06-04 09:01:34.196   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(90): previous definition here
+06-04 09:01:34.196   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(123): syscall getgroups32 redefined here
+06-04 09:01:34.196   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(91): previous definition here
+06-04 09:01:34.196   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(129): nonexistent syscall 'mmap'
+06-04 09:01:34.196   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(130): nonexistent syscall 'getrlimit'
+06-04 09:01:34.196   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(131): nonexistent syscall 'newfstatat'
+06-04 09:01:34.196   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(134): syscall flock redefined here
+06-04 09:01:34.196   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: compile_file: <fd>(92): previous definition here
+06-04 09:01:34.197   709   709 W android.hardware.media.c2@1.2-mediatek: libminijail[709]: logging seccomp filter failures
+06-04 09:01:34.270   820   820 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+06-04 09:01:34.272   502   502 I tombstoned: received crash request for pid 702
+06-04 09:01:34.279   820   820 I crash_dump32: performing dump of process 702 (target tid = 702)
+06-04 09:01:34.285   820   820 E DEBUG   : failed to read process info: failed to open /proc/702: No such file or directory
+06-04 09:01:34.288   709   709 I HidlServiceManagement: Registered android.hardware.media.c2@1.2::IComponentStore/default
+06-04 09:01:34.290   709   709 I HidlServiceManagement: Removing namespace from process name android.hardware.media.c2@1.2-mediatek to c2@1.2-mediatek.
+06-04 09:01:34.319   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(37)
+06-04 09:01:34.393   706   706 I hwcomposer: getprop [ro.vendor.mtk_ovl_bringup] 0
+06-04 09:01:34.415   706   706 E hwcomposer: [SWWatchDog] [SW_WDT] Set an anchor w/o notify. <<[DEV] ioctl(DISP_IOCTL_GET_DISPLAY_CAPS):602>>  
+06-04 09:01:34.415   706   706 E hwcomposer: [SWWatchDog] [SW_WDT] delAnchor: the anchor(0) is not in the pool  
+06-04 09:01:34.416   706   706 W RefBase : CallStack::getCurrentInternal not linked, returning null
+06-04 09:01:34.416   706   706 W RefBase : CallStack::logStackInternal not linked
+06-04 09:01:34.416   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+06-04 09:01:34.449   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:34.449   820   820 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-04 09:01:34.449   820   820 F DEBUG   : Build fingerprint: 'onn/100135924/mid7021_mq:14/UP1A.231005.007/hkh20260408:user/release-keys'
+06-04 09:01:34.449   820   820 F DEBUG   : Revision: '0'
+06-04 09:01:34.449   820   820 F DEBUG   : ABI: 'arm'
+06-04 09:01:34.449   820   820 F DEBUG   : Timestamp: 2026-06-04 09:01:34.284280001-0700
+06-04 09:01:34.449   820   820 F DEBUG   : Process uptime: 0s
+06-04 09:01:34.449   820   820 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
+06-04 09:01:34.449   820   820 F DEBUG   : pid: 702, tid: 702, name: allocator@4.0-s  >>> /vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek <<<
+06-04 09:01:34.450   820   820 F DEBUG   : uid: 1000
+06-04 09:01:34.450   820   820 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+06-04 09:01:34.450   820   820 F DEBUG   : Abort message: 'FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xf54811f0)'
+06-04 09:01:34.450   820   820 F DEBUG   :     r0  00000000  r1  000002be  r2  00000006  r3  ffecc468
+06-04 09:01:34.450   820   820 F DEBUG   :     r4  ffecc478  r5  ffecc460  r6  000002be  r7  0000016b
+06-04 09:01:34.450   820   820 F DEBUG   :     r8  00000000  r9  ffffffff  r10 ffecc468  r11 f6bc14b0
+06-04 09:01:34.450   820   820 F DEBUG   :     ip  000002be  sp  ffecc448  lr  f5fbb5e3  pc  f5fbb5f6
+06-04 09:01:34.450   820   820 F DEBUG   : 16 total frames
+06-04 09:01:34.450   820   820 F DEBUG   : backtrace:
+06-04 09:01:34.450   820   820 F DEBUG   :       #00 pc 0003b5f6  /apex/com.android.runtime/lib/bionic/libc.so (abort+138) (BuildId: f6cc18cf130e89327af123ab10201afa)
+06-04 09:01:34.450   820   820 F DEBUG   :       #01 pc 0003c973  /apex/com.android.runtime/lib/bionic/libc.so (__fortify_fatal(char const*, ...)+26) (BuildId: f6cc18cf130e89327af123ab10201afa)
+06-04 09:01:34.450   820   820 F DEBUG   :       #02 pc 00086819  /apex/com.android.runtime/lib/bionic/libc.so (HandleUsingDestroyedMutex(pthread_mutex_t*, char const*)+24) (BuildId: f6cc18cf130e89327af123ab10201afa)
+06-04 09:01:34.450   820   820 F DEBUG   :       #03 pc 000866ef  /apex/com.android.runtime/lib/bionic/libc.so (pthread_mutex_lock+130) (BuildId: f6cc18cf130e89327af123ab10201afa)
+06-04 09:01:34.450   820   820 F DEBUG   :       #04 pc 0004f625  /vendor/lib/libsrv_um.so (BuildId: f6240db8076021a8897be4cf5cecbe31)
+06-04 09:01:34.450   820   820 F DEBUG   :       #05 pc 00035529  /vendor/lib/libsrv_um.so (BuildId: f6240db8076021a8897be4cf5cecbe31)
+06-04 09:01:34.450   820   820 F DEBUG   :       #06 pc 00035497  /vendor/lib/libsrv_um.so (BuildId: f6240db8076021a8897be4cf5cecbe31)
+06-04 09:01:34.450   820   820 F DEBUG   :       #07 pc 00024b37  /vendor/lib/libsrv_um.so (BuildId: f6240db8076021a8897be4cf5cecbe31)
+06-04 09:01:34.450   820   820 F DEBUG   :       #08 pc 00034bf1  /vendor/lib/libsrv_um.so (RGXCreateDeviceMemContext+1604) (BuildId: f6240db8076021a8897be4cf5cecbe31)
+06-04 09:01:34.450   820   820 F DEBUG   :       #09 pc 0000baf1  /vendor/lib/hw/gralloc.rogue.so (BuildId: ad3029998229efbe87fa2daed9dee4a1)
+06-04 09:01:34.450   820   820 F DEBUG   :       #10 pc 00032917  /apex/com.android.runtime/bin/linker (__dl__ZN6soinfo17call_constructorsEv+562) (BuildId: a7b9008b5924b69da680ea48685b5b32)
+06-04 09:01:34.450   820   820 F DEBUG   :       #11 pc 000229df  /apex/com.android.runtime/bin/linker (__dl__Z9do_dlopenPKciPK17android_dlextinfoPKv+1846) (BuildId: a7b9008b5924b69da680ea48685b5b32)
+06-04 09:01:34.450   820   820 F DEBUG   :       #12 pc 0001eb8b  /apex/com.android.runtime/bin/linker (__loader_android_dlopen_ext+42) (BuildId: a7b9008b5924b69da680ea48685b5b32)
+06-04 09:01:34.451   820   820 F DEBUG   :       #13 pc 00001913  /apex/com.android.runtime/lib/bionic/libdl.so (android_dlopen_ext+4) (BuildId: aec40a4c531818403903830c1543e55f)
+06-04 09:01:34.451   820   820 F DEBUG   :       #14 pc 000016e9  /system/lib/libvndksupport.so (android_load_sphal_library+76) (BuildId: 85f03abff18bee034c44b7981eb03136)
+06-04 09:01:34.451   820   820 F DEBUG   :       #15 pc 000036cd  /vendor/lib/libPVRMtkutils.so (mtk_gralloc_get_module+84) (BuildId: f96ae5335f98e325b2c64adf19c64cc0)
+06-04 09:01:34.459   820   820 I crash_dump32: start notify aee_aed tombstone path: /data/tombstones/.temporary1
+06-04 09:01:34.459   820   820 I crash_dump32: Built commit 1002699b04bb3521f5be160aafcabaa1abb2cdeb
+06-04 09:01:34.460   820   820 I crash_dump32: socket name: android:aee_aed, sfd: 9
+06-04 09:01:34.475   833   833 I AEE_AED : handle_request(9)
+06-04 09:01:34.476   833   833 I AEE_AED : aed_dynamic_security_check: dynamic security check option is enabled by full dump dconfig
+06-04 09:01:34.477   833   833 I AEE_AED : read_request: receive requirement from crash_dump32
+06-04 09:01:34.478   833   833 I AEE_AED : parse_tombstone: the tombstone file '/data/tombstones/.temporary1' need to be parsed
+06-04 09:01:34.479   833   833 W AEE_AED : DAL feature is off, just return
+06-04 09:01:34.479   833   833 I AEE_AED : Dumping EXP/Native (NE)
+06-04 09:01:34.479   833   833 I AEE_AED : aed_wait_decrypt done! file base encryption
+06-04 09:01:34.480   833   833 I AEE_AED : db base:/data/aee_exp
+06-04 09:01:34.485   833   833 E AEE_AED : aed_crash_dump_session: writing crash_temporary_file_notify successfully
+06-04 09:01:34.485   820   820 I crash_dump32: crash_temporary_file_notify: copy done
+06-04 09:01:34.485   820   820 I crash_dump32: crash_temporary_file_notify exit
+06-04 09:01:34.492   820   820 E crash_dump32: unable to connect to activity manager: Connection refused
+06-04 09:01:34.493   820   820 I crash_dump32: start aee dumping
+06-04 09:01:34.494   833   833 E AEE_AED : aed_crash_dump_session: writing /data/aee_exp/temp/db.4gam8Z/MINIDUMP path
+06-04 09:01:34.494   833   833 I AEE_AED : $** *** *** *** *** *** *** *** Fatal *** *** *** *** *** *** *** **$
+06-04 09:01:34.497   835   835 E AEE_DUMPSTATE: execute /system_ext/bin/aee_dumpstate
+06-04 09:01:34.504   502   502 E tombstoned: Tombstone written to: tombstone_00
+06-04 09:01:34.500   835   835 I auditd  : type=1400 audit(0.0:27): avc:  denied  { read } for  comm="aee_dumpstate" path="/dev/RT_Monitor" dev="tmpfs" ino=9032 scontext=u:r:dumpstate:s0 tcontext=u:object_r:RT_Monitor_device:s0 tclass=chr_file permissive=0
+06-04 09:01:34.500   835   835 W aee_dumpstate: type=1400 audit(0.0:27): avc:  denied  { read } for  path="/dev/RT_Monitor" dev="tmpfs" ino=9032 scontext=u:r:dumpstate:s0 tcontext=u:object_r:RT_Monitor_device:s0 tclass=chr_file permissive=0
+06-04 09:01:34.534   736   736 I SurfaceFlinger: Using HWComposer service: default
+06-04 09:01:34.549   736   736 I SurfaceFlinger: release 4.19.191-gf990ee884278 enabled 0
+06-04 09:01:34.549   736   736 I SurfaceFlinger: legacy cpu policy enabled 0
+06-04 09:01:34.550   736   736 I SurfaceFlinger: SurfaceFlinger is starting
+06-04 09:01:34.550   736   736 I SurfaceFlinger: Disabling blur effects, they are not supported.
+06-04 09:01:34.561   835   835 I AEE_DUMPSTATE: begin
+06-04 09:01:34.562   835   835 I AEE_DUMPSTATE: Built  commit 1002699b04bb3521f5be160aafcabaa1abb2cdeb
+06-04 09:01:34.576   722   722 I FastMixerState: sMaxFastTracks = 8
+06-04 09:01:34.581   736   736 I SurfaceFlinger: SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+06-04 09:01:34.582   736   736 W libc    : Access denied finding property "vendor.debug.renderengine.backend"
+06-04 09:01:34.583   736   736 E SurfaceFlinger: Unrecognized RenderEngineType ; ignoring!
+06-04 09:01:34.585   722   722 I libc    : malloc_limit: Allocation limit enabled, max size 536870912 bytes
+06-04 09:01:34.599   722   722 W BatteryNotifier: batterystats service unavailable!
+06-04 09:01:34.601   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@7.1::IDevicesFactory/default in either framework or device VINTF manifest.
+06-04 09:01:34.603   835   835 E AEE_DUMPSTATE: start set_signal_for_dumpstate
+06-04 09:01:34.605   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@7.1::IEffectsFactory/default in either framework or device VINTF manifest.
+06-04 09:01:34.619   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(38)
+06-04 09:01:34.722   833   833 I AEE_AED : Build Info: 'alps-vf-mp-s0.mp1unknown:alps-vf-mp-s0.mp1unknown-V17.78.V12.126:mt6765:S01,onn/100135924/mid7021_mq:14/UP1A.231005.007/hkh20260408:user/release-keys'
+06-04 09:01:34.722   833   833 I AEE_AED : MSSI Info: 'onn/100135924/mid7021_mq:14/UP1A.231005.007/hkh20260408:user/release-keys'
+06-04 09:01:34.723   833   833 W libc    : Access denied finding property "ro.vendor.mgvi_name"
+06-04 09:01:34.728   833   833 I AEE_AED : MGVI Info: ''
+06-04 09:01:34.729   833   833 W libc    : Access denied finding property "ro.vendor.mgk_name"
+06-04 09:01:34.734   833   833 I AEE_AED : MGK Info: ''
+06-04 09:01:34.735   833   833 I AEE_AED : VF System Info: 'unknown:alps-mp-u0.mp1-V12.126'
+06-04 09:01:34.736   833   833 I AEE_AED : Exception Log Time:[Thu Jun  4 09:01:34 PDT 2026] [26.670896]
+06-04 09:01:34.736   833   833 I AEE_AED : 
+06-04 09:01:34.736   833   833 I AEE_AED : Exception Class: Native (NE)
+06-04 09:01:34.736   833   833 I AEE_AED : Exception Type: SIGABRT
+06-04 09:01:34.736   833   833 I AEE_AED : 
+06-04 09:01:34.736   833   833 I AEE_AED : Current Executing Process: 
+06-04 09:01:34.736   833   833 I AEE_AED :   pid: 702, tid: 702
+06-04 09:01:34.736   833   833 I AEE_AED :   /vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
+06-04 09:01:34.736   833   833 I AEE_AED : 
+06-04 09:01:34.736   833   833 I AEE_AED : $** *** *** *** *** *** *** *** Fatal *** *** *** *** *** *** *** **$
+06-04 09:01:34.743   850   850 E AEE_DUMPSTATE: execute /system_ext/bin/aee_dumpstate
+06-04 09:01:34.743   843   843 I bootstat: Service started: /system/bin/bootstat --set_system_boot_reason 
+06-04 09:01:34.744   850   850 I auditd  : type=1400 audit(0.0:28): avc:  denied  { read } for  comm="aee_dumpstate" path="/dev/RT_Monitor" dev="tmpfs" ino=9032 scontext=u:r:dumpstate:s0 tcontext=u:object_r:RT_Monitor_device:s0 tclass=chr_file permissive=0
+06-04 09:01:34.744   850   850 W aee_dumpstate: type=1400 audit(0.0:28): avc:  denied  { read } for  path="/dev/RT_Monitor" dev="tmpfs" ino=9032 scontext=u:r:dumpstate:s0 tcontext=u:object_r:RT_Monitor_device:s0 tclass=chr_file permissive=0
+06-04 09:01:34.749   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:34.758   843   843 I bootstat: Canonical boot reason: reboot,longkey
+06-04 09:01:34.758   843   843 I bootstat: Canonical boot reason: reboot,longkey
+06-04 09:01:34.807   850   850 I AEE_DUMPSTATE: begin
+06-04 09:01:34.808   850   850 I AEE_DUMPSTATE: Built  commit 1002699b04bb3521f5be160aafcabaa1abb2cdeb
+06-04 09:01:34.810   850   850 E AEE_DUMPSTATE: start set_signal_for_dumpstate
+06-04 09:01:34.811   850   850 I AEE_DUMPSTATE: aee_opt=0x26000cc4 
+06-04 09:01:34.812   850   850 E aee_dumpstate: encrypt_dynamic_switch: File /proc/device-tree/chosen/aee,encrypt_enable not exist
+06-04 09:01:34.813   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /data/aee_exp/temp/db.4gam8Z/__exp_main.txt
+06-04 09:01:34.824   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@7.1::IEffectsFactory/default in either framework or device VINTF manifest.
+06-04 09:01:34.825   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@7.1::IDevicesFactory/default in either framework or device VINTF manifest.
+06-04 09:01:34.832   843   843 E bootstat: Failed to read /metadata/bootstat/persist.sys.boot.reason: No such file or directory
+06-04 09:01:34.832   843   843 I bootstat: Value of persist.sys.boot.reason : 
+06-04 09:01:34.832   843   843 I bootstat: Normalized last reboot reason : reboot,longkey
+06-04 09:01:34.833   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /data/aee_exp/temp/db.4gam8Z/_exp_detail.txt
+06-04 09:01:34.834   843   843 E bootstat: Failed to unlink /metadata/bootstat/persist.sys.boot.reason: No such file or directory
+06-04 09:01:34.838   722   722 I ServiceManagerCppClient: Waiting for service 'media.metrics' on '/dev/binder'...
+06-04 09:01:34.854   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /data/aee_exp/temp/db.4gam8Z/SYS_PROPERTIES
+06-04 09:01:34.854   693   693 I boot_progress_start: 26789
+06-04 09:01:34.857   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/702/attr/current
+06-04 09:01:34.859   858   858 E AEE_DUMPSTATE: execute /system/bin/ls
+06-04 09:01:34.871   693   693 I AndroidRuntime: Using default boot image
+06-04 09:01:34.871   693   693 I AndroidRuntime: Leaving lock profiling enabled
+06-04 09:01:34.904   849   849 I perfetto:           probes.cc:104 Starting /system/bin/traced_probes service
+06-04 09:01:34.906   693   693 I zygote  : option[0]=-Xzygote
+06-04 09:01:34.906   693   693 I zygote  : option[1]=exit
+06-04 09:01:34.906   693   693 I zygote  : option[2]=vfprintf
+06-04 09:01:34.906   693   693 I zygote  : option[3]=sensitiveThread
+06-04 09:01:34.906   693   693 I zygote  : option[4]=-verbose:gc
+06-04 09:01:34.907   693   693 I zygote  : option[5]=-XX:PerfettoHprof=true
+06-04 09:01:34.907   693   693 I zygote  : option[6]=-XX:PerfettoJavaHeapStackProf=true
+06-04 09:01:34.907   693   693 I zygote  : option[7]=-Xprimaryzygote
+06-04 09:01:34.907   693   693 I zygote  : option[8]=-Xms4m
+06-04 09:01:34.907   693   693 I zygote  : option[9]=-Xmx256m
+06-04 09:01:34.907   693   693 I zygote  : option[10]=-XX:HeapGrowthLimit=128m
+06-04 09:01:34.907   693   693 I zygote  : option[11]=-XX:ForegroundHeapGrowthMultiplier=2.0
+06-04 09:01:34.907   693   693 I zygote  : option[12]=-Xusejit:true
+06-04 09:01:34.907   693   693 I zygote  : option[13]=-Xjitsaveprofilinginfo
+06-04 09:01:34.907   693   693 I zygote  : option[14]=-XMadviseWillNeedVdexFileSize:104857600
+06-04 09:01:34.907   693   693 I zygote  : option[15]=-XMadviseWillNeedOdexFileSize:104857600
+06-04 09:01:34.907   693   693 I zygote  : option[16]=-XMadviseWillNeedArtFileSize:4294967295
+06-04 09:01:34.907   693   693 I zygote  : option[17]=-Xps-min-first-save-ms:150000
+06-04 09:01:34.907   693   693 I zygote  : option[18]=-XX:LowMemoryMode
+06-04 09:01:34.907   693   693 I zygote  : option[19]=-XjdwpOptions:suspend=n,server=y
+06-04 09:01:34.908   693   693 I zygote  : option[20]=-XjdwpProvider:default
+06-04 09:01:34.908   693   693 I zygote  : option[21]=-Xopaque-jni-ids:swapable
+06-04 09:01:34.908   693   693 I zygote  : option[22]=-Xcompiler-option
+06-04 09:01:34.908   693   693 I zygote  : option[23]=--instruction-set-variant=cortex-a53
+06-04 09:01:34.908   693   693 I zygote  : option[24]=-Xcompiler-option
+06-04 09:01:34.908   693   693 I zygote  : option[25]=--instruction-set-features=default
+06-04 09:01:34.908   693   693 I zygote  : option[26]=-Xcompiler-option
+06-04 09:01:34.908   693   693 I zygote  : option[27]=--generate-mini-debug-info
+06-04 09:01:34.908   693   693 I zygote  : option[28]=-Ximage-compiler-option
+06-04 09:01:34.908   693   693 I zygote  : option[29]=--runtime-arg
+06-04 09:01:34.908   693   693 I zygote  : option[30]=-Ximage-compiler-option
+06-04 09:01:34.908   693   693 I zygote  : option[31]=-Xms64m
+06-04 09:01:34.908   693   693 I zygote  : option[32]=-Ximage-compiler-option
+06-04 09:01:34.908   693   693 I zygote  : option[33]=--runtime-arg
+06-04 09:01:34.908   693   693 I zygote  : option[34]=-Ximage-compiler-option
+06-04 09:01:34.909   693   693 I zygote  : option[35]=-Xmx64m
+06-04 09:01:34.909   849   849 I perfetto:  probes_producer.cc:382 Disconnected from tracing service
+06-04 09:01:34.909   693   693 I zygote  : option[36]=-Ximage-compiler-option
+06-04 09:01:34.909   693   693 I zygote  : option[37]=--dirty-image-objects=/system/etc/dirty-image-objects
+06-04 09:01:34.909   693   693 I zygote  : option[38]=-Ximage-compiler-option
+06-04 09:01:34.909   693   693 I zygote  : option[39]=--instruction-set-variant=cortex-a53
+06-04 09:01:34.909   693   693 I zygote  : option[40]=-Ximage-compiler-option
+06-04 09:01:34.909   693   693 I zygote  : option[41]=--instruction-set-features=default
+06-04 09:01:34.909   849   863 I perfetto: _activity_trigger.cc:71 mm_events ftrace instance not found. Triggering of traces on memory pressure will not be available on this device.
+06-04 09:01:34.909   693   693 I zygote  : option[42]=-Ximage-compiler-option
+06-04 09:01:34.909   693   693 I zygote  : option[43]=--generate-mini-debug-info
+06-04 09:01:34.910   693   693 I zygote  : option[44]=-Duser.locale=en-US
+06-04 09:01:34.910   693   693 I zygote  : option[45]=--cpu-abilist=armeabi-v7a,armeabi
+06-04 09:01:34.910   693   693 I zygote  : option[46]=-Xfingerprint:onn/100135924/mid7021_mq:14/UP1A.231005.007/hkh20260408:user/release-keys
+06-04 09:01:34.920   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(39)
+06-04 09:01:34.942   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/702/status
+06-04 09:01:34.943   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/702/oom_score
+06-04 09:01:34.943   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/702/oom_adj
+06-04 09:01:34.943   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/702/cmdline
+06-04 09:01:34.944   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/702/environ
+06-04 09:01:34.952   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/702/sched
+06-04 09:01:34.957   865   865 E AEE_DUMPSTATE: execute /system/bin/showmap
+06-04 09:01:35.008   693   693 I zygote  : Using CollectorTypeCC GC.
+06-04 09:01:35.015   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/702/maps
+06-04 09:01:35.024   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/m4u_dbg/mva
+06-04 09:01:35.031   838   838 I adbd    : persist.adb.watchdog set to ''
+06-04 09:01:35.032   838   838 I adbd    : persist.sys.test_harness set to ''
+06-04 09:01:35.033   838   838 I adbd    : adb watchdog timeout set to 600 seconds
+06-04 09:01:35.034   838   870 I adbd    : Waiting for persist.adb.tls_server.enable=1
+06-04 09:01:35.035   838   838 I adbd    : adbd started
+06-04 09:01:35.035   838   872 I adbd    : opening control endpoint /dev/usb-ffs/adb/ep0
+06-04 09:01:35.038   838   872 I adbd    : UsbFfsConnection constructed
+06-04 09:01:35.039   838   874 I adbd    : UsbFfs-monitor thread spawned
+06-04 09:01:35.049   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:35.110   849   849 I perfetto:  probes_producer.cc:382 Disconnected from tracing service
+06-04 09:01:35.174   736   842 E IMGSRV  : :479: DevmemMapToDeviceAddress() failed (PVRSRV_ERROR_CMD_TOO_BIG) in PVRSRVMapToDeviceAddress()
+06-04 09:01:35.174   736   842 E IMGSRV  : :93: Failed to map static memory from PDS heap() failed (PVRSRV_ERROR_CMD_TOO_BIG) in allocateStaticMemory()
+06-04 09:01:35.174   736   842 E IMGSRV  : :88: PVRSRVDestroyDeviceMemContext() failed (PVRSRV_ERROR_CMD_TOO_BIG) in RGXConstructDeviceMemContext()
+06-04 09:01:35.174   736   842 F libc    : FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xf17050d0)
+06-04 09:01:35.174   736   842 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 842 (surfaceflinger), pid 736 (surfaceflinger)
+06-04 09:01:35.202   883   883 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+06-04 09:01:35.203   502   502 I tombstoned: received crash request for pid 842
+06-04 09:01:35.204   883   883 I crash_dump32: performing dump of process 736 (target tid = 842)
+06-04 09:01:35.221   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(40)
+06-04 09:01:35.347   883   883 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-04 09:01:35.347   883   883 F DEBUG   : Build fingerprint: 'onn/100135924/mid7021_mq:14/UP1A.231005.007/hkh20260408:user/release-keys'
+06-04 09:01:35.347   883   883 F DEBUG   : Revision: '0'
+06-04 09:01:35.347   883   883 F DEBUG   : ABI: 'arm'
+06-04 09:01:35.347   883   883 F DEBUG   : Timestamp: 2026-06-04 09:01:35.210503463-0700
+06-04 09:01:35.347   883   883 F DEBUG   : Process uptime: 3s
+06-04 09:01:35.347   883   883 F DEBUG   : Cmdline: /system/bin/surfaceflinger
+06-04 09:01:35.347   883   883 F DEBUG   : pid: 736, tid: 842, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+06-04 09:01:35.347   883   883 F DEBUG   : uid: 1000
+06-04 09:01:35.347   883   883 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+06-04 09:01:35.347   883   883 F DEBUG   : Abort message: 'FORTIFY: pthread_mutex_lock called on a destroyed mutex (0xf17050d0)'
+06-04 09:01:35.347   883   883 F DEBUG   :     r0  00000000  r1  0000034a  r2  00000006  r3  ee6398d8
+06-04 09:01:35.347   883   883 F DEBUG   :     r4  ee6398e8  r5  ee6398d0  r6  000002e0  r7  0000016b
+06-04 09:01:35.347   883   883 F DEBUG   :     r8  00000000  r9  ffffffff  r10 ee6398d8  r11 f1747840
+06-04 09:01:35.347   883   883 F DEBUG   :     ip  0000034a  sp  ee6398b8  lr  f0a415e3  pc  f0a415f6
+06-04 09:01:35.347   883   883 F DEBUG   : 16 total frames
+06-04 09:01:35.347   883   883 F DEBUG   : backtrace:
+06-04 09:01:35.347   883   883 F DEBUG   :       #00 pc 0003b5f6  /apex/com.android.runtime/lib/bionic/libc.so (abort+138) (BuildId: f6cc18cf130e89327af123ab10201afa)
+06-04 09:01:35.347   883   883 F DEBUG   :       #01 pc 0003c973  /apex/com.android.runtime/lib/bionic/libc.so (__fortify_fatal(char const*, ...)+26) (BuildId: f6cc18cf130e89327af123ab10201afa)
+06-04 09:01:35.347   883   883 F DEBUG   :       #02 pc 00086819  /apex/com.android.runtime/lib/bionic/libc.so (HandleUsingDestroyedMutex(pthread_mutex_t*, char const*)+24) (BuildId: f6cc18cf130e89327af123ab10201afa)
+06-04 09:01:35.347   883   883 F DEBUG   :       #03 pc 000866ef  /apex/com.android.runtime/lib/bionic/libc.so (pthread_mutex_lock+130) (BuildId: f6cc18cf130e89327af123ab10201afa)
+06-04 09:01:35.347   883   883 F DEBUG   :       #04 pc 0004f625  /vendor/lib/libsrv_um.so (BuildId: f6240db8076021a8897be4cf5cecbe31)
+06-04 09:01:35.347   883   883 F DEBUG   :       #05 pc 00035529  /vendor/lib/libsrv_um.so (BuildId: f6240db8076021a8897be4cf5cecbe31)
+06-04 09:01:35.347   883   883 F DEBUG   :       #06 pc 00035497  /vendor/lib/libsrv_um.so (BuildId: f6240db8076021a8897be4cf5cecbe31)
+06-04 09:01:35.347   883   883 F DEBUG   :       #07 pc 00024b37  /vendor/lib/libsrv_um.so (BuildId: f6240db8076021a8897be4cf5cecbe31)
+06-04 09:01:35.347   883   883 F DEBUG   :       #08 pc 00034bf1  /vendor/lib/libsrv_um.so (RGXCreateDeviceMemContext+1604) (BuildId: f6240db8076021a8897be4cf5cecbe31)
+06-04 09:01:35.347   883   883 F DEBUG   :       #09 pc 0000baf1  /vendor/lib/hw/gralloc.rogue.so (BuildId: ad3029998229efbe87fa2daed9dee4a1)
+06-04 09:01:35.348   883   883 F DEBUG   :       #10 pc 00032917  /apex/com.android.runtime/bin/linker (__dl__ZN6soinfo17call_constructorsEv+562) (BuildId: a7b9008b5924b69da680ea48685b5b32)
+06-04 09:01:35.348   883   883 F DEBUG   :       #11 pc 000229df  /apex/com.android.runtime/bin/linker (__dl__Z9do_dlopenPKciPK17android_dlextinfoPKv+1846) (BuildId: a7b9008b5924b69da680ea48685b5b32)
+06-04 09:01:35.348   883   883 F DEBUG   :       #12 pc 0001eb8b  /apex/com.android.runtime/bin/linker (__loader_android_dlopen_ext+42) (BuildId: a7b9008b5924b69da680ea48685b5b32)
+06-04 09:01:35.348   883   883 F DEBUG   :       #13 pc 00001913  /apex/com.android.runtime/lib/bionic/libdl.so (android_dlopen_ext+4) (BuildId: aec40a4c531818403903830c1543e55f)
+06-04 09:01:35.348   883   883 F DEBUG   :       #14 pc 000016e9  /system/lib/libvndksupport.so (android_load_sphal_library+76) (BuildId: 85f03abff18bee034c44b7981eb03136)
+06-04 09:01:35.348   883   883 F DEBUG   :       #15 pc 000036cd  /vendor/lib/libPVRMtkutils.so (mtk_gralloc_get_module+84) (BuildId: f96ae5335f98e325b2c64adf19c64cc0)
+06-04 09:01:35.350   888   888 W perfetto:          service.cc:248 Started traced, listening on /dev/socket/traced_producer /dev/socket/traced_consumer
+06-04 09:01:35.362   883   883 I crash_dump32: start notify aee_aed tombstone path: /data/tombstones/.temporary3
+06-04 09:01:35.362   883   883 I crash_dump32: Built commit 1002699b04bb3521f5be160aafcabaa1abb2cdeb
+06-04 09:01:35.363   883   883 I crash_dump32: socket name: android:aee_aed, sfd: 9
+06-04 09:01:35.367   894   894 I AEE_AED : handle_request(9)
+06-04 09:01:35.368   894   894 I AEE_AED : aed_dynamic_security_check: dynamic security check option is enabled by full dump dconfig
+06-04 09:01:35.369   894   894 I AEE_AED : read_request: receive requirement from crash_dump32
+06-04 09:01:35.370   894   894 I AEE_AED : parse_tombstone: the tombstone file '/data/tombstones/.temporary3' need to be parsed
+06-04 09:01:35.371   894   894 W AEE_AED : DAL feature is off, just return
+06-04 09:01:35.371   894   894 I AEE_AED : Dumping EXP/Native (NE)
+06-04 09:01:35.372   894   894 I AEE_AED : aed_wait_decrypt done! file base encryption
+06-04 09:01:35.372   894   894 I AEE_AED : db base:/data/aee_exp
+06-04 09:01:35.375   894   894 E AEE_AED : aed_crash_dump_session: writing crash_temporary_file_notify successfully
+06-04 09:01:35.375   883   883 I crash_dump32: crash_temporary_file_notify: copy done
+06-04 09:01:35.375   883   883 I crash_dump32: crash_temporary_file_notify exit
+06-04 09:01:35.375   883   883 E crash_dump32: unable to connect to activity manager: Connection refused
+06-04 09:01:35.375   883   883 I crash_dump32: start aee dumping
+06-04 09:01:35.384   895   895 I auditd  : type=1400 audit(0.0:29): avc:  denied  { read } for  comm="aee_dumpstate" path="/dev/RT_Monitor" dev="tmpfs" ino=9032 scontext=u:r:dumpstate:s0 tcontext=u:object_r:RT_Monitor_device:s0 tclass=chr_file permissive=0
+06-04 09:01:35.384   895   895 W aee_dumpstate: type=1400 audit(0.0:29): avc:  denied  { read } for  path="/dev/RT_Monitor" dev="tmpfs" ino=9032 scontext=u:r:dumpstate:s0 tcontext=u:object_r:RT_Monitor_device:s0 tclass=chr_file permissive=0
+06-04 09:01:35.376   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:35.376   502   502 E tombstoned: Tombstone written to: tombstone_01
+06-04 09:01:35.376   894   894 E AEE_AED : aed_crash_dump_session: writing /data/aee_exp/temp/db.9NCVPV/MINIDUMP path
+06-04 09:01:35.377   894   894 I AEE_AED : $** *** *** *** *** *** *** *** Fatal *** *** *** *** *** *** *** **$
+06-04 09:01:35.381   895   895 E AEE_DUMPSTATE: execute /system_ext/bin/aee_dumpstate
+06-04 09:01:35.417   691   691 I OemIptablesHook: OEM iptable hook installed.
+06-04 09:01:35.417   691   691 I netd    : Setting up OEM hooks: 2513186us
+06-04 09:01:35.424   691   691 I netd    : Setting up FirewallController hooks: 6541us
+06-04 09:01:35.425   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/702/task/702/status
+06-04 09:01:35.426   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/702/task/702/sched
+06-04 09:01:35.428   850   850 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_BLOCKIO, can not open file /sys/kernel/debug/blockio, No such file or directory
+06-04 09:01:35.440   691   691 I netd    : Setting up TetherController hooks: 15797us
+06-04 09:01:35.448   895   895 I AEE_DUMPSTATE: begin
+06-04 09:01:35.449   895   895 I AEE_DUMPSTATE: Built  commit 1002699b04bb3521f5be160aafcabaa1abb2cdeb
+06-04 09:01:35.450   895   895 E AEE_DUMPSTATE: start set_signal_for_dumpstate
+06-04 09:01:35.458   691   691 I netd    : Setting up BandwidthController hooks: 18641us
+06-04 09:01:35.458   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/blocktag/blockio
+06-04 09:01:35.459   691   691 I netd    : Setting up IdletimerController hooks: 533us
+06-04 09:01:35.464   850   850 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_STORAGE_DEBUG_UFS, can not open file /proc/ufs_debug, No such file or directory
+06-04 09:01:35.467   850   850 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_STORAGE_DEBUG_MSDC, can not open file /proc/msdc_debug, No such file or directory
+06-04 09:01:35.470   850   850 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_MMPROFILE, can not open file /sys/kernel/debug/mmprofile/buffer, No such file or directory
+06-04 09:01:35.472   850   850 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_MMPROFILE, can not open file /proc/mmprofile/buffer, No such file or directory
+06-04 09:01:35.476   850   850 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_IMG_MEM_DUMP, can not open file /proc/pvr/memtrack_stats, Permission denied
+06-04 09:01:35.486   691   691 I netd    : Setting up StrictController hooks: 27482us
+06-04 09:01:35.488   850   850 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_IMG_MEM_HISTORY, can not open file /proc/pvr/devicemem_history, Permission denied
+06-04 09:01:35.495   903   903 E AEE_DUMPSTATE: execute /system/bin/cat
+06-04 09:01:35.518   691   691 I netd    : Enabling bandwidth control: 31300us
+06-04 09:01:35.524   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(41)
+06-04 09:01:35.530   849   849 I perfetto:  probes_producer.cc:341 Connected to the service
+06-04 09:01:35.472   850   850 I auditd  : type=1400 audit(0.0:30): avc:  denied  { search } for  comm="aee_dumpstate" name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:35.472   850   850 W aee_dumpstate: type=1400 audit(0.0:30): avc:  denied  { search } for  name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:35.557   691   691 I netd    : Initializing RouteController: 39343us
+06-04 09:01:35.561   906   906 E AEE_DUMPSTATE: execute /system/bin/logcat
+06-04 09:01:35.472   850   850 I auditd  : type=1400 audit(0.0:31): avc:  denied  { search } for  comm="aee_dumpstate" name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:35.472   850   850 W aee_dumpstate: type=1400 audit(0.0:31): avc:  denied  { search } for  name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:35.578   894   894 I AEE_AED : Build Info: 'alps-vf-mp-s0.mp1unknown:alps-vf-mp-s0.mp1unknown-V17.78.V12.126:mt6765:S01,onn/100135924/mid7021_mq:14/UP1A.231005.007/hkh20260408:user/release-keys'
+06-04 09:01:35.578   894   894 I AEE_AED : MSSI Info: 'onn/100135924/mid7021_mq:14/UP1A.231005.007/hkh20260408:user/release-keys'
+06-04 09:01:35.579   894   894 W libc    : Access denied finding property "ro.vendor.mgvi_name"
+06-04 09:01:35.585   894   894 I AEE_AED : MGVI Info: ''
+06-04 09:01:35.585   894   894 W libc    : Access denied finding property "ro.vendor.mgk_name"
+06-04 09:01:35.591   894   894 I AEE_AED : MGK Info: ''
+06-04 09:01:35.591   894   894 I AEE_AED : VF System Info: 'unknown:alps-mp-u0.mp1-V12.126'
+06-04 09:01:35.593   894   894 I AEE_AED : Exception Log Time:[Thu Jun  4 09:01:35 PDT 2026] [27.528150]
+06-04 09:01:35.593   894   894 I AEE_AED : 
+06-04 09:01:35.593   894   894 I AEE_AED : Exception Class: Native (NE)
+06-04 09:01:35.593   894   894 I AEE_AED : Exception Type: SIGABRT
+06-04 09:01:35.593   894   894 I AEE_AED : 
+06-04 09:01:35.593   894   894 I AEE_AED : Current Executing Process: 
+06-04 09:01:35.593   894   894 I AEE_AED :   pid: 736, tid: 842
+06-04 09:01:35.593   894   894 I AEE_AED :   /system/bin/surfaceflinger
+06-04 09:01:35.593   894   894 I AEE_AED : 
+06-04 09:01:35.593   894   894 I AEE_AED : $** *** *** *** *** *** *** *** Fatal *** *** *** *** *** *** *** **$
+06-04 09:01:35.600   907   907 E AEE_DUMPSTATE: execute /system_ext/bin/aee_dumpstate
+06-04 09:01:35.484   850   850 I auditd  : type=1400 audit(0.0:32): avc:  denied  { search } for  comm="aee_dumpstate" name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:35.484   850   850 W aee_dumpstate: type=1400 audit(0.0:32): avc:  denied  { search } for  name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:35.484   850   850 I auditd  : type=1400 audit(0.0:33): avc:  denied  { search } for  comm="aee_dumpstate" name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:35.484   850   850 W aee_dumpstate: type=1400 audit(0.0:33): avc:  denied  { search } for  name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:35.659   907   907 I AEE_DUMPSTATE: begin
+06-04 09:01:35.660   907   907 I AEE_DUMPSTATE: Built  commit 1002699b04bb3521f5be160aafcabaa1abb2cdeb
+06-04 09:01:35.661   907   907 E AEE_DUMPSTATE: start set_signal_for_dumpstate
+06-04 09:01:35.662   907   907 I AEE_DUMPSTATE: aee_opt=0x26000cc4 
+06-04 09:01:35.664   907   907 E aee_dumpstate: encrypt_dynamic_switch: File /proc/device-tree/chosen/aee,encrypt_enable not exist
+06-04 09:01:35.664   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /data/aee_exp/temp/db.9NCVPV/__exp_main.txt
+06-04 09:01:35.667   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /data/aee_exp/temp/db.9NCVPV/_exp_detail.txt
+06-04 09:01:35.676   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:35.678   752   757 W TeeMcDaemon: Cannot open trustlet /data/vendor/mcRegistry/07150000000000000000000000000000.tlbin (No such file or directory) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/SecureWorld.cpp:114]
+06-04 09:01:35.682   752   763 I TeeMcDaemon: open: Open storage file "/data/vendor/mcRegistry/TbStorage/Store_0.tf" [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/FSD2.cpp:182]
+06-04 09:01:35.685   907   907 D AEE_DUMPSTATE: archive_file_to_db: Collect file /data/aee_exp/temp/db.9NCVPV/_exp_detail.txt to _exp_detail.txt successfully, size 125498
+06-04 09:01:35.686   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /data/aee_exp/temp/db.9NCVPV/SYS_PROPERTIES
+06-04 09:01:35.695   907   907 D AEE_DUMPSTATE: archive_file_to_db: Collect file /data/aee_exp/temp/db.9NCVPV/SYS_PROPERTIES to SYS_PROPERTIES successfully, size 42720
+06-04 09:01:35.696   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/736/attr/current
+06-04 09:01:35.697   907   907 D AEE_DUMPSTATE: archive_file_to_db: Collect file /proc/736/attr/current to PROCESS_ATTR successfully, size 22
+06-04 09:01:35.604   907   907 I auditd  : type=1400 audit(0.0:34): avc:  denied  { read } for  comm="aee_dumpstate" path="/dev/RT_Monitor" dev="tmpfs" ino=9032 scontext=u:r:dumpstate:s0 tcontext=u:object_r:RT_Monitor_device:s0 tclass=chr_file permissive=0
+06-04 09:01:35.604   907   907 W aee_dumpstate: type=1400 audit(0.0:34): avc:  denied  { read } for  path="/dev/RT_Monitor" dev="tmpfs" ino=9032 scontext=u:r:dumpstate:s0 tcontext=u:object_r:RT_Monitor_device:s0 tclass=chr_file permissive=0
+06-04 09:01:35.701   910   910 E AEE_DUMPSTATE: execute /system/bin/ls
+06-04 09:01:35.728   752   763 I TeeMcDaemon: open: storage file "/data/vendor/mcRegistry/TbStorage/Store_0.tf" successfully open (size: 22 KB / 22528 B)) [vendor/mediatek/proprietary/trustzone/trustonic/source/external/mobicore/common/500/Daemon/src/FSD2.cpp:198]
+06-04 09:01:35.746   911   911 E AEE_DUMPSTATE: execute /system/bin/logcat
+06-04 09:01:35.767   913   913 E AEE_DUMPSTATE: execute /system/bin/logcat
+06-04 09:01:35.776   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/736/status
+06-04 09:01:35.778   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/736/oom_score
+06-04 09:01:35.778   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/736/oom_adj
+06-04 09:01:35.779   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/736/cmdline
+06-04 09:01:35.780   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/736/environ
+06-04 09:01:35.782   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/736/sched
+06-04 09:01:35.792   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /etc/event-log-tags
+06-04 09:01:35.799   915   915 E AEE_DUMPSTATE: execute /system/bin/showmap
+06-04 09:01:35.802   850   850 E AEE_DUMPSTATE: archive_listed_files_to_db: Failed to dump SYS_MEMORY_INFO, can not open file /sys/kernel/debug/tracing/buffer_total_size_kb, No such file or directory
+06-04 09:01:35.805   850   850 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_MEMORY_LOG, can not open file /sys/kernel/debug/dmlog, No such file or directory
+06-04 09:01:35.807   850   850 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_MEMORY_LOG, can not open file /sys/kernel/mm/mlog/dump, No such file or directory
+06-04 09:01:35.819   850   850 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_MMSTAT_TRACE, can not open file /sys/kernel/tracing/instances/mmstat/trace, No such file or directory
+06-04 09:01:35.821   850   850 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_GED_INFO, can not open file /d/ged/gedlog, No such file or directory
+06-04 09:01:35.823   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/gpulog
+06-04 09:01:35.824   850   850 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/sched_debug
+06-04 09:01:35.825   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(42)
+06-04 09:01:35.869   917   917 E AEE_DUMPSTATE: execute /system/bin/top
+06-04 09:01:35.892   406   406 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+06-04 09:01:35.888   904   904 I auditd  : type=1400 audit(0.0:35): avc:  denied  { write } for  comm="atrace" name="enable" dev="tracefs" ino=4251 scontext=u:r:atrace:s0 tcontext=u:object_r:debugfs_tracing_debug:s0 tclass=file permissive=0
+06-04 09:01:35.888   904   904 W atrace  : type=1400 audit(0.0:35): avc:  denied  { write } for  name="enable" dev="tracefs" ino=4251 scontext=u:r:atrace:s0 tcontext=u:object_r:debugfs_tracing_debug:s0 tclass=file permissive=0
+06-04 09:01:35.925   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/736/maps
+06-04 09:01:35.942   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/m4u_dbg/mva
+06-04 09:01:35.977   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:36.047   838   874 W adbd    : timed out while waiting for FUNCTIONFS_BIND, trying again
+06-04 09:01:36.048   838   874 I adbd    : UsbFfs: connection terminated: monitor thread finished
+06-04 09:01:36.048   838   838 I adbd    : UsbFfs: already offline
+06-04 09:01:36.048   838   838 I adbd    : destroying transport UsbFfs
+06-04 09:01:36.048   838   838 I adbd    : UsbFfsConnection being destroyed
+06-04 09:01:36.126   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(43)
+06-04 09:01:36.182   691   691 I netd    : Initializing XfrmController: 624988us
+06-04 09:01:36.201   691   691 I resolv  : resolv_init: Initializing resolver
+06-04 09:01:36.214   919   919 I idmap2d : Starting
+06-04 09:01:36.215   916   916 E mnld    : mtk_socket_tcp_startListening: mSockListenId ok
+06-04 09:01:36.216   916   916 W MPE_MA  : mpe_sys_read_mpe_conf_flag: load mpe config from MPE_CONF_DEFAULT
+06-04 09:01:36.216   916   916 W mnld_pwr_interface: mnld_pwr_open: mnld_pwr_open, /dev/gps_pwr failed:No such file or directory
+06-04 09:01:36.216   916   916 E mnld_pwr_interface: mnld_pwr_init: mnld_pwr_open failed, No such file or directory
+06-04 09:01:36.216   916   936 W mnld_pwr_interface: mnld_pwr_open: mnld_pwr_open, /dev/gps_pwr failed:No such file or directory
+06-04 09:01:36.216   916   936 E mnld_pwr_interface: mnld_pwr_control_thread: mnld_pwr_open failed, No such file or directory, retry:0
+06-04 09:01:36.216   916   916 E mtk_lbs_utility: init_timer_id_alarm: timerfd_create  CLOCK_BOOTTIME_ALARM 
+06-04 09:01:36.217   916   929 W mnld    : thread_adc_capture_init: open_port: Unable to open /dev/gps_emi, retry:1
+06-04 09:01:36.217   916   916 E mtk_lbs_utility: safe_sendto: safe_sendto() sendto() failed path=[mtk_mnl2hal] ret=-1 reason=[Connection refused]111
+06-04 09:01:36.218   916   916 E MNLD    : mnld_init: mnl2hal_release_wakelock failed because of safe_sendto fail ,strerror:Connection refused 
+06-04 09:01:36.218   916   916 E mtk_lbs_utility: safe_sendto: safe_sendto() sendto() failed path=[mtk_mnl2hal] ret=-1 reason=[Connection refused]111
+06-04 09:01:36.218   916   916 E MNLD    : mnld_init: mnl2hal_mnld_reboot failed because of safe_sendto fail ,strerror:Connection refused 
+06-04 09:01:36.219   916   916 E mnld    : Mnld2DebugInterface_mnldUpdateReboot: Mnld2DebugInterface_mnldUpdateReboot
+06-04 09:01:36.219   916   916 E mnld    : mtk_socket_connect_local: mtk_socket_connect_local() connect() failed reason=[Connection refused]111 for path=[mtk_mnld2debugService]
+06-04 09:01:36.219   916   916 E mnld    : Mnld2DebugInterface_mnldUpdateReboot: Mnld2DebugInterface_mnldUpdateReboot() mtk_socket_client_connect() failed
+06-04 09:01:36.219   916   916 E mnld    : mtk_socket_connect_local: mtk_socket_connect_local() connect() failed reason=[Connection refused]111 for path=[mtk_lbs_log_v2s]
+06-04 09:01:36.220   916   916 E mnld    : LbsLogInterface_closeLog: LbsLogInterface_closeLog() mtk_socket_client_connect() failed
+06-04 09:01:36.220   916   916 E mnld    : mtk_socket_connect_local: mtk_socket_connect_local() connect() failed reason=[Connection refused]111 for path=[mtk_lbs_log_v2s]
+06-04 09:01:36.220   916   916 E mnld    : LbsLogInterface_closeLog: LbsLogInterface_closeLog() mtk_socket_client_connect() failed
+06-04 09:01:36.220   916   916 E mnld    : mtk_socket_connect_local: mtk_socket_connect_local() connect() failed reason=[Connection refused]111 for path=[mtk_lbs_log_v2s]
+06-04 09:01:36.221   916   916 E mnld    : LbsLogInterface_closeLog: LbsLogInterface_closeLog() mtk_socket_client_connect() failed
+06-04 09:01:36.221   916   916 E mtk_lbs_utility: safe_sendto: safe_sendto() sendto() failed path=[mtk_mnl2hal] ret=-1 reason=[Connection refused]111
+06-04 09:01:36.221   916   916 E gps_controlller: mnld_gps_update_name: mnl2hal_update_gnss_name err 
+06-04 09:01:36.222   916   945 E flp     : mnld_screen_monitor_thread: Create
+06-04 09:01:36.223   916   945 E flp     : mnld_screen_monitor_thread: Wake Monitor Restart
+06-04 09:01:36.239   691   691 I netd    : Registering NetdNativeService: 1170us
+06-04 09:01:36.246   691   691 I netd    : Registering MDnsService: 7163us
+06-04 09:01:36.254   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/736/task/842/status
+06-04 09:01:36.256   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/736/task/842/sched
+06-04 09:01:36.257   907   907 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_BLOCKIO, can not open file /sys/kernel/debug/blockio, No such file or directory
+06-04 09:01:36.263   691   691 I HidlServiceManagement: Registered android.system.net.netd@1.1::INetd/default
+06-04 09:01:36.264   691   691 I netd    : Registering NetdHwService: 17921us
+06-04 09:01:36.264   691   691 I netd    : Netd started in 3410181us
+06-04 09:01:36.269   923   923 I installd: installd firing up
+06-04 09:01:36.271   907   907 I AEE_DUMPSTATE: archive_file_to_db: current dumped file is /proc/blocktag/blockio
+06-04 09:01:36.272   907   907 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_STORAGE_DEBUG_UFS, can not open file /proc/ufs_debug, No such file or directory
+06-04 09:01:36.273   907   907 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_STORAGE_DEBUG_MSDC, can not open file /proc/msdc_debug, No such file or directory
+06-04 09:01:36.275   907   907 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_MMPROFILE, can not open file /sys/kernel/debug/mmprofile/buffer, No such file or directory
+06-04 09:01:36.276   907   907 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_MMPROFILE, can not open file /proc/mmprofile/buffer, No such file or directory
+06-04 09:01:36.290   468   468 I wmt_launcher: get property(vendor.connsys.driver.ready) is no
+06-04 09:01:36.299   907   907 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_IMG_MEM_DUMP, can not open file /proc/pvr/memtrack_stats, Permission denied
+06-04 09:01:36.296   907   907 I auditd  : type=1400 audit(0.0:36): avc:  denied  { search } for  comm="aee_dumpstate" name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:36.296   907   907 W aee_dumpstate: type=1400 audit(0.0:36): avc:  denied  { search } for  name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:36.296   907   907 I auditd  : type=1400 audit(0.0:37): avc:  denied  { search } for  comm="aee_dumpstate" name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:36.296   907   907 W aee_dumpstate: type=1400 audit(0.0:37): avc:  denied  { search } for  name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:36.300   907   907 E AEE_DUMPSTATE: archive_file_to_db: Failed to dump SYS_IMG_MEM_HISTORY, can not open file /proc/pvr/devicemem_history, Permission denied
+06-04 09:01:36.296   907   907 I auditd  : type=1400 audit(0.0:38): avc:  denied  { search } for  comm="aee_dumpstate" name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:36.296   907   907 W aee_dumpstate: type=1400 audit(0.0:38): avc:  denied  { search } for  name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:36.296   907   907 I auditd  : type=1400 audit(0.0:39): avc:  denied  { search } for  comm="aee_dumpstate" name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:36.296   907   907 W aee_dumpstate: type=1400 audit(0.0:39): avc:  denied  { search } for  name="pvr" dev="proc" ino=4026533374 scontext=u:r:dumpstate:s0 tcontext=u:object_r:procfs_gpu_img:s0 tclass=dir permissive=0
+06-04 09:01:36.310   958   958 E AEE_DUMPSTATE: execute /system/bin/cat
+06-04 09:01:36.314   838   872 I adbd    : opening control endpoint /dev/usb-ffs/adb/ep0
+06-04 09:01:36.371   962   962 E AEE_DUMPSTATE: execute /system/bin/logcat
+06-04 09:01:36.373   706   706 I hwcomposer: [ASYNCBLTDEV] create AsyncBlitDevice  
+06-04 09:01:36.380   960   960 I libc    : malloc_limit: Allocation limit enabled, max size 134217728 bytes
+06-04 09:01:36.393   838   872 I adbd    : UsbFfsConnection constructed
+06-04 09:01:36.394   838   966 I adbd    : UsbFfs-monitor thread spawned
+06-04 09:01:36.423   722   722 I ServiceManagerCppClient: Waiting for service 'media.metrics' on '/dev/binder' successful after waiting 1585ms
+06-04 09:01:36.426   960   964 I ServiceManagerCppClient: Waiting for service 'package_native' on '/dev/binder'...
+06-04 09:01:36.427   722   722 I AudioFlinger: Using default 3000 mSec as standby time.
+06-04 09:01:36.427   465   465 I wmt_loader: Can't open device node(/dev/wmtdetect) count(44)
+06-04 09:01:36.432   722   722 D APM_Config: MTK_audio_get_audio_policy_config_file bluetooth_le_mode off, a2dp offload enabled 1
+06-04 09:01:36.432   706   706 I hwcomposer: [PqXmlParser] init: failed to open file: /vendor/etc/cust_pq.xml  
+06-04 09:01:36.433   722   722 D APM_Config: MTK_audio_get_audio_policy_config_file 306 disable a2dp offload
+06-04 09:01:36.433   722   722 D APM_Config:  MTK_audio_get_audio_policy_config_file, 328, a2dp offload, ums non-offload, use audio_policy_configuration.xml
+06-04 09:01:36.445   406   406 I hwservicemanager: Since vendor.mediatek.hardware.pq@2.14::IPictureQuality/default is not registered, trying to start it as a lazy HAL (if it's not configured to be a lazy HAL, it may be stuck starting or still starting).
+06-04 09:01:36.447   706   706 E hwcomposer: [IPqDevice] Can't get PQ service tried (0) times  
+06-04 09:01:36.495   953   953 I main_extractorservice: enable media.extractor memory limits
+06-04 09:01:36.496   953   953 V MediaUtils: physMem: 3077824512
+06-04 09:01:36.496   953   953 V MediaUtils: requested limit: 615564900
+06-04 09:01:36.496   953   953 I libc    : malloc_limit: Allocation limit enabled, max size 615564900 bytes
