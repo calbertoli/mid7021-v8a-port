@@ -1,0 +1,10 @@
+# Experiment exhaust — capture dumps must never enter history (they bloat fast)
+expdb*.bin
+metadata*.bin
+md_udc*.bin
+*.console
+build_*.log
+# kernel build outputs
+out/
+*.o
+# NOTE: golden boot images (boot_images/, v8a_diagnostics/) are tracked ON PURPOSE.

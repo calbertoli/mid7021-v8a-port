@@ -80,3 +80,6 @@ Each image is our arm64 kernel + a ramdisk. The embedded kernel commit is listed
 | `boot_v5_panic75.img` | 13MB | `4.19.191-g2f935e3df488` | `60d60a0574a3c28d5f4545ceb03a3eb5` |
 | `boot_v8a_ce92e45b9_neuter.img` | 13MB | `4.19.191-gce92e45b9a05-dirty` | `69bda094ae9ec7c735d507c6191b309a` |
 | `boot_wdt-feed.img` | 13MB | `4.19.191-g82c031685b2d` | `a894630cbb5e63990c266377d6319fb5` |
+
+## v8a watchdog diagnostics (v20-v28)
+See **BUILDLOG.md** for the md5 → kernel-commit → outcome table; images in **v8a_diagnostics/**. Source committed as 0f4d04523 on branch mid7021-wdt-readback.
