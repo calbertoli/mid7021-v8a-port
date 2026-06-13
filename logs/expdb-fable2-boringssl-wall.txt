@@ -1,0 +1,170 @@
+# expdb-fable2 — SELINUX_DEVELOP fix works; new wall = unlabeled vendor boringssl (kernel 51e796eb1). Serial scrubbed.
+oringssl_self_test32(labeled "u:object_r:unlabeled:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials. Note: this error shows up even in permissive mode in order to make auditing denials possible.
+[   10.081905]  (1)[1:init]init: Reboot start, reason: reboot,boringssl-self-check-failed, reboot_target: boringssl-self-check-failed
+[   10.121229]  (0)[1:init][wdtk-reboot] *** REBOOT REQUESTED *** action=1 reason="boringssl-self-check-failed" by comm=init pid=1
+[    0.039567]  (2)[53:kauditd]audit: type=2000 audit(0.036:1): state=initialized audit_enabled=0 res=1
+[    2.046578]  (2)[1:swapper/0][wdtk-canary] mid7021 reboot-capture+SELdevelop ACTIVE (mtk_wdt probe)
+[    6.135117]  (5)[53:kauditd]audit: type=1403 audit(1768721940.980:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[    6.145816]  (5)[53:kauditd]audit: type=1400 audit(1768721940.980:3): avc:  denied  { read } for  pid=1 comm="init" name="vendor_file_contexts" dev="dm-1" ino=1586 scontext=u:r:kernel:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[    6.163188]  (5)[53:kauditd]audit: type=1400 audit(1768721940.980:4): avc:  denied  { read } for  pid=1 comm="init" name="odm" dev="dm-1" ino=2861 scontext=u:r:kernel:s0 tcontext=u:object_r:unlabeled:s0 tclass=lnk_file permissive=1
+[    6.173414]  (5)[53:kauditd]audit: type=1400 audit(1768721940.984:5): avc:  denied  { getattr } for  pid=1 comm="init" path="/vendor/etc/selinux/vendor_file_contexts" dev="dm-1" ino=1586 scontext=u:r:kernel:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[    6.182657]  (5)[53:kauditd]audit: type=1400 audit(1768721940.984:6): avc:  denied  { open } for  pid=1 comm="init" path="/vendor/etc/selinux/vendor_file_contexts" dev="dm-1" ino=1586 scontext=u:r:kernel:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[    6.706356]  (0)[53:kauditd]audit: type=1400 audit(1768721941.552:9): avc:  denied  { read } for  pid=301 comm="init" name="odm" dev="dm-1" ino=2861 scontext=u:r:vendor_init:s0 tcontext=u:object_r:unlabeled:s0 tclass=lnk_file permissive=1
+[    6.734453]  (4)[53:kauditd]audit: type=1400 audit(1768721941.580:10): avc:  denied  { read } for  pid=301 comm="init" name="vendor_file_contexts" dev="dm-1" ino=1586 scontext=u:r:vendor_init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[    6.749899]  (4)[53:kauditd]audit: type=1400 audit(1768721941.580:11): avc:  denied  { open } for  pid=301 comm="init" path="/vendor/etc/selinux/vendor_file_contexts" dev="dm-1" ino=1586 scontext=u:r:vendor_init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[    7.560648]  (1)[1:init]init: Parsing file /vendor/etc/init/boringssl_self_test.rc...
+[    8.244353]  (1)[1:init]init: starting service 'ueventd'...
+[    8.272825]  (3)[1:init]init: starting service 'apexd-bootstrap'...
+[    8.283613]  (2)[1:init]init: ... started service 'apexd-bootstrap' has pid 304
+[    8.293929]  (3)[1:init]init: SVC_EXEC service 'apexd-bootstrap' pid 304 (uid 0 gid 1000+0 context default) started; waiting...
+[    8.392667]  (1)[304:apexd]apexd-bootstrap: Scanning /system/apex for pre-installed ApexFiles
+[    8.408550]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.tzdata.apex
+[    8.429992]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.apex.cts.shim.apex
+[    8.440268]  (2)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.healthfitness.apex
+[    8.455244]  (2)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.tethering.capex
+[    8.470393]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.resolv.capex
+[    8.498316]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.conscrypt.capex
+[    8.516718]  (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.runtime.apex
+[    8.531880]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.scheduling.capex
+[    8.547607]  (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.os.statsd.apex
+[    8.565007]  (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.ondevicepersonalization.capex
+[    8.582205]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.art.capex
+[    8.597312]  (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.wifi.capex
+[    8.611856]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.permission.capex
+[    8.626480]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.neuralnetworks.capex
+[    8.639893]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.sdkext.apex
+[    8.650718]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.uwb.capex
+[    8.664694]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.devicelock.apex
+[    8.678189]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.appsearch.capex
+[    8.692287]  (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.virt.apex
+[    8.706023]  (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.i18n.apex
+[    8.716852]  (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.mediaprovider.capex
+[    8.749993]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.configinfrastructure.capex
+[    8.759929]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.media.capex
+[    8.770840]  (2)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.extservices.capex
+[    8.784912]  (2)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.vndk.current.apex
+[    8.796232]  (2)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.ipsec.capex
+[    8.807407]  (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.adbd.capex
+[    8.818117]  (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.adservices.capex
+[    8.828638]  (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.media.swcodec.capex
+[    8.932970]  (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.btservices.apex
+[    8.949249]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.cellbroadcast.capex
+[    8.961862]  (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.rkpd.apex
+[    8.973599]  (0)[304:apexd]apexd-bootstrap: Scanning /system_ext/apex for pre-installed ApexFiles
+[    8.981947]  (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.vndk.v31.apex
+[    9.005324]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.vndk.v28.apex
+[    9.022040]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.vndk.v30.apex
+[    9.099812]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.vndk.v32.apex
+[    9.109297]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.compos.apex
+[    9.121304]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.vndk.v33.apex
+[    9.129634]  (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.vndk.v29.apex
+[    9.142362]  (6)[304:apexd]apexd-bootstrap: Scanning /product/apex for pre-installed ApexFiles
+[    9.155614]  (6)[304:apexd]apexd-bootstrap: /product/apex does not exist. Skipping
+[    9.168635]  (6)[304:apexd]apexd-bootstrap: Scanning /vendor/apex for pre-installed ApexFiles
+[    9.182187]  (6)[304:apexd]apexd-bootstrap: Found pre-installed APEX /vendor/apex/com.samsung.android.biometrics.face.signed.apex
+[    9.286418]  (4)[304:apexd]apexd-bootstrap: Found pre-installed APEX /vendor/apex/com.samsung.android.camera.unihal.signed.apex
+[    9.335964]  (4)[304:apexd]apexd-bootstrap: Found bootstrap APEX /system/apex/com.android.i18n.apex
+[    9.349262]  (4)[304:apexd]apexd-bootstrap: Found bootstrap APEX /system/apex/com.android.vndk.current.apex
+[    9.362481]  (7)[304:apexd]apexd-bootstrap: Found bootstrap APEX /system/system_ext/apex/com.android.vndk.v31.apex
+[    9.375279]  (7)[304:apexd]apexd-bootstrap: Found bootstrap APEX /system/apex/com.android.tzdata.apex
+[    9.387782]  (7)[304:apexd]apexd-bootstrap: Found bootstrap APEX /system/apex/com.android.runtime.apex
+[    9.400017]  (7)[304:apexd]apexd-bootstrap: Need to pre-allocate 46 loop devices for 41 APEX packages
+[    9.412314]  (7)[304:apexd]apexd-bootstrap: No block apex metadata partition found, not adding block apexes
+[    9.440680]  (2)[304:apexd]apexd-bootstrap: Found 16 idle loopback devices that were pre-allocated by kernel. Allocated 30 more.
+[    9.580045]  (6)[356:apexd]apexd-bootstrap: Successfully mounted package /system/system_ext/apex/com.android.vndk.v31.apex on /apex/com.android.vndk.v31@1 duration=113
+[    9.614676]  (0)[357:apexd]apexd-bootstrap: Successfully mounted package /system/apex/com.android.tzdata.apex on /apex/com.android.tzdata@340090000 duration=148
+[    9.632174]  (0)[355:apexd]apexd-bootstrap: Successfully mounted package /system/apex/com.android.vndk.current.apex on /apex/com.android.vndk.v34@1 duration=165
+[    9.660468]  (0)[358:apexd]apexd-bootstrap: Successfully mounted package /system/apex/com.android.runtime.apex on /apex/com.android.runtime@1 duration=193
+[    9.677083]  (2)[354:apexd]apexd-bootstrap: Successfully mounted package /system/apex/com.android.i18n.apex on /apex/com.android.i18n@1 duration=210
+[    9.690220]  (2)[304:apexd]apexd-bootstrap: Activated 5 packages.
+[    9.711917]  (2)[304:apexd]apexd-bootstrap: OnBootstrap done, duration=1319
+[    9.720257]  (0)[1:init]init: Service 'apexd-bootstrap' (pid 304) exited with status 0 waiting took 1.438000 seconds
+[    9.725736]  (0)[1:init]init: Sending signal 9 to service 'apexd-bootstrap' (pid 304) process group...
+[    9.934272]  (0)[1:init]init: starting service 'exec 1 (/vendor/bin/modprobe -a -d /vendor/lib/modules helloworld.ko trace_mmstat.ko)'...
+[    9.982158]  (0)[1:init]init: starting service 'prng_seeder'...
+[   10.005668]  (0)[1:init]init: processing action (ro.product.cpu.abilist32=* && early-init) from (/vendor/etc/init/boringssl_self_test.rc:2)
+[   10.017244]  (0)[1:init]init: Command 'exec_start boringssl_self_test32_vendor' action=ro.product.cpu.abilist32=* && early-init (/vendor/etc/init/boringssl_self_test.rc:3) took 0ms and failed: Could not start exec service: File /vendor/bin/b
+ (2)[53:kauditd]audit: type=2000 audit(0.036:1): state=initialized audit_enabled=0 res=1
+ (2)[1:swapper/0][wdtk-canary] mid7021 reboot-capture+SELdevelop ACTIVE (mtk_wdt probe)
+ (5)[53:kauditd]audit: type=1403 audit(1768721940.980:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+ (5)[53:kauditd]audit: type=1400 audit(1768721940.980:3): avc:  denied  { read } for  pid=1 comm="init" name="vendor_file_contexts" dev="dm-1" ino=1586 scontext=u:r:kernel:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1B
+ (5)[53:kauditd]audit: type=1400 audit(1768721940.980:4): avc:  denied  { read } for  pid=1 comm="init" name="odm" dev="dm-1" ino=2861 scontext=u:r:kernel:s0 tcontext=u:object_r:unlabeled:s0 tclass=lnk_file permissive=1
+ (5)[53:kauditd]audit: type=1400 audit(1768721940.984:5): avc:  denied  { getattr } for  pid=1 comm="init" path="/vendor/etc/selinux/vendor_file_contexts" dev="dm-1" ino=1586 scontext=u:r:kernel:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+ (5)[53:kauditd]audit: type=1400 audit(1768721940.984:6): avc:  denied  { open } for  pid=1 comm="init" path="/vendor/etc/selinux/vendor_file_contexts" dev="dm-1" ino=1586 scontext=u:r:kernel:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+ (0)[53:kauditd]audit: type=1400 audit(1768721941.552:9): avc:  denied  { read } for  pid=301 comm="init" name="odm" dev="dm-1" ino=2861 scontext=u:r:vendor_init:s0 tcontext=u:object_r:unlabeled:s0 tclass=lnk_file permissive=1
+ (4)[53:kauditd]audit: type=1400 audit(1768721941.580:10): avc:  denied  { read } for  pid=301 comm="init" name="vendor_file_contexts" dev="dm-1" ino=1586 scontext=u:r:vendor_init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1C
+ (4)[53:kauditd]audit: type=1400 audit(1768721941.580:11): avc:  denied  { open } for  pid=301 comm="init" path="/vendor/etc/selinux/vendor_file_contexts" dev="dm-1" ino=1586 scontext=u:r:vendor_init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+ (1)[1:init]init: Parsing file /vendor/etc/init/boringssl_self_test.rc...
+ (1)[1:init]init: starting service 'ueventd'...
+ (3)[1:init]init: starting service 'apexd-bootstrap'...
+ (2)[1:init]init: ... started service 'apexd-bootstrap' has pid 304
+ (3)[1:init]init: SVC_EXEC service 'apexd-bootstrap' pid 304 (uid 0 gid 1000+0 context default) started; waiting...
+ (1)[304:apexd]apexd-bootstrap: Scanning /system/apex for pre-installed ApexFiles
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.tzdata.apex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.apex.cts.shim.apex,t
+ (2)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.healthfitness.apex
+ (2)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.tethering.capex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.resolv.capex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.conscrypt.capex
+ (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.runtime.apex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.scheduling.capex
+ (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.os.statsd.apex
+ (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.ondevicepersonalization.capex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.art.capex
+ (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.wifi.capex{w
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.permission.capex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.neuralnetworks.capex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.sdkext.apex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.uwb.capex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.devicelock.apex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.appsearch.capex
+ (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.virt.apex
+ (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.i18n.apex
+ (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.mediaprovider.capex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.configinfrastructure.capex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.media.capex
+ (2)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.extservices.capex
+ (2)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.vndk.current.apex
+ (2)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.ipsec.capex
+ (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.adbd.capexWQ
+ (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.adservices.capex
+ (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.media.swcodec.capex
+ (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.btservices.apex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.cellbroadcast.capex
+ (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.rkpd.apex
+ (0)[304:apexd]apexd-bootstrap: Scanning /system_ext/apex for pre-installed ApexFiles
+ (0)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.vndk.v31.apex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.vndk.v28.apex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.vndk.v30.apex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.vndk.v32.apex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.compos.apex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.vndk.v33.apex
+ (1)[304:apexd]apexd-bootstrap: Found pre-installed APEX /system_ext/apex/com.android.vndk.v29.apex
+ (6)[304:apexd]apexd-bootstrap: Scanning /product/apex for pre-installed ApexFiles
+ (6)[304:apexd]apexd-bootstrap: /product/apex does not exist. Skipping
+ (6)[304:apexd]apexd-bootstrap: Scanning /vendor/apex for pre-installed ApexFiles
+ (6)[304:apexd]apexd-bootstrap: Found pre-installed APEX /vendor/apex/com.samsung.android.biometrics.face.signed.apex
+ (4)[304:apexd]apexd-bootstrap: Found pre-installed APEX /vendor/apex/com.samsung.android.camera.unihal.signed.apex
+ (4)[304:apexd]apexd-bootstrap: Found bootstrap APEX /system/apex/com.android.i18n.apex
+ (4)[304:apexd]apexd-bootstrap: Found bootstrap APEX /system/apex/com.android.vndk.current.apex
+ (7)[304:apexd]apexd-bootstrap: Found bootstrap APEX /system/system_ext/apex/com.android.vndk.v31.apex
+ (7)[304:apexd]apexd-bootstrap: Found bootstrap APEX /system/apex/com.android.tzdata.apex
+ (7)[304:apexd]apexd-bootstrap: Found bootstrap APEX /system/apex/com.android.runtime.apex
+ (7)[304:apexd]apexd-bootstrap: Need to pre-allocate 46 loop devices for 41 APEX packages
+ (7)[304:apexd]apexd-bootstrap: No block apex metadata partition found, not adding block apexes
+ (2)[304:apexd]apexd-bootstrap: Found 16 idle loopback devices that were pre-allocated by kernel. Allocated 30 more.
+ (6)[356:apexd]apexd-bootstrap: Successfully mounted package /system/system_ext/apex/com.android.vndk.v31.apex on /apex/com.android.vndk.v31@1 duration=113
+ (0)[357:apexd]apexd-bootstrap: Successfully mounted package /system/apex/com.android.tzdata.apex on /apex/com.android.tzdata@340090000 duration=148
+ (0)[355:apexd]apexd-bootstrap: Successfully mounted package /system/apex/com.android.vndk.current.apex on /apex/com.android.vndk.v34@1 duration=165
+ (0)[358:apexd]apexd-bootstrap: Successfully mounted package /system/apex/com.android.runtime.apex on /apex/com.android.runtime@1 duration=193
+ (2)[354:apexd]apexd-bootstrap: Successfully mounted package /system/apex/com.android.i18n.apex on /apex/com.android.i18n@1 duration=210*
+ (2)[304:apexd]apexd-bootstrap: Activated 5 packages.
+ (2)[304:apexd]apexd-bootstrap: OnBootstrap done, duration=1319
+ (0)[1:init]init: Service 'apexd-bootstrap' (pid 304) exited with status 0 waiting took 1.438000 seconds
+ (0)[1:init]init: Sending signal 9 to service 'apexd-bootstrap' (pid 304) process group...
+ (0)[1:init]init: starting service 'exec 1 (/vendor/bin/modprobe -a -d /vendor/lib/modules helloworld.ko trace_mmstat.ko)'...
+ (0)[1:init]init: starting service 'prng_seeder'...
+ (0)[1:init]init: processing action (ro.product.cpu.abilist32=* && early-init) from (/vendor/etc/init/boringssl_self_test.rc:2)
+ (0)[1:init]init: Command 'exec_start boringssl_self_test32_vendor' action=ro.product.cpu.abilist32=* && early-init (/vendor/etc/init/boringssl_self_test.rc:3) took 0ms and failed: Could not start exec service: File /vendor/bin/boringssl_self_test32(labeled "u:object_r:unlabeled:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials. Note: this error shows up even in permissive mode in order to make auditing denials possible.
+ (1)[1:init]init: Reboot start, reason: reboot,boringssl-self-check-failed, reboot_target: boringssl-self-check-failed
+ (0)[1:init][wdtk-reboot] *** REBOOT REQUESTED *** action=1 reason="boringssl-self-check-failed" by comm=init pid=1

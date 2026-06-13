@@ -1,0 +1,17 @@
+# expdb-fable1 — SELinux setenforce fatal (pre-fix, kernel ebd409b92). Serial scrubbed.
+[    0.039543]  (2)[53:kauditd]audit: type=2000 audit(0.036:1): state=initialized audit_enabled=0 res=1
+[    2.061207]  (3)[1:swapper/0][wdtk-canary] mid7021 reboot-capture build ACTIVE (mtk_wdt probe)
+[    6.185336]  (4)[53:kauditd]audit: type=1403 audit(1768720220.024:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[    6.190308]  (1)[1:init]init: security_setenforce(false) failed: Invalid argument
+[    6.191598]  (1)[1:init]init: InitFatalReboot: signal 6
+[    6.209619]  (1)[1:init]init:   #00 pc 0000000000160fb8  /system/bin/init (android::init::InitFatalReboot(int)+204) (BuildId: 76f30a4743a40d386e68c3d10f14b079)
+[    6.315891]  (1)[1:init]init:   #04 pc 000000000016814c  /system/bin/init (android::init::SetupSelinux(char**)+11708) (BuildId: 76f30a4743a40d386e68c3d10f14b079)
+[    6.337731]  (1)[1:init][wdtk-reboot] *** REBOOT REQUESTED *** action=1 reason="recovery" by comm=init pid=1
+ (2)[53:kauditd]audit: type=2000 audit(0.036:1): state=initialized audit_enabled=0 res=1
+ (3)[1:swapper/0][wdtk-canary] mid7021 reboot-capture build ACTIVE (mtk_wdt probe)
+ (4)[53:kauditd]audit: type=1403 audit(1768720220.024:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+B (1)[1:init]init: security_setenforce(false) failed: Invalid argument
+b (1)[1:init]init: InitFatalReboot: signal 6
+b (1)[1:init]init:   #00 pc 0000000000160fb8  /system/bin/init (android::init::InitFatalReboot(int)+204) (BuildId: 76f30a4743a40d386e68c3d10f14b079)
+b (1)[1:init]init:   #04 pc 000000000016814c  /system/bin/init (android::init::SetupSelinux(char**)+11708) (BuildId: 76f30a4743a40d386e68c3d10f14b079)
+ (1)[1:init][wdtk-reboot] *** REBOOT REQUESTED *** action=1 reason="recovery" by comm=init pid=1
