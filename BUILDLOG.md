@@ -22,6 +22,7 @@ before that commit). `expdb_vNN` = the breadcrumb-panic dump read off the device
 | boot_v8a_wdtrstb_survive.img | 2784e2b7 | ce92e45b9 #7 | v25 | **clean negative: PMIC RG_WDTRSTB_EN cleared+held, still bootlooped ~8s → that PMIC bit is NOT the gate (gate is AP-side WDT_MODE_EXRST_EN/b2, never cleared).** |
 | boot_v8a_blindspot79.img | 7d07e992 | ce92e45b9 #8 | v26 | blind-spot ring — premature 0.21s panic (jiffies starts ~2^32; bug, owned) |
 | boot_v8a_blindspot79b.img | 46971512 | ce92e45b9 #9 (src 0f4d04523) | v27/v28 | jiffies→local_clock fixed. Capture contaminated by A/B-slot fallback (read an un-instrumented kernel). Device finding pending. |
+| boot_v8a_rebootcap.img | e1438c10 | ebd409b92 | (pending) | **reboot-capture: hook mtk_wdt_restart()+reboot-notifier → log culprit comm/PID+reason+stack, panic→expdb. Tests SW-reboot/init-suicide hypothesis. Flash BOTH slots + canary.** |
 
 ## Leading hypothesis (open)
 TOPRGU re-arms in the unmonitored 6.5→8.18s window (`mtk_wdt_start()` re-sets
