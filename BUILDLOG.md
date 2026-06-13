@@ -23,6 +23,8 @@ before that commit). `expdb_vNN` = the breadcrumb-panic dump read off the device
 | boot_v8a_blindspot79.img | 7d07e992 | ce92e45b9 #8 | v26 | blind-spot ring — premature 0.21s panic (jiffies starts ~2^32; bug, owned) |
 | boot_v8a_blindspot79b.img | 46971512 | ce92e45b9 #9 (src 0f4d04523) | v27/v28 | jiffies→local_clock fixed. Capture contaminated by A/B-slot fallback (read an un-instrumented kernel). Device finding pending. |
 | boot_v8a_rebootcap.img | e1438c10 | ebd409b92 | (pending) | **reboot-capture: hook mtk_wdt_restart()+reboot-notifier → log culprit comm/PID+reason+stack, panic→expdb. Tests SW-reboot/init-suicide hypothesis. Flash BOTH slots + canary.** |
+| boot_v8a_rebootcap.img | e1438c10 | ebd409b92 | fable1 | **VERDICT: init suicide. PID1 reboot(RESTART2,"recovery")@6.34s; `security_setenforce(false)`=EINVAL -> init FATAL. NOT a watchdog. Policy loaded OK (audit res=1).** |
+| boot_v8a_seldevelop.img | 1d4b4a90 | 51e796eb1 | (pending) | **FIX: CONFIG_SECURITY_SELINUX_DEVELOP=y + BOOTPARAM=y. Lets init setenforce->permissive succeed. Flash boot-only (super already on device), both slots.** |
 
 ## Leading hypothesis (open)
 TOPRGU re-arms in the unmonitored 6.5→8.18s window (`mtk_wdt_start()` re-sets
