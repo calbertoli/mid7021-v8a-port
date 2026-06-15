@@ -83,3 +83,9 @@ Each image is our arm64 kernel + a ramdisk. The embedded kernel commit is listed
 
 ## v8a watchdog diagnostics (v20-v28)
 See **BUILDLOG.md** for the md5 → kernel-commit → outcome table; images in **v8a_diagnostics/**. Source committed as 0f4d04523 on branch mid7021-wdt-readback.
+
+## v8a TEE-graft frontier (2026-06-14)
+| Image | Size | Kernel | md5 |
+|---|---|---|---|
+| `boot_v8a_pvrbridge900.img` | 13MB | `4.19.191-gdf4ff38a6 (A04e GPL PVR transplant, 900s deadline)` | `d1d6372f7cbf4f17caf2043d36ac805a` |
+| `boot_v8a_pvrbridge900_dlptneuter.img` | 13MB | `4.19.191-gb913714a3628 (+dlpt false-poweroff neuter)` | `972ffd14c8c980c3c05b2045a70ea9ff` |

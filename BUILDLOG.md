@@ -39,3 +39,15 @@ build-tag/commit **canary** printk, so one console line settles "is this our ker
 - Kernel controls the AP TOPRGU watchdog → signed-LK dead-end eliminated.
 - v8a pipeline runs to ~8s: arm64 kernel → mount GSI+A04e super → switch-root → 2nd-stage init → SELinux policy load (~7s).
 - Same kernel reached SurfaceFlinger at 25.9s on the v7a stack → runtime budget to adb exists once the dog is beaten.
+
+## v8a TEE-graft frontier arc (2026-06-14)
+
+Images: `v8a_diagnostics/boot_v8a_pvrbridge900.img` (d1d6372f), `boot_v8a_pvrbridge900_dlptneuter.img` (972ffd14). Run on `super_userdebug_tee_v5` (Trustonic keymaster@4.1 graft + 3 transitive libs + gatekeeper.trustonic + A04e GPL PVR transplant; super untracked, 3.3GB).
+
+Walls cleared this arc (each capture-verified):
+- **GPU err311** → A04e GPL m1.13ED5776728 PVR transplant (kernel df4ff38a6, MM bridge 37→46 fn): SurfaceFlinger inits GLES 3.2 on GE8320.
+- **gatekeeper hang** (TZTSdaemon wait) → grafted gatekeeper.trustonic.so + `ro.hardware.gatekeeper=trustonic`.
+- **keystore2 SQLITE CANTOPEN** → was STALE/corrupt /data (crash-loop residue), NOT a TEE issue; fixed by clean `userdata` erase → formattable reprovisions. On clean /data keystore2 registers (shared-secret OK, km_compat TRUSTED_ENVIRONMENT).
+- **~114s false low-battery poweroff** → `dlpt_check_power_off` neuter (kernel b913714a3): boot now runs minutes; apexd-bootstrap activates 5 packages. Battery confirmed **~99%** via KPOC — kernel gauge `soc:0` is garbage from the broken hl7005 charger driver (the real fleet fix, deferred). RUN NEUTER ONLY ON EXTERNAL POWER.
+
+**Current wall (finalstretch11, clean single-boot, valid /data):** `vdc cryptfs init_user0` exits 25 (`EX_SERVICE_SPECIFIC -8`) → init reboots to recovery (`init_user0_failed`) at ~113s, before zygote. Upstream healthy (keymaster+keystore register, /data mounts metadata-encrypted, apexd activates, bootctrl non-fatal). FBE = `inlinecrypt` + raw key (NO wrappedkey_v0); kernel has full inline-crypt + `_FALLBACK`. Leading hypothesis: a non-storage-key keymaster seal/derive op vold needs for user-0 FBE that the grafted Trustonic keymaster handles unlike the GSI expects. Next: decode vdc exit-25 stage + key-dir SELinux labels (offline) → drop-`inlinecrypt` bisection → reserve super-rebuild reboot-suppression capture.
